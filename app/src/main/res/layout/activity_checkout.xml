@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.A1tech.Activity.CheckoutActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar_payment"
+            layout="@layout/toolbar" />
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+    </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context="com.A1tech.Activity.CheckoutActivity">-->
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="Yetkazish manzili"-->
+<!--        android:textSize="12sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_address"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp"-->
+<!--        android:background="#F4F3F3"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:hint="Manzil"-->
+<!--        android:padding="@dimen/margin_10dp"-->
+
+<!--        android:textColor="@color/black"></TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:padding="@dimen/margin_5dp"-->
+<!--        android:text="123545535.245457" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/longt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:padding="@dimen/margin_5dp"-->
+<!--        android:text="123545535.245457" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:padding="@dimen/margin_5dp"-->
+<!--        android:text="Qo'shimcha ma'lumotlar"-->
+<!--  />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edt_qosh"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp"-->
+<!--        android:background="#F4F3F3"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:hint="Qo'shimcha ma'lumotlar"-->
+<!--        android:padding="@dimen/margin_10dp"></EditText>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:padding="@dimen/margin_5dp"-->
+<!--        android:text="To'lov turi"-->
+<!--        />-->
+
+<!--    <RadioButton-->
+<!--        android:id="@+id/radioButton_naht"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:padding="@dimen/margin_5dp"-->
+<!--        android:text="Naht" />-->
+
+<!--    <RadioButton-->
+<!--        android:id="@+id/radioButton_cart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:padding="@dimen/margin_5dp"-->
+<!--        android:text="Plastik karta" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/Mahsulot"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--            android:layout_marginTop="@dimen/margin_5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:padding="@dimen/margin_5dp"-->
+<!--            android:paddingLeft="@dimen/margin_5dp"-->
+<!--            android:text="Mahsulotlar :"-->
+<!--            android:textSize="18dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mahsulotSummasi"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginStart="@dimen/margin_5dp"-->
+<!--            android:layout_marginEnd="@dimen/margin_5dp"-->
+<!--            android:layout_marginRight="7dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:padding="@dimen/margin_5dp"-->
+<!--            android:paddingLeft="@dimen/margin_5dp"-->
+<!--            android:text="1 200 300 so'm"-->
+<!--            android:textSize="18sp" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/margin_5dp"-->
+<!--            android:layout_marginTop="@dimen/margin_5dp"-->
+<!--            android:layout_marginEnd="@dimen/margin_5dp"-->
+<!--            android:layout_marginBottom="@dimen/margin_5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+
+
+<!--            android:padding="5dp"-->
+<!--            android:text="Yetkazib berish :"-->
+<!--            android:textSize="18dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/DostavkaPrice"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginStart="@dimen/margin_5dp"-->
+<!--            android:layout_marginTop="@dimen/margin_5dp"-->
+<!--            android:layout_marginEnd="@dimen/margin_5dp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:layout_marginBottom="@dimen/margin_5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingLeft="@dimen/margin_5dp"-->
+<!--            android:text="10 000 so'm"-->
+<!--            android:textSize="18dp" />-->
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/margin_5dp"-->
+<!--            android:layout_marginTop="@dimen/margin_5dp"-->
+<!--            android:layout_marginEnd="@dimen/margin_5dp"-->
+<!--            android:layout_marginBottom="@dimen/margin_5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+
+
+<!--            android:padding="5dp"-->
+<!--            android:text="Jami Summa :"-->
+<!--            android:textSize="18dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/JamiSummaPrice"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginStart="@dimen/margin_5dp"-->
+<!--            android:layout_marginTop="@dimen/margin_5dp"-->
+<!--            android:layout_marginEnd="@dimen/margin_5dp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:layout_marginBottom="@dimen/margin_5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingLeft="@dimen/margin_5dp"-->
+<!--            android:text="1 230 300 so'm"-->
+<!--            android:textSize="18dp" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_tasdiq"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/margin_5dp"-->
+<!--        android:layout_marginTop="@dimen/margin_10dp"-->
+<!--        android:layout_marginRight="@dimen/margin_5dp"-->
+<!--        android:layout_marginBottom="@dimen/margin_5dp"-->
+<!--        android:background="@drawable/add_to_cart_textview_bg"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:text="Buyurtma qilish"-->
+<!--        android:textColor="#FFFFFF" />-->
+<!--</LinearLayout>-->

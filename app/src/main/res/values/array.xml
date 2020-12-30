@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="id_activityScreenTitles" >
+
+        <item></item>
+        <item>Dashboard</item>
+        <item>My Profile</item>
+        <item>nearby res</item>
+        <item>Settings</item>
+        <item>About us</item>
+        <item/>
+        <item>Log Out</item>
+    </string-array>
+    <string-array name="id_activityScreenTIcons" >
+        <item>@drawable/ic_baseline_phone_24</item>
+        <item>@drawable/ic_baseline_phone_24</item>
+        <item>@drawable/ic_baseline_phone_24</item>
+        <item>@drawable/ic_baseline_phone_24</item>
+        <item>@drawable/ic_baseline_phone_24</item>
+        <item>@drawable/ic_baseline_phone_24</item>
+        <item>0</item>
+        <item>@drawable/ic_baseline_phone_24</item>
+
+    </string-array>
+</resources>

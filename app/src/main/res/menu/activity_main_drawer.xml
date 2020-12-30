@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Asosiy" />
+        <item
+            android:id="@+id/nav_myshipping"
+            android:icon="@drawable/ic_myshipping"
+            android:title="Mening buyurtmalarim" />
+
+        <item
+            android:id="@+id/nav_mylocation"
+            android:icon="@drawable/ic_mylocation"
+            android:title="Mening manzillarim" />
+    </group>
+
+    <group
+        android:id="@+id/nav_communication_group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/ic_mypersonal"
+            android:title="Shahsiy ma'lumotlar" />
+<!--        <item-->
+<!--            android:id="@+id/nav_operator"-->
+<!--            android:icon="@drawable/ic_baseline_campaign_24"-->
+<!--            android:title="Operator bilan bog'lanish" />-->
+        <item
+            android:id="@+id/nav_aloqa"
+            android:icon="@drawable/ic_bizbnaloqa"
+            android:title="Biz bilan Aloqa" />
+
+    </group>
+</menu>

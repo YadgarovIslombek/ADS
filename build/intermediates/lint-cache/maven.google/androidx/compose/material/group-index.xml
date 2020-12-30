@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<androidx.compose.material>
+  <material versions="0.1.0-dev15,0.1.0-dev16,0.1.0-dev17,1.0.0-alpha01,1.0.0-alpha02,1.0.0-alpha03,1.0.0-alpha04,1.0.0-alpha05,1.0.0-alpha06,1.0.0-alpha07"/>
+  <material-icons-core versions="0.1.0-dev15,0.1.0-dev16,0.1.0-dev17,1.0.0-alpha01,1.0.0-alpha02,1.0.0-alpha03,1.0.0-alpha04,1.0.0-alpha05,1.0.0-alpha06,1.0.0-alpha07"/>
+  <material-icons-extended versions="0.1.0-dev15,0.1.0-dev16,0.1.0-dev17,1.0.0-alpha01,1.0.0-alpha02,1.0.0-alpha03,1.0.0-alpha04,1.0.0-alpha05,1.0.0-alpha06,1.0.0-alpha07"/>
+</androidx.compose.material>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <include
+        android:id="@+id/llProgressBarMap"
+        layout="@layout/circular_android_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+
+            android:elevation="5dp"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/search_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/colorAccent"
+                android:gravity="center_vertical"
+                android:hint="Поиск"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:textColorHint="@color/colorAccent"
+                tools:ignore="RtlSymmetry"
+                android:drawableLeft="@drawable/ic_search" />
+
+            <include
+                android:id="@+id/llProgressBar"
+                layout="@layout/circular_android_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/my_location"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:id="@+id/my_lovation"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_baseline_account_circle_24"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</fragment>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.A1tech.Activity.ProductActivity"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar_product"
+        layout="@layout/toolbar" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:id="@+id/progress_bar1"
+        layout="@layout/progressbar"
+        android:visibility="gone" />
+
+
+</LinearLayout>

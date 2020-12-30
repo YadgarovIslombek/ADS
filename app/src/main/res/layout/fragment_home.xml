@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.A1tech.Activity.MainActivity">
+
+
+
+    <!--  <FrameLayout
+          android:id="@+id/container"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_oziq_ovqat"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_margin="9dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_qurilish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/food" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Oziq-Ovqatlar"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_qurilish"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_margin="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_oziq_ovqat"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/qurilish_mollari" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Qurilish mollari"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parfumeriya"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_margin="9dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_konstovar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_oziq_ovqat"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/parfums" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Parfumeriya"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_konstovar"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_margin="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_parfumeriya"
+        app:layout_constraintTop_toBottomOf="@+id/card_qurilish"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imageView311"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/konstovar" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Konstovar"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_fastfood"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_margin="9dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_comp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_parfumeriya"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/img_konstovar_card"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/fastfood" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Fast-food"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_comp"
+        android:layout_width="182dp"
+        android:layout_height="180dp"
+        android:layout_margin="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_fastfood"
+        app:layout_constraintTop_toBottomOf="@+id/card_konstovar"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/comp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Kompyuterlar"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingTop="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        app:cardBackgroundColor="@color/backgroungColor"
+        app:cardCornerRadius="20dp"
+        android:elevation="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Sabzavotlar"
+                android:textAlignment="center"
+                android:textColor="@color/ADSColor"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.272" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/pro_basket"
+                app:civ_border_color="#86938A"
+                app:civ_border_width="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/ADSColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+   <!-- <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="15dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="190dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="15dp"
+              android:background="#8EBFEF">
+
+             <TextView
+                 android:layout_width="176dp"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="serif"
+                 android:padding="13dp"
+                 android:text="Qurilish mollari"
+                 android:textAlignment="center"
+                 android:textSize="30sp" />
+
+              <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:background="@color/colorAccent"
+                  android:padding="20dp"
+                  android:text="Hammasini ko'rish" />
+
+
+          </RelativeLayout>
+
+
+          <ImageView
+              android:layout_width="120dp"
+              android:layout_height="120dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginTop="-30dp"
+              android:src="@mipmap/ic_launcher" />
+       </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="190dp"
+       android:elevation="15dp"
+       app:cardCornerRadius="15dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="190dp">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="15dp"
+             android:background="#EF6B4A">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="95dp"
+                android:fontFamily="serif"
+                android:padding="13dp"
+                android:text="Parfumeriya"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:background="@color/colorAccent"
+                 android:backgroundTint="#B64E4E"
+                 android:padding="20dp"
+                 android:text="Hammasini ko'rish" />
+
+
+         </RelativeLayout>
+
+
+         <ImageView
+             android:layout_width="120dp"
+             android:layout_height="120dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginTop="-30dp"
+             android:src="@mipmap/ic_launcher" />
+      </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="190dp"
+       android:elevation="15dp"
+       app:cardCornerRadius="15dp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="190dp">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_margin="15dp"
+             android:background="#54DC8C">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="95dp"
+                android:fontFamily="serif"
+                android:padding="13dp"
+                android:text="Konstovar"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:background="#9A4747"
+                 android:backgroundTint="#D63D3D"
+                 android:padding="20dp"
+                 android:text="Hammasini ko'rish" />
+
+
+         </RelativeLayout>
+
+
+         <ImageView
+             android:layout_width="120dp"
+             android:layout_height="120dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginTop="-30dp"
+             android:src="@mipmap/ic_launcher" />
+      </RelativeLayout>
+   </androidx.cardview.widget.CardView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

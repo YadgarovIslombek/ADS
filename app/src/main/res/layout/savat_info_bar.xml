@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:background="@color/colorAccent"
+    android:padding="16dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:lineSpacingExtra="3sp"
+    android:text="Savatni ko'rish"
+    android:layout_centerVertical="true"
+    android:textColor="#3e3e3e"
+    android:textSize="16sp"
+    android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/savat_all_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#3e3e3e"
+        android:textSize="16sp"
+        android:textStyle="normal"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<fragment
+    android:id="@+id/map1"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="65dp"
+    android:layout_marginTop="1dp"
+    tools:context="com.A1tech.Activity.MapsActivity" />
+
+    <Button
+        android:id="@+id/btn_sendLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/add_to_cart_textview_bg"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Manzilni jo'natish"
+        android:textColor="@color/backgroungColor"
+
+        android:textSize="17sp" />
+</RelativeLayout>

@@ -22,13 +22,20 @@ public class User {
         this.phoneNumber = phoneNumber;
         this.password = password;
     }
-    public User(String password, String phoneNumber, String userName) {
+    public User(String userName, String password, String phoneNumber) {
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.userName = userName;
     }
 
-
+    public User(double latitude, double longitude, String phoneNumber, String userName, String qosh, String address) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.phoneNumber = phoneNumber;
+        this.userName = userName;
+        this.qosh = qosh;
+        this.address = address;
+    }
 
     public User(int clientId, String email, int isActive, int isRegistered, double latitude, double longitude, String password, String phoneNumber, int status, String userName, String qosh, String address) {
         this.clientId = clientId;

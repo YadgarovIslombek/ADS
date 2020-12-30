@@ -79,12 +79,12 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         fragmentManager = getActivity().getSupportFragmentManager();
         progress = view.findViewById(R.id.progress_bar);
         mobile = view.findViewById(R.id.mobileLog);
-        password = view.findViewById(R.id.login_password);
+        password = view.findViewById(R.id.l_password);
         loginButton = view.findViewById(R.id.btnlog);
         forgotPassword = view.findViewById(R.id.forgot_password);
         signUp = view.findViewById(R.id.createAccount);
-        show_hide_password = view
-                .findViewById(R.id.show_hide_password);
+//        show_hide_password = view
+//                .findViewById(R.id.show_hide_password);
         constraintLayout = view.findViewById(R.id.login_layout);
 
         localStorage = new LocalStorage(getContext());
@@ -152,7 +152,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.loginBtn:
+            case R.id.btnlog:
                 checkValidation();
                 break;
 

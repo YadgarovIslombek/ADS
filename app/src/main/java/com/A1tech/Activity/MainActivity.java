@@ -110,7 +110,7 @@ public class MainActivity extends BaseActivity
             @Override
             public void onClick(View view) {
                 localStorage.logoutUser();
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), LoginRegister.class));
                 finish();
                 overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
                 // Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_LONG).show();

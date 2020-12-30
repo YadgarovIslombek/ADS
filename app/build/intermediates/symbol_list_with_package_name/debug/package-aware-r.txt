@@ -2509,6 +2509,7 @@ id adjust_width
 id alertTitle
 id aligned
 id all
+id already_user
 id always
 id animateToEnd
 id animateToStart
@@ -2531,6 +2532,7 @@ id bottom
 id bounce
 id btnCheck
 id btn_sendLocation
+id btnlog
 id btnreg
 id btnsignup
 id buttonPanel
@@ -2568,6 +2570,7 @@ id circular
 id clear_text
 id clip_horizontal
 id clip_vertical
+id close_activity
 id collapseActionView
 id confirm_button
 id container
@@ -2642,6 +2645,7 @@ id forever
 id forgot_button
 id forgot_password
 id fragment_container_view_tag
+id frameContainer
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2690,6 +2694,7 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id l_password
 id labelGroup
 id labeled
 id lang
@@ -2709,10 +2714,7 @@ id ll1
 id llProgressBar
 id llProgressBarMap
 id logation_addres
-id loginBtn
 id login_layout
-id login_mobile
-id login_password
 id map
 id map1
 id masked
@@ -2912,7 +2914,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id show_hide_password
 id sin
 id skipCollapsed
 id slide
@@ -2995,7 +2996,6 @@ id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
 id text_v_login
-id text_v_reg
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3124,6 +3124,7 @@ layout activity_cart
 layout activity_checkout
 layout activity_info
 layout activity_login
+layout activity_login_register
 layout activity_main
 layout activity_maps
 layout activity_product
@@ -3159,14 +3160,16 @@ layout fragment_address
 layout fragment_adress
 layout fragment_blank
 layout fragment_comunicate
+layout fragment_forgot_password_
 layout fragment_home
 layout fragment_location_changed
-layout fragment_login
+layout fragment_login2
 layout fragment_malumot
 layout fragment_maps_main
 layout fragment_order
 layout fragment_order_history
 layout fragment_profile
+layout fragment_sign_up
 layout fragment_test
 layout fragment_tolov
 layout item_option
@@ -3318,6 +3321,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string closebutton
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title

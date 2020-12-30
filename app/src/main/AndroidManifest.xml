@@ -41,14 +41,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.A1tech.Activity.LoginActivity" />
-        <activity android:name="com.A1tech.Activity.SignUpActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.A1tech.Activity.CheckoutActivity" />
 
         <uses-library

@@ -136,12 +136,9 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
             } else if (getPassword.length() < 6) {
                 password.setError("Parol 6 ta belgidan kam");
                 password.requestFocus();
-            } else if (!terms_conditions.isChecked()) {
-                new CustomToast().Show_Toast(getActivity(), view,
-                        "Accept Term & Conditions");
-            } else {
-                user = new User(getFullName, getMobileNumber, getPassword);
-                registerUser(getFullName,getMobileNumber,getPassword);
+            }  else {
+                user = new User(getFullName,getPassword, getMobileNumber);
+                registerUser(getFullName,getPassword,getMobileNumber);
             /*  gson = new Gson();
             String userString = gson.toJson(user);
 
@@ -163,9 +160,9 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
             }
 
         }
-    private void registerUser(String getFullName, String getMobileNumber, String getPassword) {
+    private void registerUser(String getFullName,  String getPassword,String getMobileNumber) {
         showProgressDialog();
-        Call<ClientResponse> call = RetrofitClient.getData(getContext()).createUser(getFullName,getMobileNumber,getPassword);
+        Call<ClientResponse> call = RetrofitClient.getData(getContext()).createUser(getFullName,getPassword,getMobileNumber);
         call.enqueue(new Callback<ClientResponse>() {
             @Override
             public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {

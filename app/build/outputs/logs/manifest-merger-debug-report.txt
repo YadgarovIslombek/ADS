@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\4b415669d66eb6c72a5bfd46b3363a5f\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.3.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\825b7e4736758c431fe0d0d1d5580339\jetified-navigation-dynamic-features-fragment-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\d329ee059b28517cc3e57ac89b6862ac\navigation-fragment-ktx-2.3.2\AndroidManifest.xml:17:1-24:12
@@ -82,22 +82,22 @@ MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HP\.gra
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\6a4ae2c50f3cd6107298693272cb348f\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\c9ab2bf4db2c2b72642e1a0185b9d74a\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.android.play:core:1.7.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
-INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
 	package
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from D:\ADS\app\src\main\AndroidManifest.xml
 		INJECTED from D:\ADS\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\ADS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
 		INJECTED from D:\ADS\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\ADS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-80:12
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:1-78:12
 		INJECTED from D:\ADS\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:2:11-69
@@ -107,12 +107,16 @@ ADDED from D:\ADS\app\src\main\AndroidManifest.xml:10:5-12:47
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:12:9-44
 	android:name
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:11:9-58
+uses-permission#android.permission.VIBRATE
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:14:5-66
+	android:name
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:14:22-63
 uses-permission#com.A1tech.permission.MAPS_RECEIVE
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:13:5-73
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:15:5-74
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:13:22-71
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:15:22-71
 uses-permission#android.permission.INTERNET
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:15:5-67
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:16:5-67
 MERGED from [com.google.android.libraries.places:places:2.4.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.libraries.places:places:2.4.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
@@ -120,9 +124,9 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.grad
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:15:22-64
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:16:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:16:5-79
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:17:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:25:5-79
@@ -130,35 +134,37 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:16:22-76
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:17:5-81
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:18:5-19:40
+	tools:ignore
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:19:9-37
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:17:22-78
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:18:22-78
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:18:5-98
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:20:5-98
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:18:22-95
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:20:22-95
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:19:5-81
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:19:22-78
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:21:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:20:5-79
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.libraries.places:places:2.4.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.libraries.places:places:2.4.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:20:22-76
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:22:22-76
 uses-feature#0x00020000
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:21:5-23:34
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:24:5-26:35
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:25:9-41
 	android:required
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:23:9-32
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:26:9-32
 application
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:25:5-78:19
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:28:5-76:19
 MERGED from [com.google.android.material:material:1.3.0-alpha03] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha03] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\0dfbd3116c5a4b755f4e58d261b1bc1f\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -200,51 +206,47 @@ MERGED from [com.google.android.play:core:1.7.2] C:\Users\HP\.gradle\wrapper\dis
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\07ebdf5aa27002afa21ed6ccd69e052a\core-1.3.2\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:31:9-35
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:34:9-35
 	android:label
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:28:9-41
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:31:9-41
 	android:roundIcon
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:30:9-54
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:33:9-54
 	android:icon
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:27:9-43
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:30:9-43
 	android:allowBackup
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:26:9-35
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:29:9-35
 	android:theme
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:32:9-40
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:35:9-40
 	android:networkSecurityConfig
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:29:9-69
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:32:9-69
 	android:usesCleartextTraffic
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:33:9-44
-activity#com.A1tech.Activity.LoginActivity
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:35:9-79
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:36:9-44
+activity#com.A1tech.Activity.LoginRegister
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:37:9-43:20
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:35:19-67
-activity#com.A1tech.Activity.SignUpActivity
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:36:9-42:20
-	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:36:19-68
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:37:19-67
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:37:13-41:29
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:40:17-77
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:40:27-74
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.A1tech.Activity.CheckoutActivity
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:43:9-73
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:44:9-73
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:43:19-70
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:44:19-70
 uses-library#org.apache.http.legacy
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:45:9-47:40
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:46:9-48:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:48:13-37
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:46:13-50
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:47:13-50
 meta-data#com.google.android.geo.API_KEY
 ADDED from D:\ADS\app\src\main\AndroidManifest.xml:57:9-59:71
 	android:value
@@ -266,29 +268,29 @@ ADDED from D:\ADS\app\src\main\AndroidManifest.xml:65:9-76
 	android:name
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:65:19-73
 activity#com.A1tech.Activity.MainActivity
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:66:9-68:20
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:66:9-78
 	android:name
 		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:66:19-66
 activity#com.A1tech.Activity.ProductActivity
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:69:9-72
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:67:9-72
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:69:19-69
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:67:19-69
 activity#com.A1tech.Activity.CartActivity
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:70:9-69
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:68:9-69
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:70:19-66
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:68:19-66
 meta-data#com.google.android.gms
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:72:9-74:69
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:70:9-72:69
 	android:value
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:74:13-66
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:72:13-66
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:73:13-50
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:71:13-50
 meta-data#preloaded_fonts
-ADDED from D:\ADS\app\src\main\AndroidManifest.xml:75:9-77:57
+ADDED from D:\ADS\app\src\main\AndroidManifest.xml:73:9-75:57
 	android:resource
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:77:13-54
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:75:13-54
 	android:name
-		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:76:13-43
+		ADDED from D:\ADS\app\src\main\AndroidManifest.xml:74:13-43
 uses-sdk
 INJECTED from D:\ADS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ADS\app\src\main\AndroidManifest.xml

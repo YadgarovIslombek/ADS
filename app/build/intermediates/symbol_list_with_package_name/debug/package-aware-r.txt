@@ -2805,6 +2805,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
 id password_toggle
 id path
 id pathRelative
@@ -2969,6 +2970,7 @@ id text2
 id textEnd
 id textInputLayout
 id textInputLayout4
+id textInputLayout7
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart

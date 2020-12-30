@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.A1tech.ADS.R;
 import com.A1tech.Activity.BaseActivity;
 import com.A1tech.Activity.CartActivity;
+import com.A1tech.Activity.MainActivity;
 import com.A1tech.Adapter.CheckoutCardAdapter;
 import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Model.Cart;
@@ -100,10 +101,12 @@ public class TolovFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             OrderFragment orderFragment = new OrderFragment();
-                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                getActivity().overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
-                fragmentTransaction.replace(R.id.content_frame,orderFragment).commit();
+//             OrderFragment orderFragment = new OrderFragment();
+//                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+//                getActivity().overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+//                fragmentTransaction.replace(R.id.content_frame,orderFragment).commit();
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

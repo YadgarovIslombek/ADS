@@ -3,6 +3,8 @@ import com.A1tech.JsonResponseProduct;
 import com.A1tech.JsonResponseProducttype;
 import com.A1tech.Model.CategoryResult;
 import com.A1tech.Model.ClientResponse;
+import com.A1tech.Model.User;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
@@ -31,8 +33,8 @@ public interface InterfacesApi {
     @Headers("Content-Type: application/json")
     @POST("action=get_client_by_user_name&password=12345678&phoneNumber=123456789101")
         Call<ClientResponse> loginUser(
-                @Query("password") String password,
-                @Query("phoneNumber") String phoneNumber
+                @Query("phoneNumber") String phoneNumber,
+                @Query("password") String password
         );
 
 

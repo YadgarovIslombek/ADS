@@ -2,65 +2,35 @@ package com.A1tech.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 public class User {
-    @SerializedName("clientId")
-    @Expose
     int clientId;
-    @SerializedName("email")
-    @Expose
     String email;
-    @SerializedName("isActive")
-    @Expose
     int isActive;
-    @SerializedName("isRegistered")
-    @Expose
     int isRegistered;
-    @SerializedName("latitude")
-    @Expose
     double latitude;
-    @SerializedName("longitude")
-    @Expose
     double longitude;
-    @SerializedName("password")
-    @Expose
-    private String password;
-    @SerializedName("phoneNumber")
-    @Expose
-   private String phoneNumber;
-
-    @SerializedName("status")
-    @Expose
-    int status;
-    @SerializedName("userName")
-    @Expose
-    private String userName;
-    private String qosh;
-    private String address;
+   String password;
+   String phoneNumber;
+     int status;
+     String userName;
+   String qosh;
+  String address;
     //Constructor
-    public User(String phoneNumber) {
+
+    public User() {
+    }
+    public User(String phoneNumber, String password) {
         this.phoneNumber = phoneNumber;
-
+        this.password = password;
     }
-
-    public User(int clientId) {
-        this.clientId = clientId;
-    }
-
-    public User(String userName, String phoneNumber) {
-        this.userName = userName;
+    public User(String password, String phoneNumber, String userName) {
         this.password = password;
         this.phoneNumber = phoneNumber;
-    }
-
-    public User(double latitude, double longitude, String phoneNumber, String userName, String qosh, String address) {
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.phoneNumber = phoneNumber;
         this.userName = userName;
-        this.qosh = qosh;
-        this.address = address;
     }
 
-    public User(int clientId, String email, int isActive, int isRegistered, double latitude, double longitude, String password, String phoneNumber, int status, String userName) {
+
+
+    public User(int clientId, String email, int isActive, int isRegistered, double latitude, double longitude, String password, String phoneNumber, int status, String userName, String qosh, String address) {
         this.clientId = clientId;
         this.email = email;
         this.isActive = isActive;
@@ -71,11 +41,10 @@ public class User {
         this.phoneNumber = phoneNumber;
         this.status = status;
         this.userName = userName;
-    }
-    public User() {
+        this.qosh = qosh;
+        this.address = address;
     }
 
-    //getters & setters
     public int getClientId() {
         return clientId;
     }
@@ -154,6 +123,22 @@ public class User {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getQosh() {
+        return qosh;
+    }
+
+    public void setQosh(String qosh) {
+        this.qosh = qosh;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
 

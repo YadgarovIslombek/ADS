@@ -16,5 +16,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="ro_yhatdan_o_tmaganmisiz_marhamat">Ro\'yhatdan o\'tmaganmisiz marhamat</string>
     <string name="Title">ADS</string>
+    <string name="closebutton">Close Button for Activity</string>
     <string name="action_Cart">Cart</string>
 </resources>

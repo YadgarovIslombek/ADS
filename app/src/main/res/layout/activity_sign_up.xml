@@ -80,12 +80,13 @@
                 android:singleLine="true"
                 android:textColor="@color/text_color"
                 android:textColorHint="@color/yellow"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/ADSColor" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout4"
             android:layout_width="match_parent"
@@ -114,7 +115,46 @@
                 android:singleLine="true"
                 android:textColor="@color/text_color"
                 android:textColorHint="@color/yellow"
-                android:textSize="16sp" />
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/ADSColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:digits="+0123456789"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_vertical"
+                android:hint="Parol kiriting"
+                android:inputType="none"
+                android:maxLength="12"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/yellow"
+                android:textSize="15sp" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"

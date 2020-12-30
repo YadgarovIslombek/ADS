@@ -30,9 +30,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         edt1 = findViewById(R.id.mobileLog);
         btnreg = findViewById(R.id.btnreg);
-        SignUptxt = findViewById(R.id.text_v_reg);
+        SignUptxt = findViewById(R.id.createAccount);
         btnreg.setOnClickListener(this);
-        SignUptxt.findViewById(R.id.text_v_reg).setOnClickListener(this);
+        SignUptxt.findViewById(R.id.createAccount).setOnClickListener(this);
 
 
     }
@@ -42,9 +42,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             edt1.setError("Telefon raqam kiriting");
             edt1.requestFocus();
 
-//        } else if ( edt2.length() < 6) {
-//                    edt2.setError("Parolingiz 6 xonadan kam");
-//                    edt2.requestFocus();
+        } else if ( edt2.length() < 6) {
+                    edt2.setError("Parolingiz 6 xonadan kam");
+                    edt2.requestFocus();
         } else {
             user = new User(getphone);
 
@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.text_v_reg:
+            case R.id.createAccount:
                 Intent intent1 = new Intent(LoginActivity.this,SignUpActivity.class);
                 startActivity(intent1);
                 break;

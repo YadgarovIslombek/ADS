@@ -18,43 +18,54 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText full_name, password,mobileNumber;
+
     User user;
     LocalStorage localStorage;
     Gson gson = new Gson();
-    EditText name, mobile;
+    EditText name, mobile, password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         name = findViewById(R.id.Name);
         mobile = findViewById(R.id.mobile);
+        password = findViewById(R.id.password);
         findViewById(R.id.btnsignup).setOnClickListener(this);
         findViewById(R.id.text_v_login).setOnClickListener(this);
     }
     private void userSignUp() {
         String getusername = name.getText().toString().trim() + "";
         String getphone = mobile.getText().toString().trim() + "";
+        String getpassword = password.getText().toString().trim() + "";
         if (getusername.length() == 0) {
             name.setError("Ism Sharifingizni kiriting");
             name.requestFocus();
         } else if (getphone.length() == 0) {
             mobile.setError("Telefon raqam kiriting");
             mobile.requestFocus();
-        } else {
-            user = new User(getusername, getphone);
+        }else if(getpassword.length() > 6){
+            password.setError("Parol kamida 6 belgili bo'lishi shart");
+            password.requestFocus();
+        }
+        else {
+            user = new User(getusername,getpassword, getphone);
 //            Map<String, String> fields = new HashMap<>();
 //            fields.put("userName", getusername.toString().trim());
 //            fields.put("phoneNumber", getphone.trim());
 
             Call<ClientResponse> call = RetrofitClient
                     .getData(getApplicationContext())
-                    .createUser(getusername, "12345678", getphone);
+                    .createUser(getusername,getpassword,getphone);
             call.enqueue(new Callback<ClientResponse>() {
                 @Override
                 public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
                     if (response.code() == 200) {
                         ClientResponse clientResponse = response.body();
+                        String userString = gson.toJson(clientResponse.getUser());
+                        localStorage.createUserLoginSession(userString);
+                        Toast.makeText(getApplicationContext(), clientResponse.getStatus(), Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        finish();
                         Toast.makeText(SignUpActivity.this, clientResponse.getMessage(), Toast.LENGTH_SHORT).show();
                         finish();
                     } else if (response.code() == 401) {
@@ -75,8 +86,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         switch (view.getId()) {
             case R.id.btnsignup:
                 userSignUp();
-                Intent intent1 = new Intent(SignUpActivity.this, MainActivity.class);
-                startActivity(intent1);
+
+
                 finish();
                 break;
             case R.id.text_v_login:

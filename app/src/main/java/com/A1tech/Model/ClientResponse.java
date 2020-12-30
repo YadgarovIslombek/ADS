@@ -1,23 +1,36 @@
 package com.A1tech.Model;
+
+import com.google.gson.annotations.SerializedName;
+
 public class ClientResponse {
-    private int status;
-    private String message;
-    private User user;
-    public ClientResponse(int status, String message, User user) {
-        this.status = status;
-        this.message = message;
-        this.user = user;
+    @SerializedName("userData")
+    User user;
+    @SerializedName("message")
+    String message;
+    @SerializedName("status")
+    int status;
+
+    public User getUser() {
+        return user;
     }
 
-    public int getStatus() {
-        return status;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public User getUser() {
-        return user;
+    public void setMessage(int code) {
+        this.message = message;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }

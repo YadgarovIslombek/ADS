@@ -149,6 +149,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -196,8 +197,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             user = new User(getMobile, getPassword);
             login(getMobile,getPassword);
         }
-    }
-    private void login(String getMobile,String getPassword) {
         showProgressDialog();
         Call<ClientResponse> call = RetrofitClient.getData(getContext()).loginUser(getMobile, getPassword);
         call.enqueue(new Callback<ClientResponse>() {
@@ -233,6 +232,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 hideProgressDialog();
             }
         });
+    }
+    private void login(String getMobile,String getPassword) {
+
     }
 
     public void vibrate(int duration) {

@@ -31,7 +31,7 @@ public interface InterfacesApi {
            @Query("phoneNumber") String phoneNumber
            );
     @Headers("Content-Type: application/json")
-    @POST("action=get_client_by_user_name&password=12345678&phoneNumber=123456789101")
+    @POST("action=get_client_by_user_name")
         Call<ClientResponse> loginUser(
                 @Query("phoneNumber") String phoneNumber,
                 @Query("password") String password

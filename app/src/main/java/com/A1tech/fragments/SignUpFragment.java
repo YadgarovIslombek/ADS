@@ -138,11 +138,47 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
                 password.requestFocus();
             }  else {
                 user = new User(getFullName,getPassword, getMobileNumber);
-                registerUser(getFullName,getPassword,getMobileNumber);
+                registerUser(user);
+                showProgressDialog();
+                Call<ClientResponse> call = RetrofitClient.getData(getContext()).createUser(getFullName,getPassword,getMobileNumber);
+                call.enqueue(new Callback<ClientResponse>() {
+                    @Override
+                    public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
+                        Log.d("Response :=>", response.body() + "");
+                        if (response != null) {
+
+                            ClientResponse clientResponse = response.body();
+                            if (clientResponse.getStatus() == 200) {
+                                String userString = gson.toJson(clientResponse.getUser());
+                                localStorage.createUserLoginSession(userString);
+                                // Toast.makeText(getContext(), clientResponse.getStatus(), Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(getContext(), MainActivity.class));
+                                getActivity().finish();
+                            } else {
+                                new CustomToast().Show_Toast(getActivity(), view,
+                                        String.valueOf(clientResponse.getStatus()));
+
+                            }
+
+                        } else {
+                            new CustomToast().Show_Toast(getActivity(), view,
+                                    "Telefon raqam va parolingizni kiriting");
+                        }
+
+                        hideProgressDialog();
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<ClientResponse> call, Throwable t) {
+                        Log.d("Error==> ", t.getMessage());
+                        hideProgressDialog();
+                    }
+                });
+
+
             /*  gson = new Gson();
             String userString = gson.toJson(user);
-
-
             localStorage.createUserLoginSession(userString);
             progressDialog.setMessage("Registering Data....");
             progressDialog.show();
@@ -160,43 +196,8 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
             }
 
         }
-    private void registerUser(String getFullName,  String getPassword,String getMobileNumber) {
-        showProgressDialog();
-        Call<ClientResponse> call = RetrofitClient.getData(getContext()).createUser(getFullName,getPassword,getMobileNumber);
-        call.enqueue(new Callback<ClientResponse>() {
-            @Override
-            public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
-                Log.d("Response :=>", response.body() + "");
-                if (response != null) {
+    private void registerUser(User user) {
 
-                    ClientResponse clientResponse = response.body();
-                    if (clientResponse.getStatus() == 200) {
-                        String userString = gson.toJson(clientResponse.getUser());
-                        localStorage.createUserLoginSession(userString);
-                        Toast.makeText(getContext(), clientResponse.getStatus(), Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(getContext(), MainActivity.class));
-                        getActivity().finish();
-                    } else {
-                        new CustomToast().Show_Toast(getActivity(), view,
-                                String.valueOf(clientResponse.getStatus()));
-
-                    }
-
-                } else {
-                    new CustomToast().Show_Toast(getActivity(), view,
-                            "Kiritilgan ma'lumotlarda xatolik");
-                }
-
-                hideProgressDialog();
-
-            }
-
-            @Override
-            public void onFailure(Call<ClientResponse> call, Throwable t) {
-                Log.d("Error==> ", t.getMessage());
-                hideProgressDialog();
-            }
-        });
     }
 
     private void hideProgressDialog() {

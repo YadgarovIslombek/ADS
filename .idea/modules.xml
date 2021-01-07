@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ADS.recycleViewTest.iml" filepath="$PROJECT_DIR$/.idea/modules/ADS.recycleViewTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ADS.recycleViewTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ADS.recycleViewTest.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/recycleViewTest.iml" filepath="$PROJECT_DIR$/.idea/modules/recycleViewTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/recycleViewTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/recycleViewTest.app.iml" />
     </modules>

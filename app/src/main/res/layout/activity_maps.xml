@@ -3,14 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<fragment
-    android:id="@+id/map1"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="65dp"
-    android:layout_marginTop="1dp"
-    tools:context="com.A1tech.Activity.MapsActivity" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            android:layout_marginTop="1dp"
+            tools:context="com.A1tech.Activity.MapsActivity" />
+        <androidx.cardview.widget.CardView
+            map:cardCornerRadius="80dp"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"></androidx.cardview.widget.CardView>
+
+    </FrameLayout>
 
     <Button
         android:id="@+id/btn_sendLocation"

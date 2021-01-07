@@ -126,6 +126,7 @@ attr alertDialogCenterButtons
 attr alertDialogStyle
 attr alertDialogTheme
 attr allowStacking
+attr allowed_chars
 attr alpha
 attr alphabeticModifiers
 attr altSrc
@@ -223,6 +224,7 @@ attr cardPreventCornerOverlap
 attr cardUseCompatPadding
 attr cardViewStyle
 attr chainUseRtl
+attr char_representation
 attr checkboxStyle
 attr checkedButton
 attr checkedChip
@@ -364,6 +366,7 @@ attr defaultQueryHint
 attr defaultState
 attr deltaPolarAngle
 attr deltaPolarRadius
+attr denied_chars
 attr deriveConstraintsFrom
 attr destination
 attr dialogCornerRadius
@@ -549,6 +552,7 @@ attr itemTextAppearance
 attr itemTextAppearanceActive
 attr itemTextAppearanceInactive
 attr itemTextColor
+attr keep_hint
 attr keyPositionType
 attr keylines
 attr labelBehavior
@@ -650,6 +654,7 @@ attr liteMode
 attr logo
 attr logoDescription
 attr mapType
+attr mask
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -4240,6 +4245,7 @@ styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width 
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
+styleable MaskedEditText allowed_chars char_representation denied_chars keep_hint mask
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType

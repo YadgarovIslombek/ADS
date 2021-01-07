@@ -154,6 +154,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnlog:
+//                startActivity(new Intent(getContext(), MainActivity.class));
+//                getActivity().finish();
                 checkValidation();
                 break;
 
@@ -213,7 +215,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                         Toast.makeText(getContext(), clientResponse.getStatus(), Toast.LENGTH_LONG).show();
                         startActivity(new Intent(getContext(), MainActivity.class));
                         getActivity().finish();
-                    } else {
+                    }  {
                         new CustomToast().Show_Toast(getActivity(), view,
                                 String.valueOf(clientResponse.getStatus()));
                     }

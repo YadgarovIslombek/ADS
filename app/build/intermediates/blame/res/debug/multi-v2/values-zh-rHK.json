@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ADS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
+            "outputFile": "D:\\project1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\wrapper\\dists\\gradle-6.5-all\\caches\\transforms-2\\files-2.1\\f5b1091142532f4707d639915fcc5b3c\\navigation-ui-2.3.2\\res\\values-zh-rHK\\values-zh-rHK.xml",

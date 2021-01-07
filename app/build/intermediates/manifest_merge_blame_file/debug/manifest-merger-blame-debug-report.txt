@@ -6,52 +6,52 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="27"
-8-->D:\ADS\app\src\main\AndroidManifest.xml
+8-->D:\project1\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->D:\ADS\app\src\main\AndroidManifest.xml
+9-->D:\project1\app\src\main\AndroidManifest.xml
 10    <!--
 11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
 12         Google Maps Android API v2, but you must specify either coarse or fine
 13         location permissions for the "MyLocation" functionality.
 14    -->
 15    <permission
-15-->D:\ADS\app\src\main\AndroidManifest.xml:10:5-12:47
+15-->D:\project1\app\src\main\AndroidManifest.xml:10:5-12:47
 16        android:name="com.A1tech.permission.MAPS_RECEIVE"
-16-->D:\ADS\app\src\main\AndroidManifest.xml:11:9-58
+16-->D:\project1\app\src\main\AndroidManifest.xml:11:9-58
 17        android:protectionLevel="signature" />
-17-->D:\ADS\app\src\main\AndroidManifest.xml:12:9-44
+17-->D:\project1\app\src\main\AndroidManifest.xml:12:9-44
 18
 19    <uses-permission android:name="android.permission.VIBRATE" />
-19-->D:\ADS\app\src\main\AndroidManifest.xml:14:5-66
-19-->D:\ADS\app\src\main\AndroidManifest.xml:14:22-63
+19-->D:\project1\app\src\main\AndroidManifest.xml:14:5-66
+19-->D:\project1\app\src\main\AndroidManifest.xml:14:22-63
 20    <uses-permission android:name="com.A1tech.permission.MAPS_RECEIVE" />
-20-->D:\ADS\app\src\main\AndroidManifest.xml:15:5-74
-20-->D:\ADS\app\src\main\AndroidManifest.xml:15:22-71
+20-->D:\project1\app\src\main\AndroidManifest.xml:15:5-74
+20-->D:\project1\app\src\main\AndroidManifest.xml:15:22-71
 21    <uses-permission android:name="android.permission.INTERNET" />
-21-->D:\ADS\app\src\main\AndroidManifest.xml:16:5-67
-21-->D:\ADS\app\src\main\AndroidManifest.xml:16:22-64
+21-->D:\project1\app\src\main\AndroidManifest.xml:16:5-67
+21-->D:\project1\app\src\main\AndroidManifest.xml:16:22-64
 22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-22-->D:\ADS\app\src\main\AndroidManifest.xml:17:5-79
-22-->D:\ADS\app\src\main\AndroidManifest.xml:17:22-76
+22-->D:\project1\app\src\main\AndroidManifest.xml:17:5-79
+22-->D:\project1\app\src\main\AndroidManifest.xml:17:22-76
 23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-23-->D:\ADS\app\src\main\AndroidManifest.xml:18:5-19:40
-23-->D:\ADS\app\src\main\AndroidManifest.xml:18:22-78
+23-->D:\project1\app\src\main\AndroidManifest.xml:18:5-19:40
+23-->D:\project1\app\src\main\AndroidManifest.xml:18:22-78
 24    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-24-->D:\ADS\app\src\main\AndroidManifest.xml:20:5-98
-24-->D:\ADS\app\src\main\AndroidManifest.xml:20:22-95
+24-->D:\project1\app\src\main\AndroidManifest.xml:20:5-98
+24-->D:\project1\app\src\main\AndroidManifest.xml:20:22-95
 25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-25-->D:\ADS\app\src\main\AndroidManifest.xml:21:5-81
-25-->D:\ADS\app\src\main\AndroidManifest.xml:21:22-78
+25-->D:\project1\app\src\main\AndroidManifest.xml:21:5-81
+25-->D:\project1\app\src\main\AndroidManifest.xml:21:22-78
 26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-26-->D:\ADS\app\src\main\AndroidManifest.xml:22:5-79
-26-->D:\ADS\app\src\main\AndroidManifest.xml:22:22-76
+26-->D:\project1\app\src\main\AndroidManifest.xml:22:5-79
+26-->D:\project1\app\src\main\AndroidManifest.xml:22:22-76
 27
 28    <uses-feature
-28-->D:\ADS\app\src\main\AndroidManifest.xml:24:5-26:35
+28-->D:\project1\app\src\main\AndroidManifest.xml:24:5-26:35
 29        android:glEsVersion="0x00020000"
-29-->D:\ADS\app\src\main\AndroidManifest.xml:25:9-41
+29-->D:\project1\app\src\main\AndroidManifest.xml:25:9-41
 30        android:required="true" />
-30-->D:\ADS\app\src\main\AndroidManifest.xml:26:9-32
+30-->D:\project1\app\src\main\AndroidManifest.xml:26:9-32
 31
 32    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Permission will be merged into the manifest of the hosting app. -->
 32-->[com.google.android.libraries.places:places:2.4.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:10:5-76
@@ -62,52 +62,52 @@
 34-->[com.google.android.play:core:1.7.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:8:20-72
 35
 36    <application
-36-->D:\ADS\app\src\main\AndroidManifest.xml:28:5-76:19
+36-->D:\project1\app\src\main\AndroidManifest.xml:28:5-76:19
 37        android:allowBackup="true"
-37-->D:\ADS\app\src\main\AndroidManifest.xml:29:9-35
+37-->D:\project1\app\src\main\AndroidManifest.xml:29:9-35
 38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 38-->[androidx.core:core:1.3.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\07ebdf5aa27002afa21ed6ccd69e052a\core-1.3.2\AndroidManifest.xml:24:18-86
 39        android:debuggable="true"
 40        android:extractNativeLibs="false"
 41        android:icon="@mipmap/ic_launcher"
-41-->D:\ADS\app\src\main\AndroidManifest.xml:30:9-43
+41-->D:\project1\app\src\main\AndroidManifest.xml:30:9-43
 42        android:label="@string/app_name"
-42-->D:\ADS\app\src\main\AndroidManifest.xml:31:9-41
+42-->D:\project1\app\src\main\AndroidManifest.xml:31:9-41
 43        android:networkSecurityConfig="@xml/network_security_config"
-43-->D:\ADS\app\src\main\AndroidManifest.xml:32:9-69
+43-->D:\project1\app\src\main\AndroidManifest.xml:32:9-69
 44        android:roundIcon="@mipmap/ic_launcher_round"
-44-->D:\ADS\app\src\main\AndroidManifest.xml:33:9-54
+44-->D:\project1\app\src\main\AndroidManifest.xml:33:9-54
 45        android:supportsRtl="true"
-45-->D:\ADS\app\src\main\AndroidManifest.xml:34:9-35
+45-->D:\project1\app\src\main\AndroidManifest.xml:34:9-35
 46        android:testOnly="true"
 47        android:theme="@style/AppTheme"
-47-->D:\ADS\app\src\main\AndroidManifest.xml:35:9-40
+47-->D:\project1\app\src\main\AndroidManifest.xml:35:9-40
 48        android:usesCleartextTraffic="true" >
-48-->D:\ADS\app\src\main\AndroidManifest.xml:36:9-44
+48-->D:\project1\app\src\main\AndroidManifest.xml:36:9-44
 49        <activity android:name="com.A1tech.Activity.LoginRegister" >
-49-->D:\ADS\app\src\main\AndroidManifest.xml:37:9-43:20
-49-->D:\ADS\app\src\main\AndroidManifest.xml:37:19-67
+49-->D:\project1\app\src\main\AndroidManifest.xml:37:9-43:20
+49-->D:\project1\app\src\main\AndroidManifest.xml:37:19-67
 50            <intent-filter>
-50-->D:\ADS\app\src\main\AndroidManifest.xml:38:13-42:29
+50-->D:\project1\app\src\main\AndroidManifest.xml:38:13-42:29
 51                <action android:name="android.intent.action.MAIN" />
-51-->D:\ADS\app\src\main\AndroidManifest.xml:39:17-69
-51-->D:\ADS\app\src\main\AndroidManifest.xml:39:25-66
+51-->D:\project1\app\src\main\AndroidManifest.xml:39:17-69
+51-->D:\project1\app\src\main\AndroidManifest.xml:39:25-66
 52
 53                <category android:name="android.intent.category.LAUNCHER" />
-53-->D:\ADS\app\src\main\AndroidManifest.xml:41:17-77
-53-->D:\ADS\app\src\main\AndroidManifest.xml:41:27-74
+53-->D:\project1\app\src\main\AndroidManifest.xml:41:17-77
+53-->D:\project1\app\src\main\AndroidManifest.xml:41:27-74
 54            </intent-filter>
 55        </activity>
 56        <activity android:name="com.A1tech.Activity.CheckoutActivity" />
-56-->D:\ADS\app\src\main\AndroidManifest.xml:44:9-73
-56-->D:\ADS\app\src\main\AndroidManifest.xml:44:19-70
+56-->D:\project1\app\src\main\AndroidManifest.xml:44:9-73
+56-->D:\project1\app\src\main\AndroidManifest.xml:44:19-70
 57
 58        <uses-library
-58-->D:\ADS\app\src\main\AndroidManifest.xml:46:9-48:40
+58-->D:\project1\app\src\main\AndroidManifest.xml:46:9-48:40
 59            android:name="org.apache.http.legacy"
-59-->D:\ADS\app\src\main\AndroidManifest.xml:47:13-50
+59-->D:\project1\app\src\main\AndroidManifest.xml:47:13-50
 60            android:required="false" />
-60-->D:\ADS\app\src\main\AndroidManifest.xml:48:13-37
+60-->D:\project1\app\src\main\AndroidManifest.xml:48:13-37
 61        <!--
 62             The API key for Google Maps-based APIs is defined as a string resource.
 63             (See the file "res/values/google_maps_api.xml").
@@ -117,46 +117,46 @@
 67             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 68        -->
 69        <meta-data
-69-->D:\ADS\app\src\main\AndroidManifest.xml:57:9-59:71
+69-->D:\project1\app\src\main\AndroidManifest.xml:57:9-59:71
 70            android:name="com.google.android.geo.API_KEY"
-70-->D:\ADS\app\src\main\AndroidManifest.xml:58:13-58
+70-->D:\project1\app\src\main\AndroidManifest.xml:58:13-58
 71            android:value="AIzaSyCmFA_Yj4jkHWEJPgVp162YkrmbUTAGoLw" />
-71-->D:\ADS\app\src\main\AndroidManifest.xml:59:13-68
+71-->D:\project1\app\src\main\AndroidManifest.xml:59:13-68
 72
 73        <activity
-73-->D:\ADS\app\src\main\AndroidManifest.xml:61:9-63:59
+73-->D:\project1\app\src\main\AndroidManifest.xml:61:9-63:59
 74            android:name="com.A1tech.Activity.MapsActivity"
-74-->D:\ADS\app\src\main\AndroidManifest.xml:62:13-60
+74-->D:\project1\app\src\main\AndroidManifest.xml:62:13-60
 75            android:label="@string/title_activity_maps" />
-75-->D:\ADS\app\src\main\AndroidManifest.xml:63:13-56
+75-->D:\project1\app\src\main\AndroidManifest.xml:63:13-56
 76        <activity android:name="com.A1tech.InfoActivity" />
-76-->D:\ADS\app\src\main\AndroidManifest.xml:64:9-60
-76-->D:\ADS\app\src\main\AndroidManifest.xml:64:19-57
+76-->D:\project1\app\src\main\AndroidManifest.xml:64:9-60
+76-->D:\project1\app\src\main\AndroidManifest.xml:64:19-57
 77        <activity android:name="com.A1tech.Activity.ProductTypeActivity" />
-77-->D:\ADS\app\src\main\AndroidManifest.xml:65:9-76
-77-->D:\ADS\app\src\main\AndroidManifest.xml:65:19-73
+77-->D:\project1\app\src\main\AndroidManifest.xml:65:9-76
+77-->D:\project1\app\src\main\AndroidManifest.xml:65:19-73
 78        <activity android:name="com.A1tech.Activity.MainActivity" />
-78-->D:\ADS\app\src\main\AndroidManifest.xml:66:9-78
-78-->D:\ADS\app\src\main\AndroidManifest.xml:66:19-66
+78-->D:\project1\app\src\main\AndroidManifest.xml:66:9-78
+78-->D:\project1\app\src\main\AndroidManifest.xml:66:19-66
 79        <activity android:name="com.A1tech.Activity.ProductActivity" />
-79-->D:\ADS\app\src\main\AndroidManifest.xml:67:9-72
-79-->D:\ADS\app\src\main\AndroidManifest.xml:67:19-69
+79-->D:\project1\app\src\main\AndroidManifest.xml:67:9-72
+79-->D:\project1\app\src\main\AndroidManifest.xml:67:19-69
 80        <activity android:name="com.A1tech.Activity.CartActivity" />
-80-->D:\ADS\app\src\main\AndroidManifest.xml:68:9-69
-80-->D:\ADS\app\src\main\AndroidManifest.xml:68:19-66
+80-->D:\project1\app\src\main\AndroidManifest.xml:68:9-69
+80-->D:\project1\app\src\main\AndroidManifest.xml:68:19-66
 81
 82        <meta-data
-82-->D:\ADS\app\src\main\AndroidManifest.xml:70:9-72:69
+82-->D:\project1\app\src\main\AndroidManifest.xml:70:9-72:69
 83            android:name="com.google.android.gms"
-83-->D:\ADS\app\src\main\AndroidManifest.xml:71:13-50
+83-->D:\project1\app\src\main\AndroidManifest.xml:71:13-50
 84            android:value="@integer/google_play_services_version" />
-84-->D:\ADS\app\src\main\AndroidManifest.xml:72:13-66
+84-->D:\project1\app\src\main\AndroidManifest.xml:72:13-66
 85        <meta-data
-85-->D:\ADS\app\src\main\AndroidManifest.xml:73:9-75:57
+85-->D:\project1\app\src\main\AndroidManifest.xml:73:9-75:57
 86            android:name="preloaded_fonts"
-86-->D:\ADS\app\src\main\AndroidManifest.xml:74:13-43
+86-->D:\project1\app\src\main\AndroidManifest.xml:74:13-43
 87            android:resource="@array/preloaded_fonts" />
-87-->D:\ADS\app\src\main\AndroidManifest.xml:75:13-54
+87-->D:\project1\app\src\main\AndroidManifest.xml:75:13-54
 88
 89        <activity
 89-->[com.google.android.libraries.places:places:2.4.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20

@@ -31,6 +31,7 @@ import com.google.gson.Gson;
 
 import java.util.regex.Pattern;
 
+import br.com.sapereaude.maskedEditText.MaskedEditText;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -38,7 +39,7 @@ import retrofit2.Response;
 
 public class SignUpFragment extends Fragment implements View.OnClickListener {
     private static View view;
-    private static EditText fullName, mobileNumber,
+    private static EditText fullName,
             password;
     private static TextView login;
     private static Button signUpButton;
@@ -47,7 +48,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
     LocalStorage localStorage;
     Gson gson = new Gson();
     View progress;
-
+    MaskedEditText mobileNumber;
     public SignUpFragment() {
 
     }
@@ -61,14 +62,13 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
         setListeners();
         return view;
     }
-
     // Initialize all views
     private void initViews() {
         fullName = view.findViewById(R.id.Name);
         progress = view.findViewById(R.id.progress_bar);
 //        emailId = view.findViewById(R.id.userEmailId);
-        mobileNumber = view.findViewById(R.id.mobile);
-
+        mobileNumber = (MaskedEditText) view.findViewById(R.id.mobile);
+        mobileNumber.setMask("##/##/####");
         password = view.findViewById(R.id.password);
 
         signUpButton = view.findViewById(R.id.btnsignup);

@@ -91,29 +91,32 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout4"
+            app:counterEnabled="true"
+            app:counterMaxLength="12"
+            app:helperTextEnabled="true"
+            app:passwordToggleEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
 
-            <EditText
+            <br.com.sapereaude.maskedEditText.MaskedEditText
                 android:id="@+id/mobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@android:color/transparent"
                 android:digits="+0123456789"
-                android:drawablePadding="8dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center_vertical"
-                android:hint="Telefon raqam"
+                android:hint=" Telefon"
                 android:inputType="phone"
-                android:maxLength="15"
-                android:padding="10dp"
-                android:singleLine="true"
-                android:textColor="@color/text_color"
-                android:textColorHint="@color/yellow"
+                android:maxLength="12"
+                app:allowed_chars="1234567890"
+                app:mask="ccc.ccc.ccc-cc"
+                app:char_representation="c"
+                app:keep_hint="true"
                 android:textSize="15sp" />
 
             <View
@@ -122,7 +125,7 @@
                 android:background="@color/ADSColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+                app:layout_constraintTop_toBottomOf="@+id/mobile" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout

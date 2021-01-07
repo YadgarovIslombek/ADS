@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ADS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+            "outputFile": "D:\\project1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HP\\.gradle\\wrapper\\dists\\gradle-6.5-all\\caches\\transforms-2\\files-2.1\\825b7e4736758c431fe0d0d1d5580339\\jetified-navigation-dynamic-features-fragment-2.3.2\\res\\values-sv\\values-sv.xml",

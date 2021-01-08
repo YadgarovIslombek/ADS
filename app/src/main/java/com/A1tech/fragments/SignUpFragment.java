@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.A1tech.ADS.R;
 import com.A1tech.Activity.LoginRegister;
@@ -38,12 +38,12 @@ import retrofit2.Response;
 
 
 public class SignUpFragment extends Fragment implements View.OnClickListener {
-    private static View view;
-    private static EditText fullName,
+    private  View view;
+    private  EditText fullName,
             password;
-    private static TextView login;
-    private static Button signUpButton;
-    private static CheckBox terms_conditions;
+    private  TextView login;
+    private  Button signUpButton;
+    private  CheckBox terms_conditions;
     User user;
     LocalStorage localStorage;
     Gson gson = new Gson();
@@ -67,8 +67,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
         fullName = view.findViewById(R.id.Name);
         progress = view.findViewById(R.id.progress_bar);
 //        emailId = view.findViewById(R.id.userEmailId);
-        mobileNumber = (MaskedEditText) view.findViewById(R.id.mobile);
-        mobileNumber.setMask("##/##/####");
+        mobileNumber = (MaskedEditText) view.findViewById(R.id.phone);
         password = view.findViewById(R.id.password);
 
         signUpButton = view.findViewById(R.id.btnsignup);

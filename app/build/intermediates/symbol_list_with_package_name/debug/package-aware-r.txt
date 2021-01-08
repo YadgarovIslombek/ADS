@@ -2578,6 +2578,7 @@ id clip_vertical
 id close_activity
 id collapseActionView
 id confirm_button
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2818,6 +2819,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phone
 id pin
 id place_autocomplete_clear_button
 id place_autocomplete_powered_by_google
@@ -3049,6 +3051,7 @@ id useLogo
 id vaqt_chek
 id view
 id view2
+id view3
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -3357,7 +3360,9 @@ string installation_failed
 string installing_module
 string invalid_password
 string invalid_username
+string ism
 string item_view_role_description
+string kirish
 string login_failed
 string material_clock_display_divider
 string material_clock_toggle_content_description
@@ -3414,6 +3419,7 @@ string nav_app_bar_open_drawer_description
 string navigation_drawer_close
 string navigation_drawer_open
 string ok
+string parol_kiriting
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3433,9 +3439,12 @@ string progress
 string prompt_email
 string prompt_password
 string retry
+string ro_yhatdan_o_tganmisiz_nunda_bu_yerga
+string ro_yhatdan_o_tish
 string ro_yhatdan_o_tmaganmisiz_marhamat
 string search_menu_title
 string status_bar_notification_info_overflow
+string telefon
 string title_activity_maps
 string welcome
 style AlertDialog_AppCompat

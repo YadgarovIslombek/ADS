@@ -186,16 +186,32 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="99dp"
+            android:layout_marginTop="123dp"
             android:layout_marginEnd="99dp"
-            android:layout_marginBottom="4dp"
             android:background="@drawable/add_to_cart_textview_bg"
             android:fontFamily="@font/poppins_semibold"
             android:text="Kirish"
             android:textAllCaps="false"
             android:textColor="@color/backgroungColor"
-            app:layout_constraintBottom_toTopOf="@+id/already_user"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+        <TextView
+            android:id="@+id/already_user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ro'yhatdan o'tganmisiz?"
+            android:textColor="@color/ADSColor"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 
         <TextView
             android:id="@+id/already_user"
@@ -204,9 +220,9 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:padding="10dp"
-            android:text="Ro'yhatdan o'tganmisiz?\nUnda bu yerga"
-            android:textColor="@color/ADSColor"
+            android:padding="5dp"
+            android:text="unda bu yerga"
+            android:textColor="#DC0737"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

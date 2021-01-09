@@ -21,7 +21,7 @@ public interface InterfacesApi {
 //    @GET("product_type") //bazadaki barcha product_groupni oladi
 //    Call<JsonResponseProducttype>getProductType();
 
-    @GET("group?action=get_product_group_all ") //bazadaki barcha product_groupni oladi
+    @GET("group?action=get_product_group_all") //bazadaki barcha product_groupni oladi
     Call<JsonResponseProducttype>getProductType();
 
 //    @GET("products/byId/{id}")

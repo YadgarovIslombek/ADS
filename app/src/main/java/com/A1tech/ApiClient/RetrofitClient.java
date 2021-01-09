@@ -1,5 +1,9 @@
 package com.A1tech.ApiClient;
 import android.content.Context;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.util.concurrent.TimeUnit;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -14,13 +18,19 @@ public class RetrofitClient {
  private static RetrofitClient mInstance;
  private static Retrofit retrofit;
     private static Retrofit getRetrofit(){
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
         return new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 //.baseUrl("http://api.larntech.net/")
                 .client(okHttpClient())
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
+
+
     }
+
     private static Interceptor provideLoggingInterceptor(){
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
         httpLoggingInterceptor.level(HttpLoggingInterceptor.Level.BODY);

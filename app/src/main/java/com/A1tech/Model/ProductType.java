@@ -1,27 +1,18 @@
 package com.A1tech.Model;
 public class ProductType {
-    int productTypeId;
     int productGroupId;
     String productGroupName;
+    Integer productTypeId;
+    String productTypeName;
 
-    //Constructor
-
-    public ProductType(int productTypeId, int productGroupId, String productGroupName) {
-        this.productTypeId = productTypeId;
+    public ProductType(int productGroupId, String productGroupName, Integer productTypeId, String productTypeName) {
         this.productGroupId = productGroupId;
         this.productGroupName = productGroupName;
-    }
-
-
-    //getters&Setters
-
-
-    public int getProductTypeId() {
-        return productTypeId;
-    }
-
-    public void setProductTypeId(int productTypeId) {
         this.productTypeId = productTypeId;
+        this.productTypeName = productTypeName;
+    }
+
+    public ProductType(int i, int i1, String sabzavotlar) {
     }
 
     public int getProductGroupId() {
@@ -38,5 +29,21 @@ public class ProductType {
 
     public void setProductGroupName(String productGroupName) {
         this.productGroupName = productGroupName;
+    }
+
+    public Integer getProductTypeId() {
+        return productTypeId;
+    }
+
+    public void setProductTypeId(Integer productTypeId) {
+        this.productTypeId = productTypeId;
+    }
+
+    public String getProductTypeName() {
+        return productTypeName;
+    }
+
+    public void setProductTypeName(String productTypeName) {
+        this.productTypeName = productTypeName;
     }
 }

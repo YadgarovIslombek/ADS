@@ -2394,6 +2394,7 @@ drawable quantum_ic_search_grey600_24
 drawable qurilish_mollari
 drawable rec_bg
 drawable rounded_corner
+drawable succesfull
 drawable telegramm
 drawable test_custom_background
 drawable text_selector
@@ -2578,7 +2579,6 @@ id clip_vertical
 id close_activity
 id collapseActionView
 id confirm_button
-id constraintLayout
 id container
 id content
 id contentPanel
@@ -2747,7 +2747,6 @@ id media_actions
 id message
 id middle
 id mini
-id mobile
 id mobileLog
 id month_grid
 id month_navigation_bar
@@ -2992,9 +2991,11 @@ id textView14
 id textView15
 id textView16
 id textView17
+id textView18
 id textView2
 id textView3
 id textView4
+id textView5
 id textView6
 id textView7
 id textView8
@@ -3015,6 +3016,7 @@ id titleDividerNoCustom
 id title_template
 id toast_error
 id toast_root
+id toast_succes
 id toggle
 id tool_title
 id toolbar
@@ -3051,7 +3053,6 @@ id useLogo
 id vaqt_chek
 id view
 id view2
-id view3
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner

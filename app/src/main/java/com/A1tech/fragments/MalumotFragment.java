@@ -80,11 +80,11 @@ public class MalumotFragment extends Fragment {
                     txt_qosh_address.setError("Iltimos manzilni aniqlashtiting");
                     txt_qosh_address.requestFocus();
                 }else{
-                    User userAddress = new User(Double.parseDouble(_lat), Double.parseDouble(_longt), _txt_mobile, String.valueOf(_txt_name),_txt_qosh_address,_txt_address);
-                    String user_address = gson.toJson(userAddress);
-                    localStorage.createUserLoginSession(user_address);
-                    Log.d("test", user_address);
-                    saveUserAddress(userAddress);
+//                    User userAddress = new User(Double.parseDouble(_lat), Double.parseDouble(_longt), _txt_mobile, String.valueOf(_txt_name),_txt_qosh_address,_txt_address);
+//                    String user_address = gson.toJson(userAddress);
+//                    localStorage.createUserLoginSession(user_address);
+//                    Log.d("test", user_address);
+//                    saveUserAddress(userAddress);
                 }
 
             }

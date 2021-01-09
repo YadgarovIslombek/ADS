@@ -8,19 +8,20 @@ public class User {
     int isRegistered;
     double latitude;
     double longitude;
-   String password;
-   String phoneNumber;
-     int status;
-     String userName;
-   String qosh;
-  String address;
+    String message;
+    String password;
+    String phoneNumber;
+    String role;
+    int status;
+    String userName;
+
     //Constructor
 
     public User() {
     }
-    public User(String phoneNumber, String password) {
-        this.phoneNumber = phoneNumber;
+    public User(String password,String phoneNumber) {
         this.password = password;
+        this.phoneNumber = phoneNumber;
     }
     public User(String userName, String password, String phoneNumber) {
         this.password = password;
@@ -28,28 +29,28 @@ public class User {
         this.userName = userName;
     }
 
-    public User(double latitude, double longitude, String phoneNumber, String userName, String qosh, String address) {
+    public User(double latitude, double longitude,String message, String phoneNumber, String userName) {
         this.latitude = latitude;
         this.longitude = longitude;
+        this.message = message;
         this.phoneNumber = phoneNumber;
         this.userName = userName;
-        this.qosh = qosh;
-        this.address = address;
+
     }
 
-    public User(int clientId, String email, int isActive, int isRegistered, double latitude, double longitude, String password, String phoneNumber, int status, String userName, String qosh, String address) {
+    public User(int clientId, String email, int isActive, int isRegistered, double latitude, double longitude,String message, String password, String phoneNumber, int status, String userName) {
         this.clientId = clientId;
         this.email = email;
         this.isActive = isActive;
         this.isRegistered = isRegistered;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.message = message;
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.status = status;
         this.userName = userName;
-        this.qosh = qosh;
-        this.address = address;
+
     }
 
     public int getClientId() {
@@ -100,6 +101,14 @@ public class User {
         this.longitude = longitude;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -114,6 +123,14 @@ public class User {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public int getStatus() {
@@ -132,20 +149,5 @@ public class User {
         this.userName = userName;
     }
 
-    public String getQosh() {
-        return qosh;
-    }
-
-    public void setQosh(String qosh) {
-        this.qosh = qosh;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
 

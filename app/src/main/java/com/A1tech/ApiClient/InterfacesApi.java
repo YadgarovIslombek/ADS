@@ -18,11 +18,18 @@ public interface InterfacesApi {
 //    @GET("/group?action=get_product_group_all") //bazadaki barcha product_groupni oladi
 //    Call<JsonResponseProducttype>getProductType();
 
-    @GET("product_type") //bazadaki barcha product_groupni oladi
+//    @GET("product_type") //bazadaki barcha product_groupni oladi
+//    Call<JsonResponseProducttype>getProductType();
+
+    @GET("group?action=get_product_group_all ") //bazadaki barcha product_groupni oladi
     Call<JsonResponseProducttype>getProductType();
 
-    @GET("products/byId/{id}")
+//    @GET("products/byId/{id}")
+//    Call<CategoryResult> getProductById(@Path("id") int productTypeId);
+
+    @GET("product?action=get_products_by_group_id&groupId{id}")
     Call<CategoryResult> getProductById(@Path("id") int productTypeId);
+
     @Headers("Content-Type: application/json")
     @POST("login?action=create_client_by_mobile")
     Call<ClientResponse> createUser(
@@ -31,10 +38,10 @@ public interface InterfacesApi {
            @Query("phoneNumber") String phoneNumber
            );
     @Headers("Content-Type: application/json")
-    @POST("action=get_client_by_user_name")
+    @POST("login?action=get_client_by_user_name")
         Call<ClientResponse> loginUser(
-                @Query("phoneNumber") String phoneNumber,
-                @Query("password") String password
+                @Query("password") String password,
+                @Query("phoneNumber") String phoneNumber
         );
 
 

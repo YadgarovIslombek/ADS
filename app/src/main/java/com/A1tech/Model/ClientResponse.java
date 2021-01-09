@@ -3,12 +3,9 @@ package com.A1tech.Model;
 import com.google.gson.annotations.SerializedName;
 
 public class ClientResponse {
-    @SerializedName("userData")
-    User user;
-    @SerializedName("message")
-    String message;
-    @SerializedName("status")
     int status;
+    String message;
+    User user;
 
     public User getUser() {
         return user;

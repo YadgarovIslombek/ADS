@@ -13,8 +13,23 @@
         android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/error"
         android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins"
         android:gravity="center_vertical"
         android:padding="5dp"
+        android:textColor="@color/red_500"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/toast_succes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/succesfull"
+        android:drawablePadding = "10dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/poppins"
+        android:padding="5dp"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:visibility="gone"/>
 </RelativeLayout>

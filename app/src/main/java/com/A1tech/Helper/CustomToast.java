@@ -2,6 +2,7 @@ package com.A1tech.Helper;
 
 
 import android.content.Context;
+import android.opengl.Visibility;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,9 +26,11 @@ public class CustomToast {
         View layout = inflater.inflate(R.layout.custom_toast,
                 (ViewGroup) view.findViewById(R.id.toast_root));
 
-        // Get TextView id and set error
+//         Get TextView id and set error
+
         TextView text = layout.findViewById(R.id.toast_error);
         text.setText(error);
+        text.setVisibility(View.VISIBLE);
 
         Toast toast = new Toast(context);// Get Toast Context
         toast.setGravity(Gravity.TOP | Gravity.FILL_HORIZONTAL, 0, 0);// Set
@@ -38,6 +41,27 @@ public class CustomToast {
         // Horizoontal
         toast.setDuration(Toast.LENGTH_SHORT);// Set Duration
         toast.setView(layout); // Set Custom View over toast
+
+        toast.show();// Finally show toast
+    }
+    public void Successfull_Toast(Context context,View view, String success){
+        LayoutInflater inflater = (LayoutInflater)context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        View layout1 = inflater.inflate(R.layout.custom_toast, (ViewGroup) view.findViewById(R.id.toast_root));
+
+        TextView textView = layout1.findViewById(R.id.toast_succes);
+        textView.setText(success);
+        textView.setVisibility(View.VISIBLE);
+        Toast toast = new Toast(context);// Get Toast Context
+        toast.setGravity(Gravity.TOP | Gravity.FILL_HORIZONTAL, 0, 0);// Set
+        // Toast
+        // gravity
+        // and
+        // Fill
+        // Horizoontal
+        toast.setDuration(Toast.LENGTH_SHORT);// Set Duration
+        toast.setView(layout1); // Set Custom View over toast
 
         toast.show();// Finally show toast
     }

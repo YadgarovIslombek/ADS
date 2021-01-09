@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.A1tech.ADS.R;
@@ -48,7 +49,8 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
     LocalStorage localStorage;
     Gson gson = new Gson();
     View progress;
-    MaskedEditText mobileNumber;
+    EditText mobileNumber;
+//    MaskedEditText mobileNumber;
     public SignUpFragment() {
 
     }
@@ -67,7 +69,8 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
         fullName = view.findViewById(R.id.Name);
         progress = view.findViewById(R.id.progress_bar);
 //        emailId = view.findViewById(R.id.userEmailId);
-        mobileNumber = (MaskedEditText) view.findViewById(R.id.phone);
+//        mobileNumber = (MaskedEditText) view.findViewById(R.id.phone);
+        mobileNumber = view.findViewById(R.id.phone);
         password = view.findViewById(R.id.password);
 
         signUpButton = view.findViewById(R.id.btnsignup);
@@ -137,43 +140,8 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
                 password.requestFocus();
             }  else {
                 user = new User(getFullName,getPassword, getMobileNumber);
-                registerUser(user);
-                showProgressDialog();
-                Call<ClientResponse> call = RetrofitClient.getData(getContext()).createUser(getFullName,getPassword,getMobileNumber);
-                call.enqueue(new Callback<ClientResponse>() {
-                    @Override
-                    public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
-                        Log.d("Response :=>", response.body() + "");
-                        if (response != null) {
+                registerUser(getFullName,getPassword,getMobileNumber);
 
-                            ClientResponse clientResponse = response.body();
-                            if (clientResponse.getStatus() == 200) {
-                                String userString = gson.toJson(clientResponse.getUser());
-                                localStorage.createUserLoginSession(userString);
-                                // Toast.makeText(getContext(), clientResponse.getStatus(), Toast.LENGTH_LONG).show();
-                                startActivity(new Intent(getContext(), MainActivity.class));
-                                getActivity().finish();
-                            } else {
-                                new CustomToast().Show_Toast(getActivity(), view,
-                                        String.valueOf(clientResponse.getStatus()));
-
-                            }
-
-                        } else {
-                            new CustomToast().Show_Toast(getActivity(), view,
-                                    "Telefon raqam va parolingizni kiriting");
-                        }
-
-                        hideProgressDialog();
-
-                    }
-
-                    @Override
-                    public void onFailure(Call<ClientResponse> call, Throwable t) {
-                        Log.d("Error==> ", t.getMessage());
-                        hideProgressDialog();
-                    }
-                });
 
 
             /*  gson = new Gson();
@@ -195,7 +163,43 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
             }
 
         }
-    private void registerUser(User user) {
+    private void registerUser(String getFullName,String getPassword, String getMobileNumber) {
+        showProgressDialog();
+        Call<ClientResponse> call = RetrofitClient.getData(getContext()).createUser(getFullName,getPassword,getMobileNumber);
+        call.enqueue(new Callback<ClientResponse>() {
+            @Override
+            public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
+                Log.d("Response :=>", response.body() + "");
+                if (response != null) {
+
+                    ClientResponse clientResponse = response.body();
+                    if (clientResponse.getStatus() == 200) {
+                        String userString = gson.toJson(clientResponse.getUser());
+                        localStorage.createUserLoginSession(userString);
+                        Log.d("TAG",userString);
+                        startActivity(new Intent(getContext(), MainActivity.class));
+                        getActivity().finish();
+                    } else {
+                        new CustomToast().Show_Toast(getActivity(), view,
+                                String.valueOf(clientResponse.getStatus()));
+
+                    }
+
+                } else {
+                    new CustomToast().Show_Toast(getActivity(), view,
+                            "Telefon raqam va parolingizni kiriting");
+                }
+
+                hideProgressDialog();
+
+            }
+
+            @Override
+            public void onFailure(Call<ClientResponse> call, Throwable t) {
+                Log.d("Error==> ", t.getMessage());
+                hideProgressDialog();
+            }
+        });
 
     }
 

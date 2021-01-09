@@ -29,6 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.A1tech.ADS.R;
 import com.A1tech.Activity.MainActivity;
 import com.A1tech.ApiClient.RetrofitClient;
@@ -45,15 +46,14 @@ import retrofit2.Response;
 
 
 public class LoginFragment extends Fragment implements View.OnClickListener {
-    private static View view;
-
-    private static EditText mobile, password;
-    private static Button loginButton;
-    private static TextView forgotPassword, signUp;
-    private static CheckBox show_hide_password;
-    private static ConstraintLayout constraintLayout;
-    private static Animation shakeAnimation;
-    private static FragmentManager fragmentManager;
+    private  View view;
+    private  EditText mobile, password;
+    private  Button loginButton;
+    private  TextView forgotPassword, signUp;
+    private  CheckBox show_hide_password;
+    private  ConstraintLayout constraintLayout;
+    private Animation shakeAnimation;
+    private  FragmentManager fragmentManager;
     Gson gson = new Gson();
     View progress;
     LocalStorage localStorage;
@@ -186,21 +186,26 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         // Get email id and password
         final String getMobile = mobile.getText().toString();
         final String getPassword = password.getText().toString();
-
-
         // Check for both field is empty or not
         if (getMobile.equals("") || getMobile.length() == 0
                 || getPassword.equals("") || getPassword.length() == 0) {
             constraintLayout.startAnimation(shakeAnimation);
             new CustomToast().Show_Toast(getActivity(), view,
-                    "Ma'lumotlarni to'g'ri kiriting.");
+                    "Telefon raqam va Parol kiritilmagan");
             vibrate(200);
-        } else {
-            user = new User(getMobile, getPassword);
-            login(getMobile,getPassword);
+
+        }else if (getMobile.equals("")|| getMobile.length() == 0){
+            mobile.setError("Telefon raqam kiritilmagan");
         }
+        else {
+            user = new User(getPassword,getMobile);
+            registerUser(getPassword,getMobile);
+        }
+    }
+
+    private void registerUser(String getPassword, String getMobile) {
         showProgressDialog();
-        Call<ClientResponse> call = RetrofitClient.getData(getContext()).loginUser(getMobile, getPassword);
+        Call<ClientResponse> call = RetrofitClient.getData(getContext()).loginUser(getPassword, getMobile);
         call.enqueue(new Callback<ClientResponse>() {
             @Override
             public void onResponse(Call<ClientResponse> call, Response<ClientResponse> response) {
@@ -209,18 +214,27 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 if (response != null) {
 
                     ClientResponse clientResponse = response.body();
-                    if (clientResponse.getStatus() == 200) {
+                     if (clientResponse.getStatus() == 200) {
                         String userString = gson.toJson(clientResponse.getUser());
                         localStorage.createUserLoginSession(userString);
-                        Toast.makeText(getContext(), clientResponse.getStatus(), Toast.LENGTH_LONG).show();
+                        Log.d("TAG", userString);
                         startActivity(new Intent(getContext(), MainActivity.class));
                         getActivity().finish();
-                    }  {
+                    } else if(clientResponse.getStatus() == 201){
                         new CustomToast().Show_Toast(getActivity(), view,
-                                String.valueOf(clientResponse.getStatus()));
-                    }
+                            "Parolingiz Xato");
+                    } else {    // Alex ga oytish garak TELEFON RAQAM hato bolsa 202 m ishqilib status qaytarsin serverda Hozircha 500 qaytadi akan TELEFON RAQAM xato bo'lib parol dogri bolsa!!!!!!!!
+                         new CustomToast().Show_Toast(getActivity(),view,
+                                 "Telefon raqam ro" +
+                                         "Ro'yhatdan o'tmagan");
+                     }
 
-                } else {
+//                    }else {
+//                        new CustomToast().Successfull_Toast(getActivity(), view,
+//                                "Xush kelibsiz");
+//                    }
+                }
+                else {
                     new CustomToast().Show_Toast(getActivity(), view,
                             "Xato ma'lumot kiritdingiz");
                 }
@@ -235,6 +249,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             }
         });
     }
+
+
     private void login(String getMobile,String getPassword) {
 
     }

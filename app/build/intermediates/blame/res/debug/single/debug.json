@@ -456,6 +456,10 @@
         "source": "D:\\project1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_succesfull.xml.flat",
+        "source": "D:\\project1\\app\\src\\main\\res\\drawable\\succesfull.xml"
+    },
+    {
         "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add.xml.flat",
         "source": "D:\\project1\\app\\src\\main\\res\\drawable\\ic_add.xml"
     },

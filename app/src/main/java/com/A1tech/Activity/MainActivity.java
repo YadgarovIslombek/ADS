@@ -3,6 +3,7 @@ package com.A1tech.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,6 +26,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.A1tech.ADS.R;
 import com.A1tech.Helper.Converter;
+import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Model.User;
 import com.A1tech.fragments.ComunicateFragment;
 import com.A1tech.fragments.HomeFragment;
@@ -31,6 +34,7 @@ import com.A1tech.fragments.OrderFragment;
 import com.A1tech.fragments.ProfileFragment;
 import com.A1tech.fragments.TestFragment;
 import com.google.android.material.navigation.NavigationView;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
@@ -92,6 +96,13 @@ public class MainActivity extends BaseActivity
         setSupportActionBar(toolbar);
         centerToolbarTitle(toolbar);
         cart_count = cartCount();
+        localStorage = new LocalStorage(getApplicationContext());
+
+        String userString = localStorage.getUserLogin();
+        Gson gson = new Gson();
+        userString = localStorage.getUserLogin();
+        user = gson.fromJson(userString, User.class);
+        Log.d("TAG",userString);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

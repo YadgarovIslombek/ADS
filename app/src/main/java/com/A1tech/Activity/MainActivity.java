@@ -50,7 +50,7 @@ public class MainActivity extends BaseActivity
         toolbar.findViewsWithText(outViews, title, View.FIND_VIEWS_WITH_TEXT);
         if (!outViews.isEmpty()) {
             final TextView titleView = (TextView) outViews.get(0);
-            titleView.setGravity(Gravity.CENTER_HORIZONTAL);
+            titleView.setGravity(Gravity.CENTER|Gravity.CENTER_VERTICAL);
             titleView.setTextColor(Color.parseColor("#FFFFFF"));
             final Toolbar.LayoutParams layoutParams = (Toolbar.LayoutParams) titleView.getLayoutParams();
             layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -141,13 +141,13 @@ public class MainActivity extends BaseActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         centerToolbarTitle(toolbar);
+        toolbar.setTitle("ADS1");
         cart_count = cartCount();
         localStorage = new LocalStorage(getApplicationContext());
         String userString = localStorage.getUserLogin();
         Gson gson = new Gson();
         userString = localStorage.getUserLogin();
         client = gson.fromJson(userString, Client.class);;
-        Log.d("Main",userString);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

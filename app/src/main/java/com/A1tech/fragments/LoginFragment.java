@@ -13,7 +13,6 @@ import androidx.fragment.app.FragmentManager;
 
 import android.os.Vibrator;
 import android.text.InputType;
-import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,11 +22,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.A1tech.ADS.R;
@@ -37,14 +33,12 @@ import com.A1tech.Helper.CustomToast;
 import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Helper.Utils;
 import com.A1tech.Model.ClientResponse;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-
 public class LoginFragment extends Fragment implements View.OnClickListener {
     private  View view;
     private  EditText mobile, password;
@@ -58,7 +52,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     View progress;
     LocalStorage localStorage;
     String userString;
-    User user;
+    Client client;
 
 
     public LoginFragment() {
@@ -91,7 +85,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         String userString = localStorage.getUserLogin();
         Gson gson = new Gson();
         userString = localStorage.getUserLogin();
-        user = gson.fromJson(userString, User.class);
+        client = gson.fromJson(userString, Client.class);
         Log.d("User", userString);
         // Load ShakeAnimation
         shakeAnimation = AnimationUtils.loadAnimation(getActivity(),
@@ -198,7 +192,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             mobile.setError("Telefon raqam kiritilmagan");
         }
         else {
-            user = new User(getPassword,getMobile);
+            client = new Client(getPassword,getMobile);
             registerUser(getPassword,getMobile);
         }
     }
@@ -215,24 +209,17 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
                     ClientResponse clientResponse = response.body();
                      if (clientResponse.getStatus() == 200) {
-                        String userString = gson.toJson(clientResponse.getUser());
+                        String userString = gson.toJson(clientResponse.getClient());
                         localStorage.createUserLoginSession(userString);
                         Log.d("TAG", userString);
                         startActivity(new Intent(getContext(), MainActivity.class));
                         getActivity().finish();
+                         new CustomToast().Successfull_Toast(getActivity(), view,
+                                 "Xush kelibsiz");
                     } else if(clientResponse.getStatus() == 201){
                         new CustomToast().Show_Toast(getActivity(), view,
                             "Parolingiz Xato");
-                    } else {    // Alex ga oytish garak TELEFON RAQAM hato bolsa 202 m ishqilib status qaytarsin serverda Hozircha 500 qaytadi akan TELEFON RAQAM xato bo'lib parol dogri bolsa!!!!!!!!
-                         new CustomToast().Show_Toast(getActivity(),view,
-                                 "Telefon raqam ro" +
-                                         "Ro'yhatdan o'tmagan");
-                     }
-
-//                    }else {
-//                        new CustomToast().Successfull_Toast(getActivity(), view,
-//                                "Xush kelibsiz");
-//                    }
+                    }
                 }
                 else {
                     new CustomToast().Show_Toast(getActivity(), view,

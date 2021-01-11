@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.A1tech.ADS.R;
@@ -27,12 +26,11 @@ import com.A1tech.Helper.CustomToast;
 import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Helper.Utils;
 import com.A1tech.Model.ClientResponse;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.google.gson.Gson;
 
 import java.util.regex.Pattern;
 
-import br.com.sapereaude.maskedEditText.MaskedEditText;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -45,7 +43,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
     private  TextView login;
     private  Button signUpButton;
     private  CheckBox terms_conditions;
-    User user;
+    Client client;
     LocalStorage localStorage;
     Gson gson = new Gson();
     View progress;
@@ -139,7 +137,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
                 password.setError("Parol 6 ta belgidan kam");
                 password.requestFocus();
             }  else {
-                user = new User(getFullName,getPassword, getMobileNumber);
+                client = new Client(getFullName,getPassword, getMobileNumber);
                 registerUser(getFullName,getPassword,getMobileNumber);
 
 
@@ -174,7 +172,7 @@ public class SignUpFragment extends Fragment implements View.OnClickListener {
 
                     ClientResponse clientResponse = response.body();
                     if (clientResponse.getStatus() == 200) {
-                        String userString = gson.toJson(clientResponse.getUser());
+                        String userString = gson.toJson(clientResponse.getClient());
                         localStorage.createUserLoginSession(userString);
                         Log.d("TAG",userString);
                         startActivity(new Intent(getContext(), MainActivity.class));

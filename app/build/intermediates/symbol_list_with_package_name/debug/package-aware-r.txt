@@ -2394,6 +2394,7 @@ drawable quantum_ic_search_grey600_24
 drawable qurilish_mollari
 drawable rec_bg
 drawable rounded_corner
+drawable sayt
 drawable succesfull
 drawable telegramm
 drawable test_custom_background
@@ -2512,6 +2513,8 @@ id add_to_cart
 id address
 id adjust_height
 id adjust_width
+id adressImg
+id adressText
 id alertTitle
 id aligned
 id all
@@ -2629,7 +2632,8 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
-id email
+id emailImg
+id emailText
 id empty_cart_img
 id end
 id end_padder
@@ -2682,9 +2686,6 @@ id imageView2
 id imageView3
 id imageView311
 id imageView4
-id imageView5
-id imageView6
-id imageView7
 id imageView8
 id imageView9
 id img1
@@ -2820,6 +2821,8 @@ id pathRelative
 id peekHeight
 id percent
 id phone
+id phoneImg
+id phoneNum
 id pin
 id place_autocomplete_clear_button
 id place_autocomplete_powered_by_google
@@ -2848,6 +2851,7 @@ id places_autocomplete_search_button
 id places_autocomplete_search_input
 id places_autocomplete_try_again
 id places_autocomplete_try_again_progress
+id plastik
 id plyus_minus
 id position
 id postLayout
@@ -2893,6 +2897,8 @@ id savat_all_money
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
+id saytImg
+id saytText
 id scale
 id screen
 id scroll
@@ -2985,7 +2991,6 @@ id textStart
 id textTop
 id textView
 id textView10
-id textView11
 id textView12
 id textView13
 id textView14
@@ -2993,14 +2998,12 @@ id textView15
 id textView16
 id textView17
 id textView18
-id textView2
 id textView3
 id textView4
 id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

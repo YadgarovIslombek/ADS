@@ -14,9 +14,15 @@ import android.view.ViewGroup;
 import com.A1tech.ADS.R;
 import com.A1tech.Activity.MainActivity;
 import com.A1tech.Activity.ProductTypeActivity;
+import com.A1tech.Helper.LocalStorage;
+import com.A1tech.Model.Client;
+import com.google.gson.Gson;
 
 public class HomeFragment extends Fragment {
     private CardView card_btn;
+    LocalStorage localStorage;
+    Client client;
+    Gson gson = new Gson();
 
     public HomeFragment() {
         // Required empty public constructor
@@ -32,6 +38,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        localStorage = new LocalStorage(getContext());
+        client = gson.fromJson(localStorage.getUserLogin(), Client.class);
         View v = inflater.inflate(R.layout.fragment_home, container, false);
         card_btn = (CardView)v.findViewById(R.id.card_oziq_ovqat);
         card_btn.setOnClickListener(new View.OnClickListener() {

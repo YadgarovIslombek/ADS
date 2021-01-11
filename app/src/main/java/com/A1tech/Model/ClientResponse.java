@@ -3,16 +3,19 @@ package com.A1tech.Model;
 import com.google.gson.annotations.SerializedName;
 
 public class ClientResponse {
+    @SerializedName("status")
     int status;
+    @SerializedName("message")
     String message;
-    User user;
+    @SerializedName("client")
+    Client client;
 
-    public User getUser() {
-        return user;
+    public Client getClient() {
+        return client;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public String getMessage() {

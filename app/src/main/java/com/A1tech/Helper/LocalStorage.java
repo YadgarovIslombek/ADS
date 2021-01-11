@@ -5,15 +5,20 @@ public class LocalStorage {
     private static final String KEY_FIREBASE_TOKEN = "firebaseToken";
     public static final String KEY_USER = "User";
     public static final String KEY_USER_ADDRESS = "user_address";
+
     private static final String IS_USER_LOGIN = "IsUserLoggedIn";
+
+
     private static LocalStorage instance = null;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     int PRIVATE_MODE = 0;
     Context _context;
+
     public LocalStorage(Context context) {
         sharedPreferences = context.getSharedPreferences("Preferences", 0);
     }
+
     public static LocalStorage getInstance(Context context) {
         if (instance == null) {
             synchronized (LocalStorage.class) {
@@ -24,19 +29,23 @@ public class LocalStorage {
         }
         return instance;
     }
+
     public void createUserLoginSession(String user) {
         editor = sharedPreferences.edit();
         editor.putBoolean(IS_USER_LOGIN, true);
         editor.putString(KEY_USER, user);
-        editor.commit();
+        editor.apply();
     }
+
     public String getUserLogin() {
         return sharedPreferences.getString(KEY_USER, "");
     }
+
+
     public void logoutUser() {
         editor = sharedPreferences.edit();
         editor.clear();
-        editor.commit();
+        editor.apply();
     }
 
     public boolean checkLogin() {
@@ -59,7 +68,7 @@ public class LocalStorage {
     public void setUserAddress(String user_address) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(KEY_USER_ADDRESS, user_address);
-        editor.commit();
+        editor.apply();
     }
 
     public String getCart() {
@@ -72,13 +81,13 @@ public class LocalStorage {
     public void setCart(String cart) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("CART", cart);
-        editor.commit();
+        editor.apply();
     }
 
     public void deleteCart() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.remove("CART");
-        editor.commit();
+        editor.apply();
     }
 
 
@@ -92,13 +101,13 @@ public class LocalStorage {
     public void setOrder(String order) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("ORDER", order);
-        editor.commit();
+        editor.apply();
     }
 
     public void deleteOrder() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.remove("ORDER");
-        editor.commit();
+        editor.apply();
     }
 
 
@@ -109,6 +118,6 @@ public class LocalStorage {
     public void setFirebaseToken(String firebaseToken) {
         editor = sharedPreferences.edit();
         editor.putString(KEY_FIREBASE_TOKEN, firebaseToken);
-        editor.commit();
+        editor.apply();
     }
 }

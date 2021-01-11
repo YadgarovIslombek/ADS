@@ -3,9 +3,9 @@ package com.A1tech.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +16,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
@@ -25,9 +24,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.A1tech.ADS.R;
-import com.A1tech.Helper.Converter;
 import com.A1tech.Helper.LocalStorage;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.A1tech.fragments.ComunicateFragment;
 import com.A1tech.fragments.HomeFragment;
 import com.A1tech.fragments.OrderFragment;
@@ -42,8 +40,9 @@ import java.util.ArrayList;
 public class MainActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener   {
     private CardView card_btn;
+    boolean doubleBackToExitPressedOnce = false;
     private static int cart_count = 0;
-    User user;
+    Client client;
 
     static void centerToolbarTitle(@NonNull final Toolbar toolbar) {
         final CharSequence title = toolbar.getTitle();
@@ -62,13 +61,60 @@ public class MainActivity extends BaseActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
+       /* FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
+        if (fl.getChildCount() == 1) {
+            super.onBackPressed();
+            if (fl.getChildCount() == 0) {
+                new AlertDialog.Builder(this)
+                        .setTitle("Close App?")
+                        .setMessage("Do you really want to close this beautiful app?")
+                        .setPositiveButton("YES",
+                                new DialogInterface.OnClickListener() {
+
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        finish();
+                                    }
+                                })
+                        .setNegativeButton("NO",
+                                new DialogInterface.OnClickListener() {
+
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                    }
+                                }).show();
+                // load your first Fragment here
+            }
+        } else if (fl.getChildCount() == 0) {
+            // load your first Fragment here
         } else {
             super.onBackPressed();
+        }*/
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        assert  drawer !=null;
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        }
+
+        else if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+        }
+        else {
+            doubleBackToExitPressedOnce = true;
+            Toast.makeText(this, "Chiqish uchun yana bir marta bosing!", Toast.LENGTH_SHORT).show();
+
+
+            new Handler(getMainLooper()).postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce = false;
+                }
+            }, 2000);
         }
     }
+
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.main, menu);
@@ -97,12 +143,11 @@ public class MainActivity extends BaseActivity
         centerToolbarTitle(toolbar);
         cart_count = cartCount();
         localStorage = new LocalStorage(getApplicationContext());
-
         String userString = localStorage.getUserLogin();
         Gson gson = new Gson();
         userString = localStorage.getUserLogin();
-        user = gson.fromJson(userString, User.class);
-        Log.d("TAG",userString);
+        client = gson.fromJson(userString, Client.class);;
+        Log.d("Main",userString);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -114,8 +159,8 @@ public class MainActivity extends BaseActivity
 
         TextView nav_user = hView.findViewById(R.id.nav_header_name);
         LinearLayout nav_footer = findViewById(R.id.footer_text);
-        if (user != null) {
-            nav_user.setText(user.getUserName());
+        if (client != null) {
+            nav_user.setText(client.getUserName());
         }
         nav_footer.setOnClickListener(new View.OnClickListener() {
             @Override

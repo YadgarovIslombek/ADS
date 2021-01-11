@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,7 +11,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.A1tech.ADS.R;
@@ -25,7 +23,7 @@ import com.A1tech.Model.Cart;
 import com.A1tech.Model.Order;
 import com.A1tech.Model.OrderItem;
 import com.A1tech.Model.PlaceOrder;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.gson.Gson;
 import java.util.ArrayList;
@@ -71,7 +69,7 @@ public class TolovFragment extends Fragment {
         gson = new Gson();
         //orderList = ((BaseActivity) getActivity()).getOrderList();
         cartList = ((BaseActivity) getContext()).getCartList();
-        User user = gson.fromJson(localStorage.getUserLogin(), User.class);
+        Client client = gson.fromJson(localStorage.getUserLogin(), Client.class);
         _total = ((BaseActivity) getActivity()).getTotalPrice();
         total.setText(_total + "");
         shipping.setText(_shipping + "");
@@ -83,7 +81,7 @@ public class TolovFragment extends Fragment {
             orderItemList.add(orderItem);
         }
 
-        confirmOrder = new PlaceOrder(user.getUserName(),user.getPhoneNumber(),user.getEmail(), user.getClientId(), orderItemList);
+        confirmOrder = new PlaceOrder(client.getUserName(), client.getPhoneNumber(), client.getEmail(), client.getClientId(), orderItemList);
 //        String confirmOrder12 = gson.toJson(confirmOrder);
 //        localStorage.setOrder(confirmOrder12);
 

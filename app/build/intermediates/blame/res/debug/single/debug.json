@@ -512,6 +512,10 @@
         "source": "D:\\project1\\app\\src\\main\\res\\drawable\\konstovar.png"
     },
     {
+        "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sayt.xml.flat",
+        "source": "D:\\project1\\app\\src\\main\\res\\drawable\\sayt.xml"
+    },
+    {
         "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_malumot_unselected.xml.flat",
         "source": "D:\\project1\\app\\src\\main\\res\\drawable\\ic_malumot_unselected.xml"
     },

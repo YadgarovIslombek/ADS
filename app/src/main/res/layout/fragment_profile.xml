@@ -70,7 +70,7 @@
                         android:text="Telefon raqam :" />
 
                     <TextView
-                        android:id="@+id/email"
+                        android:id="@+id/phone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -94,7 +94,7 @@
                         android:text="Manzil :" />
 
                     <TextView
-                        android:id="@+id/phone"
+                        android:id="@+id/address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -118,7 +118,7 @@
                         android:text="Plastik karta :" />
 
                     <TextView
-                        android:id="@+id/address"
+                        android:id="@+id/plastik"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:drawableRight="@drawable/ic_pen"

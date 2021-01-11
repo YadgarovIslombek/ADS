@@ -36,7 +36,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/adressImg"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -46,24 +46,34 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/phoneImg"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_phone"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            app:layout_constraintTop_toBottomOf="@+id/adressImg" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/emailImg"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_mail"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+            app:layout_constraintTop_toBottomOf="@+id/phoneImg" />
+
+        <ImageView
+            android:id="@+id/saytImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sayt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailImg" />
 
         <TextView
             android:id="@+id/textView7"
@@ -80,7 +90,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/adressText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -90,11 +100,11 @@
             android:text="Al-Xorazmiy 108-uy"
             android:textColor="@color/ADSColor"
             android:textSize="15dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/adressImg"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/phoneNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -104,11 +114,11 @@
             android:text="+998(62) 22-8-80-80"
             android:textColor="@color/ADSColor"
             android:textSize="15dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintStart_toEndOf="@+id/phoneImg"
+            app:layout_constraintTop_toBottomOf="@+id/adressText" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/emailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -118,25 +128,39 @@
             android:text="sanatbek@gmail.com"
             android:textColor="@color/ADSColor"
             android:textSize="15dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView7"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintStart_toEndOf="@+id/emailImg"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNum" />
+
+        <TextView
+            android:id="@+id/saytText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins"
+            android:padding="@dimen/margin_5dp"
+            android:text="a1tech.uz"
+            android:textColor="@color/ADSColor"
+            android:textSize="15dp"
+            app:layout_constraintStart_toEndOf="@+id/saytImg"
+            app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="8dp"
             android:background="@color/ADSColor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+            app:layout_constraintTop_toBottomOf="@+id/saytImg" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="6dp"
             android:fontFamily="@font/poppins_light"
             android:gravity="center"
@@ -186,7 +210,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="181dp"
             android:fontFamily="@font/poppins"
             android:text=" Telegram"
@@ -199,7 +223,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="179dp"
             android:fontFamily="@font/poppins"
             android:text=" Facebook"
@@ -211,7 +235,7 @@
             android:id="@+id/textView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="181dp"
             android:fontFamily="@font/poppins"

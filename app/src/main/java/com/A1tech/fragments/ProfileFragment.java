@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.A1tech.ADS.R;
 import com.A1tech.Helper.LocalStorage;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.google.gson.Gson;
 
 
@@ -36,17 +36,17 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
 
-//        name = view.findViewById(R.id.name);
-//        email = view.findViewById(R.id.email);
-//        mobile = view.findViewById(R.id.mobile);
-//        address = view.findViewById(R.id.address);
-//        localStorage = new LocalStorage(getContext());
-//
-//        User user = gson.fromJson(localStorage.getUserLogin(), User.class);
-//        name.setText(user.getUserName());
-//        email.setText(user.getEmail());
-//        mobile.setText(user.getPhoneNumber());
-//        address.setText(user.getEmail());
+        name = view.findViewById(R.id.name);
+        mobile = view.findViewById(R.id.phone);
+        email = view.findViewById(R.id.phone);
+        address = view.findViewById(R.id.address);
+        localStorage = new LocalStorage(getContext());
+
+        Client user = gson.fromJson(localStorage.getUserLogin(), Client.class);
+        name.setText(user.getUserName());
+        mobile.setText(user.getPhoneNumber());
+        email.setText(user.getEmail());
+        address.setText(user.getMessage());
 
         return view;
     }

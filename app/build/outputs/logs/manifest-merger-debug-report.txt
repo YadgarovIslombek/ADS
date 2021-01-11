@@ -108,6 +108,10 @@ ADDED from D:\project1\app\src\main\AndroidManifest.xml:10:5-12:47
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:12:9-44
 	android:name
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:11:9-58
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:13:5-69
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:13:22-66
 uses-permission#android.permission.VIBRATE
 ADDED from D:\project1\app\src\main\AndroidManifest.xml:14:5-66
 	android:name

@@ -2,7 +2,6 @@ package com.A1tech.fragments;
 
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,10 +15,9 @@ import com.A1tech.Activity.BaseActivity;
 import com.A1tech.Adapter.OrderAdapter;
 import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Model.Order;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.google.gson.Gson;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class OrderFragment extends Fragment {
@@ -47,7 +45,7 @@ public class OrderFragment extends Fragment {
         linearLayout = view.findViewById(R.id.no_order_ll);
         localStorage = new LocalStorage(getContext());
 
-        User user = gson.fromJson(localStorage.getUserLogin(), User.class);
+        Client client = gson.fromJson(localStorage.getUserLogin(), Client.class);
 //        order = new Order(user.getId(), user.getToken());
 //        fetchOrderDetails(order);
         setupOrderRecycleView();

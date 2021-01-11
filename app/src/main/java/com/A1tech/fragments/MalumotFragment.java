@@ -1,7 +1,6 @@
 package com.A1tech.fragments;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -19,7 +18,7 @@ import android.widget.TextView;
 import com.A1tech.ADS.R;
 import com.A1tech.Activity.BaseActivity;
 import com.A1tech.Helper.LocalStorage;
-import com.A1tech.Model.User;
+import com.A1tech.Model.Client;
 import com.google.gson.Gson;
 
 public class MalumotFragment extends Fragment {
@@ -29,7 +28,7 @@ public class MalumotFragment extends Fragment {
     String _txt_address, _lat, _longt, _txt_qosh_address, _txt_name, _txt_mobile, userString;
     LocalStorage localStorage;
     Gson gson;
-    User user;
+    Client client;
     View progress;
     BaseActivity baseActivity;
 
@@ -58,11 +57,11 @@ public class MalumotFragment extends Fragment {
         localStorage = new LocalStorage(getContext());
         gson = new Gson();
         userString = localStorage.getUserLogin();
-        user = gson.fromJson(userString, User.class);
+        client = gson.fromJson(userString, Client.class);
         Log.d("User String : ", userString);
-        if (user != null) {
-            txt_name.setText(user.getUserName());
-            txt_mobile.setText(user.getPhoneNumber());
+        if (client != null) {
+            txt_name.setText(client.getUserName());
+            txt_mobile.setText(client.getPhoneNumber());
         }
         context = container.getContext();
         txt_pyment.setOnClickListener(new View.OnClickListener() {
@@ -93,7 +92,7 @@ public class MalumotFragment extends Fragment {
 
     }
 
-    private void saveUserAddress(User userAddress) {
+    private void saveUserAddress(Client clientAddress) {
         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
         ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);
         ft.replace(R.id.content_frame, new TolovFragment());

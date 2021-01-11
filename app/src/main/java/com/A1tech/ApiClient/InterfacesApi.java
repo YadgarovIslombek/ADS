@@ -3,7 +3,6 @@ import com.A1tech.JsonResponseProduct;
 import com.A1tech.JsonResponseProducttype;
 import com.A1tech.Model.CategoryResult;
 import com.A1tech.Model.ClientResponse;
-import com.A1tech.Model.User;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -1,4 +1,4 @@
-#Mon Jan 11 15:50:19 UZT 2021
+#Mon Jan 11 16:56:13 UZT 2021
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex

@@ -2,6 +2,7 @@ package com.A1tech.Activity;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,12 +35,13 @@ public class BaseActivity extends AppCompatActivity implements AddorRemoveCallba
         gson = new Gson();
         userJson = localStorage.getUserLogin();
         progressDialog = new ProgressDialog(BaseActivity.this);
-//        user = gson.fromJson(userJson, UserResult.class);
-//          NetworkCheck.isNetworkAvailable(getApplicationContext());
+        //user = gson.fromJson(userJson, UserResult.class);
+        //  NetworkCheck.isNetworkAvailable(getApplicationContext());
         cartCount();
     }
 
     public int cartCount() {
+
         gson = new Gson();
         if (localStorage.getCart() != null) {
             String jsonCart = localStorage.getCart();
@@ -47,6 +49,7 @@ public class BaseActivity extends AppCompatActivity implements AddorRemoveCallba
             Type type = new TypeToken<List<Cart>>() {
             }.getType();
             cartList = gson.fromJson(jsonCart, type);
+
             //Toast.makeText(getContext(),remedyList.size()+"",Toast.LENGTH_LONG).show();
             return cartList.size();
         }
@@ -147,6 +150,5 @@ public class BaseActivity extends AppCompatActivity implements AddorRemoveCallba
         return progressDialog;
     }
 }
-
 
 

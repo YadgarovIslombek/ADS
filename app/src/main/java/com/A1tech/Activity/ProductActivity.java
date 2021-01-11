@@ -19,6 +19,7 @@ import com.A1tech.ApiClient.RetrofitClient;
 import com.A1tech.Helper.Converter;
 import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Model.CategoryResult;
+import com.A1tech.Model.Client;
 import com.A1tech.Model.ProductModel;
 import com.A1tech.Model.ProductType;
 import com.google.gson.Gson;
@@ -42,6 +43,7 @@ public class ProductActivity extends BaseActivity {
     ProductAdapter mAdapter;
     ProductModel productModel;
     ProductType productType;
+    Client client;
     int productTypeId;
     private RecyclerView recyclerView;
     Toolbar toolbar;
@@ -53,6 +55,7 @@ public class ProductActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
         localStorage = new LocalStorage(getApplicationContext());
+        client = gson.fromJson(localStorage.getUserLogin(), Client.class);
         Intent intent = getIntent();
         productTypeId = intent.getIntExtra("category",0);
         productModel = new ProductModel(productTypeId);

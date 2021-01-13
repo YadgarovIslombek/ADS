@@ -57,7 +57,6 @@ public class CartActivity extends BaseActivity {
 //        productTypeId = intent.getIntExtra("category",0);
         toolbar = (Toolbar) findViewById(R.id.toolbar_cart);
         setSupportActionBar(toolbar);
-        txt_tool = (TextView) findViewById(R.id.tool_title);
         txt_tool.setText("Savat");
         txt_tool.setGravity(Gravity.CENTER);
         setUpCartRecyclerview();

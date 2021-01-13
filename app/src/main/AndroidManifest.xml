@@ -35,13 +35,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name="com.A1tech.Activity.LoginRegister">
+
+        </activity>
+        <activity android:name="com.A1tech.Activity.CheckoutActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.A1tech.Activity.CheckoutActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -60,10 +62,14 @@
 
         <activity
             android:name="com.A1tech.Activity.MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps" >
+
+        </activity>
         <activity android:name="com.A1tech.InfoActivity" />
-        <activity android:name="com.A1tech.Activity.ProductTypeActivity" />
-        <activity android:name="com.A1tech.Activity.MainActivity"></activity>
+        <activity android:name="com.A1tech.Activity.ProductTypeActivity" >
+
+        </activity>
+        <activity android:name="com.A1tech.Activity.MainActivity" />
         <activity android:name="com.A1tech.Activity.ProductActivity" />
         <activity android:name="com.A1tech.Activity.CartActivity" />
 

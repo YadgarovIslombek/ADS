@@ -17,12 +17,10 @@ public class CheckoutActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
         //Toolbar
-        toolbar = (Toolbar)findViewById(R.id.toolbar_payment);
         setSupportActionBar(toolbar);
         //Toolbarga text qo'ydim > put text in toolbar
-        txt_tool =(TextView)findViewById(R.id.tool_title);
+
         // this text
-        txt_tool.setText("Buyurtma");
         //frame ni ichiga fragment chaqirdim > call fragment  inside frame in activity
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);

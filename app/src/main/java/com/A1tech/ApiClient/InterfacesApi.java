@@ -1,6 +1,6 @@
 package com.A1tech.ApiClient;
 import com.A1tech.JsonResponseProduct;
-import com.A1tech.JsonResponseProducttype;
+import com.A1tech.JsonResponseProductGroup;
 import com.A1tech.Model.CategoryResult;
 import com.A1tech.Model.ClientResponse;
 
@@ -14,14 +14,10 @@ public interface InterfacesApi {
     @GET("products")
     Call<JsonResponseProduct> getAllProducts();
 
-//    @GET("/group?action=get_product_group_all") //bazadaki barcha product_groupni oladi
-//    Call<JsonResponseProducttype>getProductType();
 
-//    @GET("product_type") //bazadaki barcha product_groupni oladi
-//    Call<JsonResponseProducttype>getProductType();
 
     @GET("group?action=get_product_group_all") //bazadaki barcha product_groupni oladi
-    Call<JsonResponseProducttype>getProductType();
+    Call<JsonResponseProductGroup>getProductType();
 
 //    @GET("products/byId/{id}")
 //    Call<CategoryResult> getProductById(@Path("id") int productTypeId);

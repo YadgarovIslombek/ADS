@@ -2268,6 +2268,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable comp
+drawable dark_background
 drawable delete
 drawable deletex
 drawable design_bottom_navigation_item_background
@@ -2314,6 +2315,12 @@ drawable ic_malumot_select
 drawable ic_malumot_unselected
 drawable ic_malumotlar
 drawable ic_menu
+drawable ic_menu_camera
+drawable ic_menu_gallery
+drawable ic_menu_manage
+drawable ic_menu_send
+drawable ic_menu_share
+drawable ic_menu_slideshow
 drawable ic_minus
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -2334,6 +2341,9 @@ drawable ic_search
 drawable ic_search_black_24dp
 drawable ic_shtab_kv
 drawable icon12_sav
+drawable img_clouds
+drawable img_moon
+drawable img_sun
 drawable instagram
 drawable konstovar
 drawable login_bg
@@ -2395,6 +2405,7 @@ drawable qurilish_mollari
 drawable rec_bg
 drawable rounded_corner
 drawable sayt
+drawable side_nav_bar
 drawable succesfull
 drawable telegramm
 drawable test_custom_background
@@ -2626,7 +2637,6 @@ id dragRight
 id dragStart
 id dragUp
 id drawer_layout
-id drawer_list
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -2668,6 +2678,7 @@ id groups
 id guideline
 id header_title
 id hideable
+id holder
 id home
 id homeAsUp
 id honorRequest
@@ -3022,7 +3033,6 @@ id toast_error
 id toast_root
 id toast_succes
 id toggle
-id tool_title
 id toolbar
 id toolbar_cart
 id toolbar_main
@@ -3166,7 +3176,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout drawer_main_m
-layout drawer_menu
 layout dynamic_feature_install_fragment
 layout forgotpassword_layout
 layout fragment_address
@@ -3286,7 +3295,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout toolbar
 menu activity_main_drawer
 menu cart_menu
 menu main
@@ -3460,9 +3468,9 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
-style AppBarLayoutNoShadow
 style AppTheme
 style AppTheme_AppBarOverlay
+style AppTheme_Dark
 style AppTheme_NoActionBar
 style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat

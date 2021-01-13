@@ -5,18 +5,15 @@ public class LocalStorage {
     private static final String KEY_FIREBASE_TOKEN = "firebaseToken";
     public static final String KEY_USER = "User";
     public static final String KEY_USER_ADDRESS = "user_address";
-
     private static final String IS_USER_LOGIN = "IsUserLoggedIn";
-
-
     private static LocalStorage instance = null;
-    SharedPreferences sharedPreferences;
+    public SharedPreferences mySharedPref;
     SharedPreferences.Editor editor;
     int PRIVATE_MODE = 0;
     Context _context;
 
     public LocalStorage(Context context) {
-        sharedPreferences = context.getSharedPreferences("Preferences", 0);
+        mySharedPref = context.getSharedPreferences("Preferences", 0);
     }
 
     public static LocalStorage getInstance(Context context) {
@@ -31,19 +28,19 @@ public class LocalStorage {
     }
 
     public void createUserLoginSession(String user) {
-        editor = sharedPreferences.edit();
+        editor = mySharedPref.edit();
         editor.putBoolean(IS_USER_LOGIN, true);
         editor.putString(KEY_USER, user);
         editor.apply();
     }
 
     public String getUserLogin() {
-        return sharedPreferences.getString(KEY_USER, "");
+        return mySharedPref.getString(KEY_USER, "");
     }
 
 
     public void logoutUser() {
-        editor = sharedPreferences.edit();
+        editor = mySharedPref.edit();
         editor.clear();
         editor.apply();
     }
@@ -55,69 +52,80 @@ public class LocalStorage {
 
 
     public boolean isUserLoggedIn() {
-        return sharedPreferences.getBoolean(IS_USER_LOGIN, false);
+        return mySharedPref.getBoolean(IS_USER_LOGIN, false);
     }
 
     public String getUserAddress() {
-        if (sharedPreferences.contains(KEY_USER_ADDRESS))
-            return sharedPreferences.getString(KEY_USER_ADDRESS, null);
+        if (mySharedPref.contains(KEY_USER_ADDRESS))
+            return mySharedPref.getString(KEY_USER_ADDRESS, null);
         else return null;
     }
 
 
     public void setUserAddress(String user_address) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = mySharedPref.edit();
         editor.putString(KEY_USER_ADDRESS, user_address);
         editor.apply();
     }
 
     public String getCart() {
-        if (sharedPreferences.contains("CART"))
-            return sharedPreferences.getString("CART", null);
+        if (mySharedPref.contains("CART"))
+            return mySharedPref.getString("CART", null);
         else return null;
     }
 
 
     public void setCart(String cart) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = mySharedPref.edit();
         editor.putString("CART", cart);
         editor.apply();
     }
 
     public void deleteCart() {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = mySharedPref.edit();
         editor.remove("CART");
         editor.apply();
     }
 
 
     public String getOrder() {
-        if (sharedPreferences.contains("ORDER"))
-            return sharedPreferences.getString("ORDER", null);
+        if (mySharedPref.contains("ORDER"))
+            return mySharedPref.getString("ORDER", null);
         else return null;
     }
 
 
     public void setOrder(String order) {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = mySharedPref.edit();
         editor.putString("ORDER", order);
         editor.apply();
     }
 
     public void deleteOrder() {
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = mySharedPref.edit();
         editor.remove("ORDER");
         editor.apply();
     }
 
 
     public String getFirebaseToken() {
-        return sharedPreferences.getString(KEY_FIREBASE_TOKEN, null);
+        return mySharedPref.getString(KEY_FIREBASE_TOKEN, null);
     }
 
     public void setFirebaseToken(String firebaseToken) {
-        editor = sharedPreferences.edit();
+        editor = mySharedPref.edit();
         editor.putString(KEY_FIREBASE_TOKEN, firebaseToken);
         editor.apply();
+    }
+    //Bu method tungi rejimni saqlaydi, True yoki False
+    public void setNightModeState (Boolean state){
+        SharedPreferences.Editor editor = mySharedPref.edit();
+        editor.putBoolean("NightMode", state);
+        editor.apply();
+    }
+    //Bu method Tungi rejimni load qiladi
+    public Boolean loadNightMode(){
+        Boolean state = mySharedPref.getBoolean("NightMode", false);
+        return state;
     }
 }

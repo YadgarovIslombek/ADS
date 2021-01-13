@@ -8,7 +8,7 @@
     android:orientation="vertical">
     <include
         android:id="@+id/toolbar_type"
-        layout="@layout/toolbar" />
+        layout="@layout/app_bar_main" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recV"
         android:layout_width="match_parent"

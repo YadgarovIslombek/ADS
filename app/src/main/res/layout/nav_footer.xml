@@ -3,7 +3,7 @@
     android:id="@+id/footer_text"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/gradient_bg"
+    android:background="@color/ADSColor"
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
@@ -15,6 +15,7 @@
         android:drawableLeft="@drawable/ic_power_settings_new_black_24dp"
         android:drawablePadding="10dp"
         android:gravity="center"
+        android:fontFamily="@font/poppins_semibold"
         android:padding="10dp"
         android:text="Tizimdan chiqish"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"

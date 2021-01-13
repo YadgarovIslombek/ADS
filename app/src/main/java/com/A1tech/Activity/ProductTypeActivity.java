@@ -2,7 +2,6 @@ package com.A1tech.Activity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.A1tech.ADS.R;
 import com.A1tech.Adapter.ProductTypeAdapter;
 import com.A1tech.ApiClient.RetrofitClient;
-import com.A1tech.JsonResponseProducttype;
+import com.A1tech.JsonResponseProductGroup;
 import com.A1tech.Model.ProductType;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,29 +34,26 @@ public class ProductTypeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_producttype);
         recyclerView = (RecyclerView) findViewById(R.id.recV);
         recyclerView.setHasFixedSize(true);
-        toolbar = (Toolbar)findViewById(R.id.toolbar_type);
-        txt_tool =(TextView)findViewById(R.id.tool_title);
-        txt_tool.setText("Mahsulot turlari");
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         progress = findViewById(R.id.progress_bar);
         showProgressDialog();
-        Call<JsonResponseProducttype> call = RetrofitClient.getData(getApplicationContext()).getProductType();
-        call.enqueue(new Callback<JsonResponseProducttype>() {
+        Call<JsonResponseProductGroup> call = RetrofitClient.getData(getApplicationContext()).getProductType();
+        call.enqueue(new Callback<JsonResponseProductGroup>() {
             @Override
-            public void onResponse(Call<JsonResponseProducttype> call, Response<JsonResponseProducttype> response) {
+            public void onResponse(Call<JsonResponseProductGroup> call, Response<JsonResponseProductGroup> response) {
 
                 Log.e("Bajarildi", response.toString());
-                JsonResponseProducttype jsonResponseProducttype = response.body();
-                productTypeList = new ArrayList<>(Arrays.asList(jsonResponseProducttype.getProductTypes()));
+                JsonResponseProductGroup jsonResponseProductGroup = response.body();
+                productTypeList = new ArrayList<>(Arrays.asList(jsonResponseProductGroup.getProductTypes()));
                 productTypeAdapter = new ProductTypeAdapter(productTypeList,ProductTypeActivity.this);
                 recyclerView.setAdapter(productTypeAdapter);
                 hideProgressDialog();
             }
 
             @Override
-            public void onFailure(Call<JsonResponseProducttype> call, Throwable t) {
+            public void onFailure(Call<JsonResponseProductGroup> call, Throwable t) {
                 Log.e("Xatolik", t.getLocalizedMessage());
                 hideProgressDialog();
             }

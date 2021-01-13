@@ -1,7 +1,9 @@
 package com.A1tech.Activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -9,6 +11,8 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +20,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
@@ -33,8 +38,13 @@ import com.A1tech.fragments.ProfileFragment;
 import com.A1tech.fragments.TestFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.gson.Gson;
+import com.mahfa.dnswitch.DayNightSwitch;
+import com.mahfa.dnswitch.DayNightSwitchAnimListener;
+import com.mahfa.dnswitch.DayNightSwitchListener;
 
 import java.util.ArrayList;
+
+import static android.view.View.SYSTEM_UI_FLAG_VISIBLE;
 
 
 public class MainActivity extends BaseActivity
@@ -43,14 +53,18 @@ public class MainActivity extends BaseActivity
     boolean doubleBackToExitPressedOnce = false;
     private static int cart_count = 0;
     Client client;
-
+    SharedPreferences preferences;
+    LocalStorage localStorage;
+    View mDecorView;
+    private DayNightSwitch day_night_switch;
+    boolean isFullScreen = false;
     static void centerToolbarTitle(@NonNull final Toolbar toolbar) {
         final CharSequence title = toolbar.getTitle();
         final ArrayList<View> outViews = new ArrayList<>(1);
         toolbar.findViewsWithText(outViews, title, View.FIND_VIEWS_WITH_TEXT);
         if (!outViews.isEmpty()) {
             final TextView titleView = (TextView) outViews.get(0);
-            titleView.setGravity(Gravity.CENTER|Gravity.CENTER_VERTICAL);
+            titleView.setGravity(Gravity.CENTER);
             titleView.setTextColor(Color.parseColor("#FFFFFF"));
             final Toolbar.LayoutParams layoutParams = (Toolbar.LayoutParams) titleView.getLayoutParams();
             layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -114,50 +128,61 @@ public class MainActivity extends BaseActivity
             }, 2000);
         }
     }
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.main, menu);
-//        MenuItem menuItem = menu.findItem(R.id.cart_action);
-//        menuItem.setIcon(Converter.convertLayoutToImage(MainActivity.this, cart_count, R.drawable.ic_baseline_shopping_cart_24));
-//        final MenuItem searchItem = menu.findItem(R.id.action_search);
-//        return true;
-//    }
-   // @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.cart_action:
-//                startActivity(new Intent(getApplicationContext(), CartActivity.class));
-//                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
-//                return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        localStorage = new LocalStorage(this);
+//        preferences = this.getSharedPreferences(SETTING, Context.MODE_PRIVATE);
+        if(localStorage.loadNightMode()==true) {
+            setTheme(R.style.AppTheme_Dark);
+        }
+        else{
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        centerToolbarTitle(toolbar);
-        toolbar.setTitle("ADS1");
         cart_count = cartCount();
         localStorage = new LocalStorage(getApplicationContext());
         String userString = localStorage.getUserLogin();
         Gson gson = new Gson();
         userString = localStorage.getUserLogin();
-        client = gson.fromJson(userString, Client.class);;
+        client = gson.fromJson(userString, Client.class);
+        //day_night_switch =(DayNightSwitch)findViewById(R.id.sw);
+       // day_night_switch.setDuration(450);
+        localStorage = new LocalStorage(getApplicationContext());
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
+       final LinearLayout holder = findViewById(R.id.holder);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        View hView = navigationView.getHeaderView(0);
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+//        drawer.setDrawerListener(toggle);
+        {
+            @Override
+            public void onDrawerSlide (View drawerView,float slideOffset) {
+                float scaleFactor = 7f;
+                float slideX = drawerView.getWidth() * slideOffset;
 
-        TextView nav_user = hView.findViewById(R.id.nav_header_name);
+                holder.setTranslationX(slideX);
+                holder.setScaleX(1 - (slideOffset / scaleFactor));
+                holder.setScaleY(1 - (slideOffset / scaleFactor));
+
+                super.onDrawerSlide(drawerView, slideOffset);
+            }
+        };
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);// will remove all possible our aactivity's window bounds
+        }
+
+        drawer.addDrawerListener(toggle);
+
+        drawer.setScrimColor(Color.TRANSPARENT);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+       View hView = navigationView.getHeaderView(0);  TextView nav_user = hView.findViewById(R.id.nav_header_name);
         LinearLayout nav_footer = findViewById(R.id.footer_text);
         if (client != null) {
             nav_user.setText(client.getUserName());
@@ -174,7 +199,11 @@ public class MainActivity extends BaseActivity
         });
 
         displaySelectedScreen(R.id.nav_home);
+
     }
+
+
+
 
     private void displaySelectedScreen(int itemId) {
         Fragment fragment = null;
@@ -229,19 +258,10 @@ public class MainActivity extends BaseActivity
         displaySelectedScreen(item.getItemId());
         //make this method blank
         return true;
-    }
-    @Override
-    public void onAddProduct() {
-        super.onAddProduct();
-        cart_count++;
-        invalidateOptionsMenu();
 
     }
 
-    @Override
-    public void onRemoveProduct() {
-        super.onRemoveProduct();
-    }
+
 }
 
 //         toolbar1 = (Toolbar)findViewById(R.id.toolbar_main);

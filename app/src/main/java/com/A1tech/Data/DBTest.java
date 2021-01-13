@@ -8,7 +8,7 @@ import com.A1tech.Model.ProductType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DB {
+public class DBTest {
     List<ProductModel> productlist = new ArrayList<>();
     List<ProductType> productTypeList = new ArrayList<>();
     List<ProductGroup> productGroupList = new ArrayList<>();

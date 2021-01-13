@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     android:layout_above="@id/map"
     xmlns:tools="http://schemas.android.com/tools">
     <LinearLayout
@@ -36,6 +37,7 @@
                         android:fontFamily="@font/poppins"
                         android:textSize="14dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -73,6 +75,7 @@
                         android:textSize="14dp" />
                 </LinearLayout>
             </LinearLayout>
+
 
 <!--        </RelativeLayout>-->
 <!--        <FrameLayout-->
@@ -261,7 +264,12 @@
         android:layout_marginBottom="65dp"
         android:layout_marginTop="1dp"
         tools:context="com.A1tech.Activity.MapsActivity" />
-
+            <androidx.cardview.widget.CardView
+                map:cardCornerRadius="80dp"
+                android:layout_width="80dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp">
+            </androidx.cardview.widget.CardView>
             <Button
                 android:id="@+id/btn_sendLocation"
                 android:layout_width="match_parent"

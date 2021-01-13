@@ -10,7 +10,7 @@
         android:orientation="vertical">
         <include
             android:id="@+id/toolbar_payment"
-            layout="@layout/toolbar" />
+            layout="@layout/app_bar_main" />
             <FrameLayout
                 android:id="@+id/content_frame"
                 android:layout_width="match_parent"

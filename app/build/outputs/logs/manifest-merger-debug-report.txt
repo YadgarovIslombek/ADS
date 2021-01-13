@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\4b415669d66eb6c72a5bfd46b3363a5f\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.3.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\825b7e4736758c431fe0d0d1d5580339\jetified-navigation-dynamic-features-fragment-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\d329ee059b28517cc3e57ac89b6862ac\navigation-fragment-ktx-2.3.2\AndroidManifest.xml:17:1-24:12
@@ -34,6 +34,7 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.grad
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\3886d25e7c75e0843eb5ffb5acc1ff39\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\ab88b2734dd8806ee1d963f7c6425500\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\605d30ed3b8615e28bcb1d70c76a9746\jetified-circleimageview-3.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.Mahfa:DayNightSwitch:1.4] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\b6ff07f61297cd4db7dd1c38a1f53b11\jetified-DayNightSwitch-1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\d6e839b8af4f3da9ef8f7fc0605df234\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\cd765317d93171099ad3dae1dfb82c3a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\e49d1d857e37976c086bb9f6adce8817\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -83,22 +84,22 @@ MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\HP\.gra
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\6a4ae2c50f3cd6107298693272cb348f\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\c9ab2bf4db2c2b72642e1a0185b9d74a\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.android.play:core:1.7.2] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
 	package
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-78:12
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-84:12
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:11-69
@@ -169,7 +170,7 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.grad
 	android:required
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:26:9-32
 application
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:28:5-76:19
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:28:5-82:19
 MERGED from [com.google.android.material:material:1.3.0-alpha03] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha03] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\0dfbd3116c5a4b755f4e58d261b1bc1f\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -227,75 +228,75 @@ MERGED from [com.google.android.play:core:1.7.2] C:\Users\HP\.gradle\wrapper\dis
 	android:usesCleartextTraffic
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:36:9-44
 activity#com.A1tech.Activity.LoginRegister
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:37:9-43:20
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:37:9-39:20
 	android:name
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:37:19-67
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:38:13-42:29
-action#android.intent.action.MAIN
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:39:17-69
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:39:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:41:17-77
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.A1tech.Activity.CheckoutActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:44:9-73
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:40:9-46:20
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:44:19-70
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:40:19-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:41:13-45:29
+action#android.intent.action.MAIN
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:42:17-69
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:44:27-74
 uses-library#org.apache.http.legacy
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:46:9-48:40
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:48:9-50:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:47:13-50
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:49:13-50
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:57:9-59:71
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:59:9-61:71
 	android:value
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:59:13-68
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:61:13-68
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:58:13-58
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:60:13-58
 activity#com.A1tech.Activity.MapsActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:61:9-63:59
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:63:9-67:20
 	android:label
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:63:13-56
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:65:13-56
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:62:13-60
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:64:13-60
 activity#com.A1tech.InfoActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:64:9-60
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:68:9-60
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:64:19-57
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:68:19-57
 activity#com.A1tech.Activity.ProductTypeActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:65:9-76
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:69:9-71:20
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:65:19-73
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:69:19-73
 activity#com.A1tech.Activity.MainActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:66:9-78
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:72:9-69
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:66:19-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:72:19-66
 activity#com.A1tech.Activity.ProductActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:67:9-72
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:73:9-72
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:67:19-69
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:73:19-69
 activity#com.A1tech.Activity.CartActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:68:9-69
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:74:9-69
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:68:19-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:74:19-66
 meta-data#com.google.android.gms
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:70:9-72:69
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:76:9-78:69
 	android:value
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:72:13-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:78:13-66
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:71:13-50
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:77:13-50
 meta-data#preloaded_fonts
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:73:9-75:57
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:79:9-81:57
 	android:resource
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:75:13-54
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:81:13-54
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:74:13-43
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:80:13-43
 uses-sdk
 INJECTED from D:\project1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project1\app\src\main\AndroidManifest.xml
@@ -360,6 +361,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HP\.gradle\wrapper\dists
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\ab88b2734dd8806ee1d963f7c6425500\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\605d30ed3b8615e28bcb1d70c76a9746\jetified-circleimageview-3.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\605d30ed3b8615e28bcb1d70c76a9746\jetified-circleimageview-3.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.Mahfa:DayNightSwitch:1.4] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\b6ff07f61297cd4db7dd1c38a1f53b11\jetified-DayNightSwitch-1.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Mahfa:DayNightSwitch:1.4] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\b6ff07f61297cd4db7dd1c38a1f53b11\jetified-DayNightSwitch-1.4\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.media:media:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\d6e839b8af4f3da9ef8f7fc0605df234\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\d6e839b8af4f3da9ef8f7fc0605df234\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\HP\.gradle\wrapper\dists\gradle-6.5-all\caches\transforms-2\files-2.1\cd765317d93171099ad3dae1dfb82c3a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44

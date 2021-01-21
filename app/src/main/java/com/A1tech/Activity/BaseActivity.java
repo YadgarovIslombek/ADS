@@ -2,7 +2,6 @@ package com.A1tech.Activity;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,21 +40,18 @@ public class BaseActivity extends AppCompatActivity implements AddorRemoveCallba
     }
 
     public int cartCount() {
-
         gson = new Gson();
         if (localStorage.getCart() != null) {
             String jsonCart = localStorage.getCart();
             Log.d("CART : ", jsonCart);
-            Type type = new TypeToken<List<Cart>>() {
-            }.getType();
+            Type type = new TypeToken<List<Cart>>() {}
+            .getType();
             cartList = gson.fromJson(jsonCart, type);
-
             //Toast.makeText(getContext(),remedyList.size()+"",Toast.LENGTH_LONG).show();
             return cartList.size();
         }
         return 0;
     }
-
     public List<Cart> getCartList() {
         if (localStorage.getCart() != null) {
             String jsonCart = localStorage.getCart();

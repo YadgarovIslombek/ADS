@@ -3,8 +3,8 @@ package com.A1tech.Model;
 public class Client {
     int clientId;
     String email;
-    boolean isActive;
-    boolean isRegistered;
+    int isActive;
+    int isRegistered;
     double latitude;
     double longitude;
     String message;
@@ -37,7 +37,7 @@ public class Client {
 
     }
 
-    public Client(int clientId, String email, boolean isActive, boolean isRegistered, double latitude, double longitude, String message, String password, String phoneNumber, int status, String userName) {
+    public Client(int clientId, String email, int isActive, int isRegistered, double latitude, double longitude, String message, String password, String phoneNumber, int status, String userName) {
         this.clientId = clientId;
         this.email = email;
         this.isActive = isActive;
@@ -68,19 +68,19 @@ public class Client {
         this.email = email;
     }
 
-    public boolean isActive() {
+    public int isActive() {
         return isActive;
     }
 
-    public void setIsActive(boolean isActive) {
+    public void setIsActive(int isActive) {
         this.isActive = isActive;
     }
 
-    public boolean isRegistered() {
+    public int isRegistered() {
         return isRegistered;
     }
 
-    public void setIsRegistered(boolean isRegistered) {
+    public void setIsRegistered(int isRegistered) {
         this.isRegistered = isRegistered;
     }
 

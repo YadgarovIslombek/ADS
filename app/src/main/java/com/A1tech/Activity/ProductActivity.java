@@ -62,8 +62,8 @@ public class ProductActivity extends BaseActivity {
         cart_count = cartCount();
         recyclerView = findViewById(R.id.product_rv);
 
-        toolbar = (Toolbar)findViewById(R.id.toolbar_product);
-        setSupportActionBar(toolbar);
+//        toolbar = (Toolbar)findViewById(R.id.toolbar_product);
+//        setSupportActionBar(toolbar);
 
         txt_tool.setText("Mahsulotlar");
         txt_tool.setGravity(Gravity.CENTER);
@@ -117,7 +117,7 @@ public class ProductActivity extends BaseActivity {
             case android.R.id.home:
                 // todo: goto back activity from here
 
-                Intent intent = new Intent(ProductActivity.this, ProductTypeActivity.class);
+                Intent intent = new Intent(ProductActivity.this, ProductGroupActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 return true;

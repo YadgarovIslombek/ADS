@@ -12,8 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.A1tech.ADS.R;
-import com.A1tech.Activity.MainActivity;
-import com.A1tech.Activity.ProductTypeActivity;
+import com.A1tech.Activity.ProductGroupActivity;
 import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Model.Client;
 import com.google.gson.Gson;
@@ -45,7 +44,7 @@ public class HomeFragment extends Fragment {
         card_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ProductTypeActivity.class);
+                Intent intent = new Intent(getActivity(), ProductGroupActivity.class);
                 startActivity(intent);
 
             }

@@ -1,3 +1,11 @@
+<!--
+  ~ /**
+  ~  * Created by Yadgarov Islombek on 15.01.21 19:01
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 07.01.21 12:53
+  ~  */
+  -->
+
 <vector android:height="24dp" android:tint="#FEFFFD"
     android:viewportHeight="24" android:viewportWidth="24"
     android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">

@@ -89,7 +89,7 @@ public class CartActivity extends BaseActivity {
             case android.R.id.home:
                 // todo: goto back activity from here
 
-                Intent intent = new Intent(CartActivity.this, ProductTypeActivity.class);
+                Intent intent = new Intent(CartActivity.this, ProductGroupActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 return true;
@@ -134,7 +134,7 @@ public class CartActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(CartActivity.this, ProductTypeActivity.class);
+        Intent intent = new Intent(CartActivity.this, ProductGroupActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();

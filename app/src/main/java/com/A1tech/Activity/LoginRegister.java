@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.A1tech.ADS.R;
 import com.A1tech.Helper.LocalStorage;
@@ -19,13 +21,17 @@ public class LoginRegister extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_login_register);
-            fragmentManager = getSupportFragmentManager();
+
             localStorage = new LocalStorage(getApplicationContext());
             if (localStorage.isUserLoggedIn()) {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
             }
+
+            setContentView(R.layout.activity_login_register);
+            fragmentManager = getSupportFragmentManager();
+
+
             // If savedinstnacestate is null then replace login fragment
             if (savedInstanceState == null) {
                 fragmentManager

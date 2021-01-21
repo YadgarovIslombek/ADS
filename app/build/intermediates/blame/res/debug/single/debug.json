@@ -100,6 +100,10 @@
         "source": "D:\\project1\\app\\src\\main\\res\\drawable\\ic_close.xml"
     },
     {
+        "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main2.xml.flat",
+        "source": "D:\\project1\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
         "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_frame_lovarion.xml.flat",
         "source": "D:\\project1\\app\\src\\main\\res\\drawable\\ic_frame_lovarion.xml"
     },

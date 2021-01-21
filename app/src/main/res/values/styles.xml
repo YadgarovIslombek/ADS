@@ -1,15 +1,20 @@
-<resources>
+<!--
+  ~ /**
+  ~  * Created by Yadgarov Islombek on 15.01.21 19:01
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 14.01.21 14:59
+  ~  */
+  -->
 
-    <!-- Base application theme. -->
+<resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/ADSColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -18,28 +23,21 @@
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="NavigationView" parent="AppTheme">
-        <item name="android:listDivider">@color/ADSColor</item>
+        <item name="android:listDivider">@color/yellow</item>
     </style>
 
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
-        <item name="color">#FFFFFF</item>
+        <item name="color">#FAD23C</item>
     </style>
 
     <style name="CustomTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:textSize">12.5dp</item>
         <item name="android:textAllCaps">true</item>
     </style>
-    <style name="AppTheme.Dark" parent="Theme.AppCompat">
-        <!-- Customize your theme here. -->
-
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
 </resources>

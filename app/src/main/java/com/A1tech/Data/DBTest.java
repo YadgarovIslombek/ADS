@@ -2,7 +2,6 @@ package com.A1tech.Data;
 
 
 import com.A1tech.Model.ProductModel;
-import com.A1tech.Model.ProductGroup;
 import com.A1tech.Model.ProductType;
 
 import java.util.ArrayList;
@@ -11,7 +10,6 @@ import java.util.List;
 public class DBTest {
     List<ProductModel> productlist = new ArrayList<>();
     List<ProductType> productTypeList = new ArrayList<>();
-    List<ProductGroup> productGroupList = new ArrayList<>();
 
     public List<ProductModel> getProductlist() {
         ProductModel productModel = new ProductModel(1, "Olma", 5000,1,2);
@@ -56,16 +54,6 @@ public class DBTest {
         return productTypeList;
     }
 
-    public List<ProductGroup> getProductGroupList(){
-        ProductGroup productGroup = new ProductGroup(1,"Oziq-Ovqat");
-        productGroupList.add(productGroup);
-        ProductGroup productGroup2 = new ProductGroup(2,"Qurilish mollari");
-        productGroupList.add(productGroup2);
-        ProductGroup productGroup3 = new ProductGroup(3,"Parfumeriya");
-        productGroupList.add(productGroup3);
-        ProductGroup productGroup4 = new ProductGroup(3,"Kanstovar");
-        productGroupList.add(productGroup4);
-        return productGroupList;
-    }
+
 
 }

@@ -2567,6 +2567,7 @@ id card_oziq_ovqat
 id card_parfumeriya
 id card_qurilish
 id card_view
+id card_view12
 id cart_action
 id cart_delete
 id cart_ikon
@@ -2586,12 +2587,12 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id circleImageView
 id circle_center
 id circular
 id clear_text
 id clip_horizontal
 id clip_vertical
-id close_activity
 id collapseActionView
 id confirm_button
 id container
@@ -2652,6 +2653,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -3002,6 +3004,7 @@ id textStart
 id textTop
 id textView
 id textView10
+id textView11
 id textView12
 id textView13
 id textView14
@@ -3009,12 +3012,15 @@ id textView15
 id textView16
 id textView17
 id textView18
+id textView19
+id textView2
 id textView3
 id textView4
 id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3037,8 +3043,6 @@ id toolbar
 id toolbar_cart
 id toolbar_main
 id toolbar_payment
-id toolbar_product
-id toolbar_type
 id top
 id topPanel
 id total
@@ -3149,6 +3153,7 @@ layout activity_info
 layout activity_login
 layout activity_login_register
 layout activity_main
+layout activity_main2
 layout activity_maps
 layout activity_product
 layout activity_producttype
@@ -3470,7 +3475,6 @@ style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
 style AppTheme_AppBarOverlay
-style AppTheme_Dark
 style AppTheme_NoActionBar
 style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat

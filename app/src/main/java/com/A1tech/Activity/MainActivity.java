@@ -43,6 +43,7 @@ import com.mahfa.dnswitch.DayNightSwitchAnimListener;
 import com.mahfa.dnswitch.DayNightSwitchListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 import static android.view.View.SYSTEM_UI_FLAG_VISIBLE;
 
@@ -131,17 +132,15 @@ public class MainActivity extends BaseActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         localStorage = new LocalStorage(this);
-//        preferences = this.getSharedPreferences(SETTING, Context.MODE_PRIVATE);
-        if(localStorage.loadNightMode()==true) {
-            setTheme(R.style.AppTheme_Dark);
-        }
-        else{
-            setTheme(R.style.AppTheme_NoActionBar);
-        }
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        centerToolbarTitle(toolbar);
         cart_count = cartCount();
         localStorage = new LocalStorage(getApplicationContext());
         String userString = localStorage.getUserLogin();

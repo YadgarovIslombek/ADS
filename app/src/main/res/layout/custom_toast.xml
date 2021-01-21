@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Yadgarov Islombek on 15.01.21 19:01
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 09.01.21 16:02
+  ~  */
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toast_root"
     android:layout_width="match_parent"

@@ -1,18 +1,45 @@
 package com.A1tech.Model;
-public class ProductType {
-    int productGroupId;
-    String productGroupName;
-    Integer productTypeId;
-    String productTypeName;
 
-    public ProductType(int productGroupId, String productGroupName, Integer productTypeId, String productTypeName) {
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class ProductType {
+
+    int producTypeId;
+
+    String typeName;
+
+    int productGroupId;
+
+    String productGroupName;
+
+    String description;
+
+    public ProductType(int producTypeId, String typeName, int productGroupId, String productGroupName, String description) {
+        this.producTypeId = producTypeId;
+        this.typeName = typeName;
         this.productGroupId = productGroupId;
         this.productGroupName = productGroupName;
-        this.productTypeId = productTypeId;
-        this.productTypeName = productTypeName;
+        this.description = description;
     }
 
     public ProductType(int i, int i1, String sabzavotlar) {
+    }
+
+    public int getProducTypeId() {
+        return producTypeId;
+    }
+
+    public void setProducTypeId(int producTypeId) {
+        this.producTypeId = producTypeId;
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
     }
 
     public int getProductGroupId() {
@@ -31,19 +58,12 @@ public class ProductType {
         this.productGroupName = productGroupName;
     }
 
-    public Integer getProductTypeId() {
-        return productTypeId;
+    public String getDescription() {
+        return description;
     }
 
-    public void setProductTypeId(Integer productTypeId) {
-        this.productTypeId = productTypeId;
-    }
-
-    public String getProductTypeName() {
-        return productTypeName;
-    }
-
-    public void setProductTypeName(String productTypeName) {
-        this.productTypeName = productTypeName;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
+

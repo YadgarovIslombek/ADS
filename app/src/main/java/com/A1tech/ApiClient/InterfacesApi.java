@@ -13,17 +13,21 @@ import retrofit2.http.Query;
 import static com.A1tech.ApiClient.Constats.ALL_PRODUCT_GROUP;
 import static com.A1tech.ApiClient.Constats.LOGIN;
 import static com.A1tech.ApiClient.Constats.SIGN_UP;
+import static com.A1tech.ApiClient.Constats.PRODUCT_BY_TYPE_ID;
 
 public interface InterfacesApi {
     @GET(ALL_PRODUCT_GROUP)
     Call<JsonResponseProductGroup>getProductType();
+//    @GET("products/byId/{id}")
+//    Call<CategoryResult> getProductById(@Path("id") int productGroupId);
 //    @GET("product_type")
-//    Call<CategoryResult> getProductById(@Path("id") int productTypeId);
-//    @GET("product_type")
-//    Call<JsonResponseProductGroup>getProductType();
+//   Call<JsonResponseProductGroup>getProductType();
 
-    @GET("PRODUCT_BYTYPEID")
-    Call<CategoryResult> getProductById(@Path("id") int productTypeId);
+    @GET(PRODUCT_BY_TYPE_ID)
+    Call<CategoryResult> getProductById
+            (
+                    @Query("groupId") int productGroupId
+            );
 
     @Headers("Content-Type: application/json")
     @POST(SIGN_UP)

@@ -6,18 +6,17 @@ public class OrderItem {
     String itemname;
     int itemMeasurment;
     String itemUnitOfMeasurment;
-    String currency;
     double itemprice;
     double itemtotal;
 
     public OrderItem() {
     }
 
-    public OrderItem(String itemname, int itemMeasurment, String itemUnitOfMeasurment, String currency, double itemprice, double itemtotal) {
+    public OrderItem(String itemname, int itemMeasurment, String itemUnitOfMeasurment, double itemprice, double itemtotal) {
         this.itemname = itemname;
         this.itemMeasurment = itemMeasurment;
         this.itemUnitOfMeasurment = itemUnitOfMeasurment;
-        this.currency = currency;
+
         this.itemprice = itemprice;
         this.itemtotal = itemtotal;
     }
@@ -62,13 +61,7 @@ public class OrderItem {
         this.itemUnitOfMeasurment = itemUnitOfMeasurment;
     }
 
-    public String getCurrency() {
-        return currency;
-    }
 
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
 
     public double getItemprice() {
         return itemprice;

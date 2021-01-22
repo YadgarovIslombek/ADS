@@ -2,20 +2,20 @@ package com.A1tech.Model;
 import  com.google.gson.annotations.SerializedName;
 import java.util.List;
 public class CategoryResult {
-    @SerializedName("productGroupList")
-    List<ProductModel> productGroupList;
+    @SerializedName("productList")
+    List<ProductModel> productList;
 
     //Constructor
-    public CategoryResult(List<ProductModel> productIdList) {
-        this.productGroupList = productIdList;
+    public CategoryResult(List<ProductModel> productList) {
+        this.productList = productList;
     }
 
     //Getters & Setters
     public List<ProductModel> getProductList() {
-        return productGroupList;
+        return productList;
     }
 
-    public void setProductList(List<ProductModel> productIdList) {
-        this.productGroupList = productIdList;
+    public void setProductList(List<ProductModel> productList) {
+        this.productList = productList;
     }
 }

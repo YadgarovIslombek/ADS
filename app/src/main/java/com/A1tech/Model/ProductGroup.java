@@ -3,7 +3,7 @@ package com.A1tech.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class ProductType {
+public class ProductGroup {
 
     int producTypeId;
 
@@ -15,7 +15,7 @@ public class ProductType {
 
     String description;
 
-    public ProductType(int producTypeId, String typeName, int productGroupId, String productGroupName, String description) {
+    public ProductGroup(int producTypeId, String typeName, int productGroupId, String productGroupName, String description) {
         this.producTypeId = producTypeId;
         this.typeName = typeName;
         this.productGroupId = productGroupId;
@@ -23,7 +23,7 @@ public class ProductType {
         this.description = description;
     }
 
-    public ProductType(int i, int i1, String sabzavotlar) {
+    public ProductGroup(int i, int i1, String sabzavotlar) {
     }
 
     public int getProducTypeId() {

@@ -2,14 +2,20 @@ package com.A1tech.Activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-import androidx.appcompat.widget.Toolbar;
+
+import androidx.appcompat.app.ActionBar;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,7 +27,7 @@ import com.A1tech.Helper.LocalStorage;
 import com.A1tech.Model.CategoryResult;
 import com.A1tech.Model.Client;
 import com.A1tech.Model.ProductModel;
-import com.A1tech.Model.ProductType;
+import com.A1tech.Model.ProductGroup;
 import com.google.gson.Gson;
 
 
@@ -42,38 +48,38 @@ public class ProductActivity extends BaseActivity {
     List<ProductModel> productList = new ArrayList<>();
     ProductAdapter mAdapter;
     ProductModel productModel;
-    ProductType productType;
+    ProductGroup productGroup;
     Client client;
-    int productTypeId;
+    int productGroupId;
     private RecyclerView recyclerView;
-    Toolbar toolbar;
-    TextView txt_tool;
+
 
     @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+        changeActionBarTitle(getSupportActionBar());
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp);
+        //upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
+        getSupportActionBar().setHomeAsUpIndicator(upArrow);
         localStorage = new LocalStorage(getApplicationContext());
         client = gson.fromJson(localStorage.getUserLogin(), Client.class);
         Intent intent = getIntent();
-        productTypeId = intent.getIntExtra("category",0);
-        productModel = new ProductModel(productTypeId);
+        productGroupId = intent.getIntExtra("category",0);
+        productModel = new ProductModel(productGroupId);
         cart_count = cartCount();
         recyclerView = findViewById(R.id.product_rv);
 
-//        toolbar = (Toolbar)findViewById(R.id.toolbar_product);
-//        setSupportActionBar(toolbar);
-
-        txt_tool.setText("Mahsulotlar");
-        txt_tool.setGravity(Gravity.CENTER);
-//        getCategoryProduct();
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         progress = findViewById(R.id.progress_bar1);
         showProgressDialog();
-        Call<CategoryResult> call = RetrofitClient.getData(getApplicationContext()).getProductById(productTypeId);
+        Call<CategoryResult> call = RetrofitClient.getData(getApplicationContext()).getProductById(productGroupId);
         call.enqueue(new Callback<CategoryResult>() {
             @Override
             public void onResponse(Call<CategoryResult> call, Response<CategoryResult> response) {
@@ -154,6 +160,29 @@ public class ProductActivity extends BaseActivity {
         cart_count--;
         invalidateOptionsMenu();
 
+    }
+    private void changeActionBarTitle(ActionBar actionBar) {
+        // Create a LayoutParams for TextView
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.MATCH_PARENT, // Width of TextView
+                RelativeLayout.LayoutParams.WRAP_CONTENT); // Height of TextView
+        TextView tv = new TextView(getApplicationContext());
+        // Apply the layout parameters to TextView widget
+        tv.setLayoutParams(lp);
+        tv.setGravity(Gravity.CENTER);
+        tv.setTypeface(null, Typeface.BOLD);
+        // Set text to display in TextView
+        tv.setText("Products"); // ActionBar title text
+        tv.setTextSize(20);
+
+        // Set the text color of TextView to red
+        // This line change the ActionBar title text color
+        tv.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+
+        // Set the ActionBar display option
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        // Finally, set the newly created TextView as ActionBar custom view
+        actionBar.setCustomView(tv);
     }
 
 }

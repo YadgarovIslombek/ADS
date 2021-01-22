@@ -2,23 +2,24 @@ package com.A1tech.Model;
 public class Cart {
     int productId;
     String productName;
-    String currency;
     int price;
-    String unitOfMeasurement;
+    int unitOfMeasurementId;
     int measurement;
+    String unitName;
     double subTotal;
     public Cart() {
     }
 
-    public Cart(int productId, String productName, String currency, int price, String unitOfMeasurement, int measurement, double subTotal) {
+    public Cart(int productId, String productName, int price, String unitName,int measurement, double subTotal) {
         this.productId = productId;
         this.productName = productName;
-        this.currency = currency;
         this.price = price;
-        this.unitOfMeasurement = unitOfMeasurement;
+        this.unitName = unitName;
         this.measurement = measurement;
         this.subTotal = subTotal;
     }
+
+
 
     public int getProductId() {
         return productId;
@@ -36,14 +37,6 @@ public class Cart {
         this.productName = productName;
     }
 
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
     public int getPrice() {
         return price;
     }
@@ -52,12 +45,12 @@ public class Cart {
         this.price = price;
     }
 
-    public String getUnitOfMeasurement() {
-        return unitOfMeasurement;
+    public int getUnitOfMeasurementId() {
+        return unitOfMeasurementId;
     }
 
-    public void setUnitOfMeasurement(String unitOfMeasurement) {
-        this.unitOfMeasurement = unitOfMeasurement;
+    public void setUnitOfMeasurementId(int unitOfMeasurementId) {
+        this.unitOfMeasurementId = unitOfMeasurementId;
     }
 
     public int getMeasurement() {
@@ -66,6 +59,14 @@ public class Cart {
 
     public void setMeasurement(int measurement) {
         this.measurement = measurement;
+    }
+
+    public String getUnitName() {
+        return unitName;
+    }
+
+    public void setUnitName(String unitName) {
+        this.unitName = unitName;
     }
 
     public double getSubTotal() {

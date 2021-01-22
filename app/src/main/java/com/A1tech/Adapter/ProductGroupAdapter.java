@@ -14,20 +14,20 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.A1tech.ADS.R;
 import com.A1tech.Activity.ProductActivity;
 import com.A1tech.Model.ProductModel;
-import com.A1tech.Model.ProductType;
+import com.A1tech.Model.ProductGroup;
 
 import java.util.List;
 
 public class ProductGroupAdapter extends RecyclerView.Adapter<ProductGroupAdapter.MyViewHolder> {
-    List<ProductType> productTypeList;
+    List<ProductGroup> productGroupList;
     List<ProductModel>productModelList;
     Context context;
 
     ProductModel productModel;
 //    public MyOnClickListener myOnClickListener;
 
-    public ProductGroupAdapter(List<ProductType> productTypeList, Context context) {
-        this.productTypeList = productTypeList;
+    public ProductGroupAdapter(List<ProductGroup> productGroupList, Context context) {
+        this.productGroupList = productGroupList;
         this.context = context;
     }
 
@@ -42,19 +42,19 @@ public class ProductGroupAdapter extends RecyclerView.Adapter<ProductGroupAdapte
     @Override
     public void onBindViewHolder(@NonNull ProductGroupAdapter.MyViewHolder holder, int position) {
 
-        final ProductType productType = productTypeList.get(position);
+        final ProductGroup productGroup = productGroupList.get(position);
 
         //db = new DB();
         /*holder.idMahsulotGuruhi.setText(Integer.toString(productTypeList.get(position).getIdMahsulotGuruhi()));
         holder.mahsulotTuriId.setText(Integer.toString(productTypeList.get(position).getMahsulotTuriId()));*/
-        holder.productName.setText(productType.getProductGroupName());
+        holder.productName.setText(productGroup.getProductGroupName());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 view.setOnClickListener(this);
                   Intent intent = new Intent(context, ProductActivity.class);
-                  intent.putExtra("category", productType.getProducTypeId());
-                Log.e("CATEGORY","QAYSI ID  "+ productType.getProducTypeId());
+                  intent.putExtra("category", productGroup.getProductGroupId());
+                Log.e("CATEGORY","QAYSI ID  "+ productGroup.getProductGroupId());
                   intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                   context.startActivity(intent);
 
@@ -68,7 +68,7 @@ public class ProductGroupAdapter extends RecyclerView.Adapter<ProductGroupAdapte
 
     @Override
     public int getItemCount() {
-        return productTypeList.size();
+        return productGroupList.size();
     }
 
     @Override

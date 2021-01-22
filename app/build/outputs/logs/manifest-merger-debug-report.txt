@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\4b415669d66eb6c72a5bfd46b3363a5f\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-dynamic-features-fragment:2.3.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\825b7e4736758c431fe0d0d1d5580339\jetified-navigation-dynamic-features-fragment-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\d329ee059b28517cc3e57ac89b6862ac\navigation-fragment-ktx-2.3.2\AndroidManifest.xml:17:1-24:12
@@ -84,22 +84,22 @@ MERGED from [androidx.annotation:annotation-experimental:1.0.0] D:\Installed pro
 MERGED from [com.android.volley:volley:1.1.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\4417b4fd6857b6872e4d70ea3bf4c279\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\c9ab2bf4db2c2b72642e1a0185b9d74a\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:2:1-19:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
+INJECTED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
 	package
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:4:5-29
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-86:12
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:1-88:12
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:2:11-69
@@ -162,7 +162,7 @@ MERGED from [com.google.android.libraries.places:places:2.4.0] D:\Installed prog
 	android:name
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:23:22-76
 application
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:26:5-84:19
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:26:5-86:19
 MERGED from [com.google.android.material:material:1.3.0-alpha03] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha03] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\0dfbd3116c5a4b755f4e58d261b1bc1f\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -219,88 +219,88 @@ MERGED from [com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:30:9-69
 	android:usesCleartextTraffic
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:34:9-44
-activity#com.A1tech.Activity.LoginRegister
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:35:9-41:20
-	android:label
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:37:13-45
-	android:configChanges
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:36:13-74
-	android:theme
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:38:13-56
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:35:19-67
-activity#com.A1tech.Activity.CheckoutActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:42:9-82
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:42:19-70
 uses-library#org.apache.http.legacy
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:43:9-45:40
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:35:9-37:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\904f0478c3682b51a9c45abfdd568427\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:45:13-37
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:44:13-50
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:36:13-50
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:54:9-56:71
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:38:9-40:71
 	android:value
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:56:13-68
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:40:13-68
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:55:13-58
-activity#com.A1tech.Activity.MapsActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:57:9-59:68
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:39:13-58
+activity#com.A1tech.Activity.LoginRegister
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:42:9-50:20
 	android:label
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:59:13-56
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:58:13-60
-activity#com.A1tech.InfoActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:60:9-60
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:60:19-57
-activity#com.A1tech.Activity.ProductGroupActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:61:9-64:20
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:44:13-45
 	android:configChanges
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:62:13-74
-	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:61:19-74
-activity#com.A1tech.Activity.MainActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:65:9-75:20
-	android:configChanges
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:67:13-74
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:43:13-74
 	android:theme
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:66:13-56
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:45:13-56
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:65:19-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:42:19-67
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:69:13-72:29
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:46:13-49:29
 action#android.intent.action.MAIN
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:70:17-69
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:70:25-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:47:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:71:17-77
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:71:27-74
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:48:27-74
+activity#com.A1tech.Activity.MainActivity
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:52:9-55:20
+	android:configChanges
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:54:13-74
+	android:theme
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:53:13-56
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:52:19-66
 activity#com.A1tech.Activity.ProductActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:76:9-72
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:56:9-72
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:76:19-69
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:56:19-69
+activity#com.A1tech.Activity.CheckoutActivity
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:58:9-72
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:58:19-70
+activity#com.A1tech.Activity.MapsActivity
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:69:9-71:68
+	android:label
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:71:13-56
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:70:13-60
+activity#com.A1tech.InfoActivity
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:72:9-60
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:72:19-57
+activity#com.A1tech.Activity.ProductGroupActivity
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:73:9-76:20
+	android:configChanges
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:74:13-74
+	android:name
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:73:19-74
 activity#com.A1tech.Activity.CartActivity
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:77:9-69
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:79:9-69
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:77:19-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:79:19-66
 meta-data#com.google.android.gms
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:78:9-80:69
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:80:9-82:69
 	android:value
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:80:13-66
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:82:13-66
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:79:13-50
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:81:13-50
 meta-data#preloaded_fonts
-ADDED from D:\project1\app\src\main\AndroidManifest.xml:81:9-83:57
+ADDED from D:\project1\app\src\main\AndroidManifest.xml:83:9-85:57
 	android:resource
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:83:13-54
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:85:13-54
 	android:name
-		ADDED from D:\project1\app\src\main\AndroidManifest.xml:82:13-43
+		ADDED from D:\project1\app\src\main\AndroidManifest.xml:84:13-43
 uses-sdk
 INJECTED from D:\project1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project1\app\src\main\AndroidManifest.xml

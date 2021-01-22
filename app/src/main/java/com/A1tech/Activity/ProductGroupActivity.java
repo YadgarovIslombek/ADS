@@ -21,7 +21,7 @@ import com.A1tech.ADS.R;
 import com.A1tech.Adapter.ProductGroupAdapter;
 import com.A1tech.ApiClient.RetrofitClient;
 import com.A1tech.JsonResponseProductGroup;
-import com.A1tech.Model.ProductType;
+import com.A1tech.Model.ProductGroup;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,12 +31,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 public class ProductGroupActivity extends AppCompatActivity {
     View progress;
-
-    List<ProductType> productGroupList = new ArrayList<>();
+    List<ProductGroup> productGroupList = new ArrayList<>();
     private RecyclerView recyclerView;
     private ProductGroupAdapter productGroupAdapter;
-    Toolbar toolbar;
-    TextView txt_tool;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,9 +59,9 @@ public class ProductGroupActivity extends AppCompatActivity {
             public void onResponse(Call<JsonResponseProductGroup> call, Response<JsonResponseProductGroup> response) {
 
                 Log.e("Bajarildi", response.toString());
-                JsonResponseProductGroup jsonResponseProductGroup = response.body();
-                productGroupList = Arrays.asList(jsonResponseProductGroup.getProductTypes());
-                productGroupAdapter = new ProductGroupAdapter(productGroupList, ProductGroupActivity.this);
+                JsonResponseProductGroup jsonResponseProducttype = response.body();
+                productGroupList = new ArrayList<>(Arrays.asList(jsonResponseProducttype.getProductTypes()));
+                productGroupAdapter = new ProductGroupAdapter(productGroupList,ProductGroupActivity.this);
                 recyclerView.setAdapter(productGroupAdapter);
                 hideProgressDialog();
             }

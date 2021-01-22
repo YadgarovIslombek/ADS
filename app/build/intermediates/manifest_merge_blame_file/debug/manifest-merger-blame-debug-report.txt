@@ -64,7 +64,7 @@
 34-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:8:20-72
 35
 36    <application
-36-->D:\project1\app\src\main\AndroidManifest.xml:26:5-84:19
+36-->D:\project1\app\src\main\AndroidManifest.xml:26:5-86:19
 37        android:allowBackup="true"
 37-->D:\project1\app\src\main\AndroidManifest.xml:27:9-35
 38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -86,200 +86,202 @@
 47-->D:\project1\app\src\main\AndroidManifest.xml:33:9-40
 48        android:usesCleartextTraffic="true" >
 48-->D:\project1\app\src\main\AndroidManifest.xml:34:9-44
-49        <activity
-49-->D:\project1\app\src\main\AndroidManifest.xml:35:9-41:20
-50            android:name="com.A1tech.Activity.LoginRegister"
-50-->D:\project1\app\src\main\AndroidManifest.xml:35:19-67
-51            android:configChanges="orientation|screenSize|keyboardHidden"
-51-->D:\project1\app\src\main\AndroidManifest.xml:36:13-74
-52            android:label="@string/app_name"
-52-->D:\project1\app\src\main\AndroidManifest.xml:37:13-45
-53            android:theme="@style/AppTheme.NoActionBar" >
-53-->D:\project1\app\src\main\AndroidManifest.xml:38:13-56
-54        </activity>
-55        <activity android:name="com.A1tech.Activity.CheckoutActivity" />
-55-->D:\project1\app\src\main\AndroidManifest.xml:42:9-82
-55-->D:\project1\app\src\main\AndroidManifest.xml:42:19-70
+49        <uses-library
+49-->D:\project1\app\src\main\AndroidManifest.xml:35:9-37:40
+50            android:name="org.apache.http.legacy"
+50-->D:\project1\app\src\main\AndroidManifest.xml:36:13-50
+51            android:required="false" />
+51-->D:\project1\app\src\main\AndroidManifest.xml:37:13-37
+52
+53        <meta-data
+53-->D:\project1\app\src\main\AndroidManifest.xml:38:9-40:71
+54            android:name="com.google.android.geo.API_KEY"
+54-->D:\project1\app\src\main\AndroidManifest.xml:39:13-58
+55            android:value="AIzaSyCmFA_Yj4jkHWEJPgVp162YkrmbUTAGoLw" />
+55-->D:\project1\app\src\main\AndroidManifest.xml:40:13-68
 56
-57        <uses-library
-57-->D:\project1\app\src\main\AndroidManifest.xml:43:9-45:40
-58            android:name="org.apache.http.legacy"
-58-->D:\project1\app\src\main\AndroidManifest.xml:44:13-50
-59            android:required="false" />
-59-->D:\project1\app\src\main\AndroidManifest.xml:45:13-37
-60        <!--
-61             The API key for Google Maps-based APIs is defined as a string resource.
-62             (See the file "res/values/google_maps_api.xml").
-63             Note that the API key is linked to the encryption key used to sign the APK.
-64             You need a different API key for each encryption key, including the release key that is used to
-65             sign the APK for publishing.
-66             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-67        -->
-68        <meta-data
-68-->D:\project1\app\src\main\AndroidManifest.xml:54:9-56:71
-69            android:name="com.google.android.geo.API_KEY"
-69-->D:\project1\app\src\main\AndroidManifest.xml:55:13-58
-70            android:value="AIzaSyCmFA_Yj4jkHWEJPgVp162YkrmbUTAGoLw" />
-70-->D:\project1\app\src\main\AndroidManifest.xml:56:13-68
-71
-72        <activity
-72-->D:\project1\app\src\main\AndroidManifest.xml:57:9-59:68
-73            android:name="com.A1tech.Activity.MapsActivity"
-73-->D:\project1\app\src\main\AndroidManifest.xml:58:13-60
-74            android:label="@string/title_activity_maps" />
-74-->D:\project1\app\src\main\AndroidManifest.xml:59:13-56
-75        <activity android:name="com.A1tech.InfoActivity" />
-75-->D:\project1\app\src\main\AndroidManifest.xml:60:9-60
-75-->D:\project1\app\src\main\AndroidManifest.xml:60:19-57
-76        <activity
-76-->D:\project1\app\src\main\AndroidManifest.xml:61:9-64:20
-77            android:name="com.A1tech.Activity.ProductGroupActivity"
-77-->D:\project1\app\src\main\AndroidManifest.xml:61:19-74
-78            android:configChanges="orientation|screenSize|keyboardHidden" >
-78-->D:\project1\app\src\main\AndroidManifest.xml:62:13-74
-79        </activity>
-80        <activity
-80-->D:\project1\app\src\main\AndroidManifest.xml:65:9-75:20
-81            android:name="com.A1tech.Activity.MainActivity"
-81-->D:\project1\app\src\main\AndroidManifest.xml:65:19-66
-82            android:configChanges="orientation|screenSize|keyboardHidden"
-82-->D:\project1\app\src\main\AndroidManifest.xml:67:13-74
-83            android:theme="@style/AppTheme.NoActionBar" >
-83-->D:\project1\app\src\main\AndroidManifest.xml:66:13-56
-84            <intent-filter>
-84-->D:\project1\app\src\main\AndroidManifest.xml:69:13-72:29
-85                <action android:name="android.intent.action.MAIN" />
-85-->D:\project1\app\src\main\AndroidManifest.xml:70:17-69
-85-->D:\project1\app\src\main\AndroidManifest.xml:70:25-66
-86
-87                <category android:name="android.intent.category.LAUNCHER" />
-87-->D:\project1\app\src\main\AndroidManifest.xml:71:17-77
-87-->D:\project1\app\src\main\AndroidManifest.xml:71:27-74
-88            </intent-filter>
-89        </activity>
-90        <activity android:name="com.A1tech.Activity.ProductActivity" />
-90-->D:\project1\app\src\main\AndroidManifest.xml:76:9-72
-90-->D:\project1\app\src\main\AndroidManifest.xml:76:19-69
-91        <activity android:name="com.A1tech.Activity.CartActivity" />
-91-->D:\project1\app\src\main\AndroidManifest.xml:77:9-69
-91-->D:\project1\app\src\main\AndroidManifest.xml:77:19-66
-92
-93        <meta-data
-93-->D:\project1\app\src\main\AndroidManifest.xml:78:9-80:69
-94            android:name="com.google.android.gms"
-94-->D:\project1\app\src\main\AndroidManifest.xml:79:13-50
-95            android:value="@integer/google_play_services_version" />
-95-->D:\project1\app\src\main\AndroidManifest.xml:80:13-66
-96        <meta-data
-96-->D:\project1\app\src\main\AndroidManifest.xml:81:9-83:57
-97            android:name="preloaded_fonts"
-97-->D:\project1\app\src\main\AndroidManifest.xml:82:13-43
-98            android:resource="@array/preloaded_fonts" />
-98-->D:\project1\app\src\main\AndroidManifest.xml:83:13-54
-99
-100        <activity
-100-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20
-101            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
-101-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:15:13-91
-102            android:exported="false"
-102-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:16:13-37
-103            android:label="@string/places_autocomplete_label"
-103-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:17:13-62
-104            android:theme="@style/PlacesAutocompleteOverlay"
-104-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:18:13-61
-105            android:windowSoftInputMode="adjustResize" >
-105-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:19:13-55
-106        </activity>
-107        <activity
-107-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
-108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-108-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:24:13-79
-109            android:exported="false"
-109-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:25:13-37
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-110-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:26:13-72
-111
-112        <meta-data
-112-->[com.google.android.gms:play-services-basement:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e547df74d48f79a93045cb57126adddb\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
-113            android:name="com.google.android.gms.version"
-113-->[com.google.android.gms:play-services-basement:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e547df74d48f79a93045cb57126adddb\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
-114            android:value="@integer/google_play_services_version" />
-114-->[com.google.android.gms:play-services-basement:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e547df74d48f79a93045cb57126adddb\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
-115
-116        <service
-116-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
-117            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-117-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
-118            android:exported="false" >
-118-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
-119            <meta-data
-119-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
-120                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-120-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
-121                android:value="cct" />
-121-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
-122        </service>
-123        <service
-123-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
-124            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-124-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
-125            android:exported="false"
-125-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
-126            android:permission="android.permission.BIND_JOB_SERVICE" >
-126-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
-127        </service>
-128
-129        <receiver
-129-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
-130            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-130-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
-131            android:exported="false" />
-131-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
-132
-133        <provider
-133-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-134            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-134-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-135            android:authorities="com.example.recycleviewtest.lifecycle-process"
-135-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-136            android:exported="false"
-136-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-137            android:multiprocess="true" /> <!-- The activities will be merged into the manifest of the hosting app. -->
-137-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-138        <activity
-138-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:5-271
-139            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-139-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:15-102
-140            android:enabled="false"
-140-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:103-126
-141            android:exported="false"
-141-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:127-151
-142            android:launchMode="singleInstance"
-142-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:204-239
-143            android:process=":playcore_missing_splits_activity"
-143-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:152-203
-144            android:stateNotNeeded="true" />
-144-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:240-269
-145        <activity
-145-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:5-226
-146            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-146-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:15-95
-147            android:enabled="false"
-147-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:96-119
-148            android:exported="false"
-148-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:120-144
-149            android:stateNotNeeded="true"
-149-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:145-174
-150            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
-150-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:175-224
-151        <service
-151-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:5-145
-152            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-152-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:14-95
-153            android:enabled="false"
-153-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:96-119
-154            android:exported="true" />
-154-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:120-143
-155    </application>
-156
-157</manifest>
+57        <activity
+57-->D:\project1\app\src\main\AndroidManifest.xml:42:9-50:20
+58            android:name="com.A1tech.Activity.LoginRegister"
+58-->D:\project1\app\src\main\AndroidManifest.xml:42:19-67
+59            android:configChanges="orientation|screenSize|keyboardHidden"
+59-->D:\project1\app\src\main\AndroidManifest.xml:43:13-74
+60            android:label="@string/app_name"
+60-->D:\project1\app\src\main\AndroidManifest.xml:44:13-45
+61            android:theme="@style/AppTheme.NoActionBar" >
+61-->D:\project1\app\src\main\AndroidManifest.xml:45:13-56
+62            <intent-filter>
+62-->D:\project1\app\src\main\AndroidManifest.xml:46:13-49:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->D:\project1\app\src\main\AndroidManifest.xml:47:17-69
+63-->D:\project1\app\src\main\AndroidManifest.xml:47:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->D:\project1\app\src\main\AndroidManifest.xml:48:17-77
+65-->D:\project1\app\src\main\AndroidManifest.xml:48:27-74
+66            </intent-filter>
+67        </activity>
+68        <activity
+68-->D:\project1\app\src\main\AndroidManifest.xml:52:9-55:20
+69            android:name="com.A1tech.Activity.MainActivity"
+69-->D:\project1\app\src\main\AndroidManifest.xml:52:19-66
+70            android:configChanges="orientation|screenSize|keyboardHidden"
+70-->D:\project1\app\src\main\AndroidManifest.xml:54:13-74
+71            android:theme="@style/AppTheme.NoActionBar" >
+71-->D:\project1\app\src\main\AndroidManifest.xml:53:13-56
+72        </activity>
+73        <activity android:name="com.A1tech.Activity.ProductActivity" />
+73-->D:\project1\app\src\main\AndroidManifest.xml:56:9-72
+73-->D:\project1\app\src\main\AndroidManifest.xml:56:19-69
+74        <activity android:name="com.A1tech.Activity.CheckoutActivity" />
+74-->D:\project1\app\src\main\AndroidManifest.xml:58:9-72
+74-->D:\project1\app\src\main\AndroidManifest.xml:58:19-70
+75
+76        <!--
+77             The API key for Google Maps-based APIs is defined as a string resource.
+78             (See the file "res/values/google_maps_api.xml").
+79             Note that the API key is linked to the encryption key used to sign the APK.
+80             You need a different API key for each encryption key, including the release key that is used to
+81             sign the APK for publishing.
+82             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+83        -->
+84
+85        <activity
+85-->D:\project1\app\src\main\AndroidManifest.xml:69:9-71:68
+86            android:name="com.A1tech.Activity.MapsActivity"
+86-->D:\project1\app\src\main\AndroidManifest.xml:70:13-60
+87            android:label="@string/title_activity_maps" />
+87-->D:\project1\app\src\main\AndroidManifest.xml:71:13-56
+88        <activity android:name="com.A1tech.InfoActivity" />
+88-->D:\project1\app\src\main\AndroidManifest.xml:72:9-60
+88-->D:\project1\app\src\main\AndroidManifest.xml:72:19-57
+89        <activity
+89-->D:\project1\app\src\main\AndroidManifest.xml:73:9-76:20
+90            android:name="com.A1tech.Activity.ProductGroupActivity"
+90-->D:\project1\app\src\main\AndroidManifest.xml:73:19-74
+91            android:configChanges="orientation|screenSize|keyboardHidden" >
+91-->D:\project1\app\src\main\AndroidManifest.xml:74:13-74
+92        </activity>
+93        <activity android:name="com.A1tech.Activity.CartActivity" />
+93-->D:\project1\app\src\main\AndroidManifest.xml:79:9-69
+93-->D:\project1\app\src\main\AndroidManifest.xml:79:19-66
+94
+95        <meta-data
+95-->D:\project1\app\src\main\AndroidManifest.xml:80:9-82:69
+96            android:name="com.google.android.gms"
+96-->D:\project1\app\src\main\AndroidManifest.xml:81:13-50
+97            android:value="@integer/google_play_services_version" />
+97-->D:\project1\app\src\main\AndroidManifest.xml:82:13-66
+98        <meta-data
+98-->D:\project1\app\src\main\AndroidManifest.xml:83:9-85:57
+99            android:name="preloaded_fonts"
+99-->D:\project1\app\src\main\AndroidManifest.xml:84:13-43
+100            android:resource="@array/preloaded_fonts" />
+100-->D:\project1\app\src\main\AndroidManifest.xml:85:13-54
+101
+102        <activity
+102-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20
+103            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+103-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:15:13-91
+104            android:exported="false"
+104-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:16:13-37
+105            android:label="@string/places_autocomplete_label"
+105-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:17:13-62
+106            android:theme="@style/PlacesAutocompleteOverlay"
+106-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:18:13-61
+107            android:windowSoftInputMode="adjustResize" >
+107-->[com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:19:13-55
+108        </activity>
+109        <activity
+109-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+110-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-base:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\61ad5e9bdee595a0d93740a3dc289c17\jetified-play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e547df74d48f79a93045cb57126adddb\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e547df74d48f79a93045cb57126adddb\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:17.2.1] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e547df74d48f79a93045cb57126adddb\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+117
+118        <service
+118-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+119            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+119-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+120            android:exported="false" >
+120-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+121            <meta-data
+121-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+122                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+122-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+123                android:value="cct" />
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+124        </service>
+125        <service
+125-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+126            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+126-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+127            android:exported="false"
+127-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+128            android:permission="android.permission.BIND_JOB_SERVICE" >
+128-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+129        </service>
+130
+131        <receiver
+131-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+132            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+132-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+133            android:exported="false" />
+133-->[com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+134
+135        <provider
+135-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+136            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+136-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+137            android:authorities="com.example.recycleviewtest.lifecycle-process"
+137-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+138            android:exported="false"
+138-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+139            android:multiprocess="true" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+139-->[androidx.lifecycle:lifecycle-process:2.1.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\51b86676dded34b29e610b9c328b8f79\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+140        <activity
+140-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:5-271
+141            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+141-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:15-102
+142            android:enabled="false"
+142-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:103-126
+143            android:exported="false"
+143-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:127-151
+144            android:launchMode="singleInstance"
+144-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:204-239
+145            android:process=":playcore_missing_splits_activity"
+145-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:152-203
+146            android:stateNotNeeded="true" />
+146-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:12:240-269
+147        <activity
+147-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:5-226
+148            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+148-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:15-95
+149            android:enabled="false"
+149-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:96-119
+150            android:exported="false"
+150-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:120-144
+151            android:stateNotNeeded="true"
+151-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:145-174
+152            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
+152-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:13:175-224
+153        <service
+153-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:5-145
+154            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+154-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:14-95
+155            android:enabled="false"
+155-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:96-119
+156            android:exported="true" />
+156-->[com.google.android.play:core:1.7.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\5dc617e0e3a44a37810666394658f49d\jetified-core-1.7.2\AndroidManifest.xml:16:120-143
+157    </application>
+158
+159</manifest>

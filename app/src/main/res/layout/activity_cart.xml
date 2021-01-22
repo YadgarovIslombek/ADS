@@ -14,9 +14,6 @@
     android:layout_height="match_parent"
     tools:context="com.A1tech.Activity.CartActivity"
     android:orientation="vertical">
-    <include
-        android:id="@+id/toolbar_cart"
-        layout="@layout/app_bar_main" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,7 +22,6 @@
 
 
     <RelativeLayout
-        android:layout_below="@id/toolbar_cart"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

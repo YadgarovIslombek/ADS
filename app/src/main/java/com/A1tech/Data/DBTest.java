@@ -2,14 +2,14 @@ package com.A1tech.Data;
 
 
 import com.A1tech.Model.ProductModel;
-import com.A1tech.Model.ProductType;
+import com.A1tech.Model.ProductGroup;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DBTest {
     List<ProductModel> productlist = new ArrayList<>();
-    List<ProductType> productTypeList = new ArrayList<>();
+    List<ProductGroup> productGroupList = new ArrayList<>();
 
     public List<ProductModel> getProductlist() {
         ProductModel productModel = new ProductModel(1, "Olma", 5000,1,2);
@@ -42,16 +42,16 @@ public class DBTest {
         productlist.add(productModel14);
         return productlist;
     }
-    public List<ProductType> getProductTypeList(){
-        ProductType productType = new ProductType(1,1, "Sabzavotlar");
-        productTypeList.add(productType);
-        ProductType productType1 = new ProductType(2,1, "Mevalar");
-        productTypeList.add(productType1);
-        ProductType productType2 = new ProductType(3,2, "Go'sht Mahsulotlari");
-        productTypeList.add(productType2);
-        ProductType productType3 = new ProductType(2,2, "Ichimliklar");
-        productTypeList.add(productType3);
-        return productTypeList;
+    public List<ProductGroup> getProductGroupList(){
+        ProductGroup productGroup = new ProductGroup(1,1, "Sabzavotlar");
+        productGroupList.add(productGroup);
+        ProductGroup productGroup1 = new ProductGroup(2,1, "Mevalar");
+        productGroupList.add(productGroup1);
+        ProductGroup productGroup2 = new ProductGroup(3,2, "Go'sht Mahsulotlari");
+        productGroupList.add(productGroup2);
+        ProductGroup productGroup3 = new ProductGroup(2,2, "Ichimliklar");
+        productGroupList.add(productGroup3);
+        return productGroupList;
     }
 
 

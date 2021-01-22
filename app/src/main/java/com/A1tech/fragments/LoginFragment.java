@@ -148,9 +148,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnlog:
-//                startActivity(new Intent(getContext(), MainActivity.class));
-//                getActivity().finish();
-                checkValidation();
+                startActivity(new Intent(getContext(), MainActivity.class));
+                getActivity().finish();
+               // checkValidation();
                 break;
 
             case R.id.forgot_password:

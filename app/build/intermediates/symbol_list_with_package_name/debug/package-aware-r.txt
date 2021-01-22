@@ -3040,7 +3040,6 @@ id toast_root
 id toast_succes
 id toggle
 id toolbar
-id toolbar_cart
 id toolbar_main
 id toolbar_payment
 id top

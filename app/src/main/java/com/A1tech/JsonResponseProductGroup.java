@@ -1,13 +1,9 @@
 package com.A1tech;
-import com.A1tech.Model.ProductType;
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
-import java.util.List;
+import com.A1tech.Model.ProductGroup;
 
 public class JsonResponseProductGroup {
-    public ProductType[] productGroupList;
-    public ProductType[] getProductTypes() {
+    public ProductGroup[] productGroupList;
+    public ProductGroup[] getProductTypes() {
         return productGroupList;
     }
 }

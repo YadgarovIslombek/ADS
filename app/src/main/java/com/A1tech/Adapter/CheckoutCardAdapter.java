@@ -42,14 +42,14 @@ public class CheckoutCardAdapter extends RecyclerView.Adapter<CheckoutCardAdapte
         localStorage = new LocalStorage(context);
         gson = new Gson();
         holder.title.setText(cart.getProductName());
-        holder.attribute.setText(cart.getUnitOfMeasurement());
+        holder.attribute.setText(cart.getUnitName());
         _price = String.valueOf(cart.getPrice());
         _quantity = String.valueOf(cart.getMeasurement());
         holder.quantity.setText(_quantity);
         holder.price.setText(_price);
-        holder.currency.setText(cart.getCurrency());
+//        holder.currency.setText(cart.getCurrency());
         _subtotal = String.valueOf(Double.parseDouble(_price) * Integer.parseInt(_quantity));
-        holder.currency.setText(cart.getCurrency());
+//        holder.currency.setText(cart.getCurrency());
         holder.subTotal.setText(_subtotal);
     }
     @Override

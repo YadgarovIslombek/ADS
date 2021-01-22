@@ -2,25 +2,23 @@ package com.A1tech.Model;
 
 public class ProductModel {
     int productId;
-    int shopId;
-    String shopName;
     String productName;
-    String currency;
     int price;
     int measurement;
-    String unitOfMeasurement;
-    int productTypeId;
+    int unitOfMeasurementId;
+    String unitName;
+    int productGroupId;
 
     //Constructor
-    public ProductModel(int productTypeId) {
-        this.productTypeId =productTypeId;
+
+
+    public ProductModel(int productGroupId) {
+        this.productGroupId = productGroupId;
     }
 
     public ProductModel(int i, String uzum, int i1, int i2, int i3) {
     }
-
     //Getters & Setters
-
     public int getProductId() {
         return productId;
     }
@@ -29,36 +27,12 @@ public class ProductModel {
         this.productId = productId;
     }
 
-    public int getShopId() {
-        return shopId;
-    }
-
-    public void setShopId(int shopId) {
-        this.shopId = shopId;
-    }
-
-    public String getShopName() {
-        return shopName;
-    }
-
-    public void setShopName(String shopName) {
-        this.shopName = shopName;
-    }
-
     public String getProductName() {
         return productName;
     }
 
     public void setProductName(String productName) {
         this.productName = productName;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
     }
 
     public int getPrice() {
@@ -77,20 +51,28 @@ public class ProductModel {
         this.measurement = measurement;
     }
 
-    public String getUnitOfMeasurement() {
-        return unitOfMeasurement;
+    public int getUnitOfMeasurementId() {
+        return unitOfMeasurementId;
     }
 
-    public void setUnitOfMeasurement(String unitOfMeasurement) {
-        this.unitOfMeasurement = unitOfMeasurement;
+    public void setUnitOfMeasurementId(int unitOfMeasurementId) {
+        this.unitOfMeasurementId = unitOfMeasurementId;
     }
 
-    public int getProductTypeId() {
-        return productTypeId;
+    public String getUnitName() {
+        return unitName;
     }
 
-    public void setProductTypeId(int productTypeId) {
-        this.productTypeId = productTypeId;
+    public void setUnitName(String unitName) {
+        this.unitName = unitName;
+    }
+
+    public int productGroupId() {
+        return productGroupId;
+    }
+
+    public void setproductGroupId(int productGroupId) {
+        this.productGroupId = productGroupId;
     }
 }
 

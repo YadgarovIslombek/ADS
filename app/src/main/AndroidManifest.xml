@@ -32,17 +32,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.A1tech.Activity.LoginRegister"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
-
-        </activity>
-        <activity android:name="com.A1tech.Activity.CheckoutActivity"></activity>
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmFA_Yj4jkHWEJPgVp162YkrmbUTAGoLw" />
+
+        <activity android:name="com.A1tech.Activity.LoginRegister"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.A1tech.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+        <activity android:name="com.A1tech.Activity.ProductActivity" />
+
+        <activity android:name="com.A1tech.Activity.CheckoutActivity"/>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -51,9 +65,7 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCmFA_Yj4jkHWEJPgVp162YkrmbUTAGoLw" />
+
         <activity
             android:name="com.A1tech.Activity.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
@@ -62,18 +74,8 @@
             android:configChanges="orientation|screenSize|keyboardHidden">
 
         </activity>
-        <activity android:name="com.A1tech.Activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
 
-        </activity>
-        <activity android:name="com.A1tech.Activity.ProductActivity" />
         <activity android:name="com.A1tech.Activity.CartActivity" />
         <meta-data
             android:name="com.google.android.gms"

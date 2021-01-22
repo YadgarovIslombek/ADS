@@ -85,7 +85,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyviewHo
         }
 */
 
-        holder.attribute.setText("1 " +product.getUnitOfMeasurement());
+        holder.attribute.setText("1 " +product.getUnitName());
         holder.currency.setText(" So'm");
         holder.price.setText(""+product.getPrice());
 
@@ -184,13 +184,13 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyviewHo
                 holder.constraintLayout.setVisibility(View.VISIBLE);
                 _price = product.getPrice();
                 _quantity = (Integer.parseInt(holder.quantity.getText().toString()));
-                _attribute = product.getUnitOfMeasurement();
+                _attribute = product.getUnitName();
 
                 if (_quantity != 0) {
                     _subtotal = (_price) * (_quantity);
                     holder.subTotal.setText(_quantity + "X" + _price + "= " + _subtotal +" So'm");
                     if (context instanceof ProductActivity) {
-                        Cart cart = new Cart(product.getProductId(), product.getProductName(), product.getCurrency(), _price, _attribute, _quantity, _subtotal);
+                        Cart cart = new Cart(product.getProductId(), product.getProductName(),_price, _attribute, _quantity, _subtotal);
                         cartList = ((BaseActivity) context).getCartList();
                         cartList.add(cart);
                         String cartStr = gson.toJson(cartList);

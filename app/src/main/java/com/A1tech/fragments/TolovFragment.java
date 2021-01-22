@@ -77,7 +77,7 @@ public class TolovFragment extends Fragment {
 
         for (int i = 0; i < cartList.size(); i++) {
 
-            orderItem = new OrderItem(cartList.get(i).getProductName(), cartList.get(i).getMeasurement(), cartList.get(i).getUnitOfMeasurement(), cartList.get(i).getCurrency(), cartList.get(i).getPrice(), cartList.get(i).getSubTotal());
+            orderItem = new OrderItem(cartList.get(i).getProductName(), cartList.get(i).getMeasurement(), cartList.get(i).getUnitName(), cartList.get(i).getPrice(), cartList.get(i).getSubTotal());
             orderItemList.add(orderItem);
         }
 

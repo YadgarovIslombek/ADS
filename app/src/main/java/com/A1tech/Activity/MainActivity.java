@@ -1,5 +1,6 @@
 package com.A1tech.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -29,21 +30,31 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.A1tech.ADS.R;
+import com.A1tech.Adapter.ProductGroupAdapter;
+import com.A1tech.ApiClient.RetrofitClient;
 import com.A1tech.Helper.LocalStorage;
+import com.A1tech.JsonResponseProductGroup;
 import com.A1tech.Model.Client;
 import com.A1tech.fragments.ComunicateFragment;
 import com.A1tech.fragments.HomeFragment;
 import com.A1tech.fragments.OrderFragment;
 import com.A1tech.fragments.ProfileFragment;
 import com.A1tech.fragments.TestFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.mahfa.dnswitch.DayNightSwitch;
 import com.mahfa.dnswitch.DayNightSwitchAnimListener;
 import com.mahfa.dnswitch.DayNightSwitchListener;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Objects;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import static android.view.View.SYSTEM_UI_FLAG_VISIBLE;
 
@@ -59,6 +70,7 @@ public class MainActivity extends BaseActivity
     View mDecorView;
     private DayNightSwitch day_night_switch;
     boolean isFullScreen = false;
+    @SuppressLint("ResourceAsColor")
     static void centerToolbarTitle(@NonNull final Toolbar toolbar) {
         final CharSequence title = toolbar.getTitle();
         final ArrayList<View> outViews = new ArrayList<>(1);
@@ -66,7 +78,7 @@ public class MainActivity extends BaseActivity
         if (!outViews.isEmpty()) {
             final TextView titleView = (TextView) outViews.get(0);
             titleView.setGravity(Gravity.CENTER);
-            titleView.setTextColor(Color.parseColor("#FFFFFF"));
+            titleView.setTextColor(Color.parseColor("#FAD23C"));
             final Toolbar.LayoutParams layoutParams = (Toolbar.LayoutParams) titleView.getLayoutParams();
             layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
             toolbar.requestLayout();
@@ -132,21 +144,26 @@ public class MainActivity extends BaseActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        localStorage = new LocalStorage(this);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         centerToolbarTitle(toolbar);
+        localStorage = new LocalStorage(this);
         cart_count = cartCount();
         localStorage = new LocalStorage(getApplicationContext());
         String userString = localStorage.getUserLogin();
         Gson gson = new Gson();
         userString = localStorage.getUserLogin();
         client = gson.fromJson(userString, Client.class);
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setVisibility(View.GONE);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
         //day_night_switch =(DayNightSwitch)findViewById(R.id.sw);
        // day_night_switch.setDuration(450);
         localStorage = new LocalStorage(getApplicationContext());
@@ -154,7 +171,7 @@ public class MainActivity extends BaseActivity
        final LinearLayout holder = findViewById(R.id.holder);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-//        drawer.setDrawerListener(toggle);
+
         {
             @Override
             public void onDrawerSlide (View drawerView,float slideOffset) {
@@ -197,7 +214,9 @@ public class MainActivity extends BaseActivity
             }
         });
 
+
         displaySelectedScreen(R.id.nav_home);
+
 
     }
 

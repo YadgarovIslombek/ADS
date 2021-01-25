@@ -65,7 +65,7 @@ public class CheckoutActivity extends BaseActivity {
         tv.setGravity(Gravity.CENTER);
         tv.setTypeface(null, Typeface.BOLD);
         // Set text to display in TextView
-        tv.setText("Products"); // ActionBar title text
+        tv.setText("To'lov"); // ActionBar title text
         tv.setTextSize(20);
         // Set the text color of TextView to red
         // This line change the ActionBar title text color

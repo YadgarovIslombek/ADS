@@ -1,17 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.redmadrobot:input-mask-android:6.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.5-all/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/res" />
       <root url="jar://$PROJECT_DIR$/../Installed programms/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../Installed programms/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../Installed programms/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../Installed programms/.gradle/caches/transforms-2/files-2.1/6b95ab3e5137264c26128473d7ad751e/jetified-input-mask-android-6.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.redmadrobot/input-mask-android/6.0.0/4c3a6e6a105945cf8d43d858f7ae0b9224d76766/input-mask-android-6.0.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Installed programms/.gradle/caches/modules-2/files-2.1/com.redmadrobot/input-mask-android/6.0.0/4c3a6e6a105945cf8d43d858f7ae0b9224d76766/input-mask-android-6.0.0-sources.jar!/" />
     </SOURCES>
   </library>

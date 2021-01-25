@@ -15,9 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <include
-            android:id="@+id/toolbar_payment"
-            layout="@layout/app_bar_main" />
             <FrameLayout
                 android:id="@+id/content_frame"
                 android:layout_width="match_parent"

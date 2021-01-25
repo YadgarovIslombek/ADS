@@ -53,7 +53,7 @@ public class ProductGroupActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         progress = findViewById(R.id.progress_bar);
         showProgressDialog();
-        Call<JsonResponseProductGroup> call = RetrofitClient.getData(getApplicationContext()).getProductType();
+        Call<JsonResponseProductGroup> call = RetrofitClient.getData(getApplicationContext()).getTypeById(1);
         call.enqueue(new Callback<JsonResponseProductGroup>() {
             @Override
             public void onResponse(Call<JsonResponseProductGroup> call, Response<JsonResponseProductGroup> response) {

@@ -79,19 +79,16 @@ public class MalumotFragment extends Fragment {
                     txt_qosh_address.setError("Iltimos manzilni aniqlashtiting");
                     txt_qosh_address.requestFocus();
                 }else{
-                    client  = new Client(Double.parseDouble(_lat), Double.parseDouble(_longt), _txt_mobile, String.valueOf(_txt_name),_txt_qosh_address,_txt_address);
+                    Client userAddress  = new Client(Double.parseDouble(_lat), Double.parseDouble(_longt), _txt_mobile, String.valueOf(_txt_name),_txt_address);
                     String user_address = gson.toJson(userAddress);
                     localStorage.createUserLoginSession(user_address);
                     Log.d("test", user_address);
                     saveUserAddress(userAddress);
                 }
-
             }
         });
         return v;
-
     }
-
     private void saveUserAddress(Client clientAddress) {
         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
         ft.setCustomAnimations(R.anim.slide_from_right, R.anim.slide_to_left);

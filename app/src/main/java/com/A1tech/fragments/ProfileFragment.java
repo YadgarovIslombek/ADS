@@ -33,7 +33,7 @@ public class ProfileFragment extends Fragment {
         address = view.findViewById(R.id.address);
         localStorage = new LocalStorage(getContext());
         Client user = gson.fromJson(localStorage.getUserLogin(), Client.class);
-        name.setText(user.getUserName());
+       // name.setText(user.getUserName());
         mobile.setText(user.getPhoneNumber());
         email.setText(user.getEmail());
         address.setText(user.getMessage());

@@ -28,7 +28,7 @@ public class Client {
         this.userName = userName;
     }
 
-    public Client(double latitude, double longitude, String message, String phoneNumber, String userName) {
+    public Client(double latitude, double longitude, String phoneNumber,String message, String userName) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.message = message;

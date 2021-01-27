@@ -2310,6 +2310,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_left_arrow
 drawable ic_location
+drawable ic_location_on_45
 drawable ic_mail
 drawable ic_malumot_select
 drawable ic_malumot_unselected
@@ -2929,7 +2930,6 @@ id search_edit_frame
 id search_go_btn
 id search_mag_icon
 id search_plate
-id search_recycler_view
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
@@ -3041,7 +3041,6 @@ id toast_succes
 id toggle
 id toolbar
 id toolbar_main
-id toolbar_payment
 id top
 id topPanel
 id total

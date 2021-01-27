@@ -1,5 +1,6 @@
 package com.A1tech.Activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -7,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -38,14 +40,13 @@ public class ProductGroupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_producttype);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF5CCC78")));
         changeActionBarTitle(getSupportActionBar());
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back_black_24dp);
         //upArrow.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_ATOP);
         getSupportActionBar().setHomeAsUpIndicator(upArrow);
-
         recyclerView = (RecyclerView) findViewById(R.id.recV);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -65,15 +66,12 @@ public class ProductGroupActivity extends AppCompatActivity {
                 recyclerView.setAdapter(productGroupAdapter);
                 hideProgressDialog();
             }
-
             @Override
             public void onFailure(Call<JsonResponseProductGroup> call, Throwable t) {
                 Log.e("Xatolik", t.getLocalizedMessage());
                 hideProgressDialog();
             }
         });
-
-
     }
     private void hideProgressDialog() {
         progress.setVisibility(View.GONE);
@@ -93,17 +91,32 @@ public class ProductGroupActivity extends AppCompatActivity {
         tv.setGravity(Gravity.CENTER);
         tv.setTypeface(null, Typeface.BOLD);
         // Set text to display in TextView
-        tv.setText("Products"); // ActionBar title text
-        tv.setTextSize(20);
+        tv.setText("Mahsulotlar guruhi"); // ActionBar title text
+        tv.setTextSize(19);
 
         // Set the text color of TextView to red
         // This line change the ActionBar title text color
-        tv.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+        tv.setTextColor(getResources().getColor(R.color.white));
 
         // Set the ActionBar display option
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         // Finally, set the newly created TextView as ActionBar custom view
         actionBar.setCustomView(tv);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+
+                // todo: goto back activity from here
+
+                Intent intent = new Intent(ProductGroupActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
    /* @Override

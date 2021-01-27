@@ -1,6 +1,7 @@
 package com.A1tech.Activity;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
@@ -71,6 +73,7 @@ public class MainActivity extends BaseActivity
     private DayNightSwitch day_night_switch;
     boolean isFullScreen = false;
     @SuppressLint("ResourceAsColor")
+
     static void centerToolbarTitle(@NonNull final Toolbar toolbar) {
         final CharSequence title = toolbar.getTitle();
         final ArrayList<View> outViews = new ArrayList<>(1);
@@ -78,7 +81,7 @@ public class MainActivity extends BaseActivity
         if (!outViews.isEmpty()) {
             final TextView titleView = (TextView) outViews.get(0);
             titleView.setGravity(Gravity.CENTER);
-            titleView.setTextColor(Color.parseColor("#FAD23C"));
+            titleView.setTextColor(Color.parseColor("#FFFFFF"));
             final Toolbar.LayoutParams layoutParams = (Toolbar.LayoutParams) titleView.getLayoutParams();
             layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
             toolbar.requestLayout();
@@ -119,37 +122,54 @@ public class MainActivity extends BaseActivity
         } else {
             super.onBackPressed();
         }*/
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        assert  drawer !=null;
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+       DrawerLayout drawer = findViewById(R.id.drawer_layout);
+//        assert  drawer !=null;
+//        if (drawer.isDrawerOpen(GravityCompat.START)) {
+//            drawer.closeDrawer(GravityCompat.START);
+//        }
+//
+//        else if (doubleBackToExitPressedOnce) {
+//            super.onBackPressed();
+//        }
+//        else {
+//            doubleBackToExitPressedOnce = true;
+//            Toast.makeText(this, "Chiqish uchun yana bir marta bosing!", Toast.LENGTH_SHORT).show();
+//
+//
+//            new Handler(getMainLooper()).postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    doubleBackToExitPressedOnce = false;
+//                }
+//            }, 2000);
+//        }
+        if (drawer.isDrawerOpen(GravityCompat.START))
             drawer.closeDrawer(GravityCompat.START);
-        }
+        else{
+            new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Chiqish")
+                    .setMessage("Dasturdan chiqmoqchimisiz?")
+                    .setPositiveButton("ha", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
 
-        else if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-        }
-        else {
-            doubleBackToExitPressedOnce = true;
-            Toast.makeText(this, "Chiqish uchun yana bir marta bosing!", Toast.LENGTH_SHORT).show();
-
-
-            new Handler(getMainLooper()).postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    doubleBackToExitPressedOnce = false;
-                }
-            }, 2000);
-        }
+                            Intent intent = new Intent(Intent.ACTION_MAIN);
+                            intent.addCategory(Intent.CATEGORY_HOME);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                            finish();
+                        }
+                    }).setNegativeButton("yo'q", null).show();}
     }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         centerToolbarTitle(toolbar);
         localStorage = new LocalStorage(this);
-        cart_count = cartCount();
+
         localStorage = new LocalStorage(getApplicationContext());
         String userString = localStorage.getUserLogin();
         Gson gson = new Gson();
@@ -187,8 +207,8 @@ public class MainActivity extends BaseActivity
         };
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);// will remove all possible our aactivity's window bounds
+//            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);// will remove all possible our aactivity's window bounds
         }
 
         drawer.addDrawerListener(toggle);

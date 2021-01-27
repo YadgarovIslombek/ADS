@@ -59,7 +59,7 @@ public class ProductActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF5CCC78")));
         changeActionBarTitle(getSupportActionBar());
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -172,12 +172,12 @@ public class ProductActivity extends BaseActivity {
         tv.setGravity(Gravity.CENTER);
         tv.setTypeface(null, Typeface.BOLD);
         // Set text to display in TextView
-        tv.setText("Products"); // ActionBar title text
-        tv.setTextSize(20);
+        tv.setText("Mahsulotlar"); // ActionBar title text
+        tv.setTextSize(19);
 
         // Set the text color of TextView to red
         // This line change the ActionBar title text color
-        tv.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+        tv.setTextColor(getResources().getColor(R.color.white));
 
         // Set the ActionBar display option
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);

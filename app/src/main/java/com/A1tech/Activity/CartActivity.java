@@ -50,7 +50,7 @@ public class CartActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF5CCC78")));
         changeActionBarTitle(getSupportActionBar());
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -203,12 +203,12 @@ public class CartActivity extends BaseActivity {
         tv.setGravity(Gravity.CENTER);
         tv.setTypeface(null, Typeface.BOLD);
         // Set text to display in TextView
-        tv.setText("Card"); // ActionBar title text
-        tv.setTextSize(20);
+        tv.setText("Savat"); // ActionBar title text
+        tv.setTextSize(19);
 
         // Set the text color of TextView to red
         // This line change the ActionBar title text color
-        tv.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+        tv.setTextColor(getResources().getColor(R.color.white));
 
         // Set the ActionBar display option
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);

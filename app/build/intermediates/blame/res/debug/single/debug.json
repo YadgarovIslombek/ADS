@@ -640,6 +640,10 @@
         "source": "D:\\project1\\app\\src\\main\\res\\drawable\\ic_search.xml"
     },
     {
+        "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_location_on_45.xml.flat",
+        "source": "D:\\project1\\app\\src\\main\\res\\drawable\\ic_location_on_45.xml"
+    },
+    {
         "merged": "D:\\project1\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_light.xml.flat",
         "source": "D:\\project1\\app\\src\\main\\res\\font\\poppins_light.xml"
     },

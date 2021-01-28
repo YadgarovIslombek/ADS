@@ -2268,7 +2268,6 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable comp
-drawable dark_background
 drawable delete
 drawable deletex
 drawable design_bottom_navigation_item_background
@@ -2342,9 +2341,6 @@ drawable ic_search
 drawable ic_search_black_24dp
 drawable ic_shtab_kv
 drawable icon12_sav
-drawable img_clouds
-drawable img_moon
-drawable img_sun
 drawable instagram
 drawable konstovar
 drawable login_bg
@@ -2803,7 +2799,6 @@ id nav_controller_view_tag
 id nav_header_name
 id nav_home
 id nav_host_fragment_container
-id nav_mylocation
 id nav_myshipping
 id nav_personal
 id nav_view

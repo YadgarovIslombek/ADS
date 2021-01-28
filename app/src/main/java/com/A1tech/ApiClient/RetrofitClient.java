@@ -12,7 +12,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    private static final String BASE_URL = "http://192.168.1.117:8580/";
+    public static final String BASE_URL = "http://192.168.1.117:8580/";
 //    private static final String BASE_URL = "http://83.69.136.24:8580/";
 //private static final String BASE_URL = "https://dd183817-f822-4755-9401-abd8c4957005.mock.pstmn.io/";
  private static RetrofitClient mInstance;

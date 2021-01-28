@@ -18,6 +18,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-beta01] D:\Ins
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-beta01] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\630fb3bf05aebe61898159354f267426\jetified-lifecycle-viewmodel-ktx-2.3.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-beta01] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\77e1db3ddd5ec7d38bd33a25b59c18ed\jetified-savedstate-ktx-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [com.redmadrobot:input-mask-android:6.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\6b95ab3e5137264c26128473d7ad751e\jetified-input-mask-android-6.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\ddaa3c1d52dc0e86cb35275f072edb09\jetified-lifecycle-runtime-ktx-2.3.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.3.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f5b1091142532f4707d639915fcc5b3c\navigation-ui-2.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.3.0-alpha03] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:17:1-24:12
@@ -34,7 +35,6 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] D:\Installed prog
 MERGED from [com.google.android.gms:play-services-location:17.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\3886d25e7c75e0843eb5ffb5acc1ff39\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.cardview:cardview:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\ab88b2734dd8806ee1d963f7c6425500\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:3.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\605d30ed3b8615e28bcb1d70c76a9746\jetified-circleimageview-3.0.0\AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.Mahfa:DayNightSwitch:1.4] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\b6ff07f61297cd4db7dd1c38a1f53b11\jetified-DayNightSwitch-1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.media:media:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\d6e839b8af4f3da9ef8f7fc0605df234\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cd765317d93171099ad3dae1dfb82c3a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\e49d1d857e37976c086bb9f6adce8817\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -65,6 +65,7 @@ MERGED from [androidx.core:core:1.3.2] D:\Installed programms\.gradle\caches\tra
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\7fb77faac66bfe655b784c1b74e14cd5\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:15:1-41:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\c5f8cefc0b005b1311a17c7955f80a83\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\a81208bd821787ba75fa4adf7f8c6902\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cfca695ce3ee0bd3008a0a1d6a4532a1\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\74e3d3d1385aa3ede3087b39d7799567\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -163,6 +164,8 @@ MERGED from [com.google.android.libraries.places:places:2.4.0] D:\Installed prog
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml:22:22-76
 application
 ADDED from D:\project1\app\src\main\AndroidManifest.xml:23:5-77:19
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.android.material:material:1.3.0-alpha03] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0-alpha03] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f59671a3c1c8941d91cbe0af065698aa\material-1.3.0-alpha03\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\0dfbd3116c5a4b755f4e58d261b1bc1f\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -335,6 +338,8 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-beta01] D:\Installed progr
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0-beta01] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\77e1db3ddd5ec7d38bd33a25b59c18ed\jetified-savedstate-ktx-1.1.0-beta01\AndroidManifest.xml:20:5-22:41
 MERGED from [com.redmadrobot:input-mask-android:6.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\6b95ab3e5137264c26128473d7ad751e\jetified-input-mask-android-6.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.redmadrobot:input-mask-android:6.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\6b95ab3e5137264c26128473d7ad751e\jetified-input-mask-android-6.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\ddaa3c1d52dc0e86cb35275f072edb09\jetified-lifecycle-runtime-ktx-2.3.0-beta01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0-beta01] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\ddaa3c1d52dc0e86cb35275f072edb09\jetified-lifecycle-runtime-ktx-2.3.0-beta01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.2] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f5b1091142532f4707d639915fcc5b3c\navigation-ui-2.3.2\AndroidManifest.xml:20:5-22:41
@@ -367,8 +372,6 @@ MERGED from [androidx.cardview:cardview:1.0.0] D:\Installed programms\.gradle\ca
 MERGED from [androidx.cardview:cardview:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\ab88b2734dd8806ee1d963f7c6425500\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [de.hdodenhof:circleimageview:3.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\605d30ed3b8615e28bcb1d70c76a9746\jetified-circleimageview-3.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\605d30ed3b8615e28bcb1d70c76a9746\jetified-circleimageview-3.0.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.Mahfa:DayNightSwitch:1.4] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\b6ff07f61297cd4db7dd1c38a1f53b11\jetified-DayNightSwitch-1.4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.Mahfa:DayNightSwitch:1.4] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\b6ff07f61297cd4db7dd1c38a1f53b11\jetified-DayNightSwitch-1.4\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.media:media:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\d6e839b8af4f3da9ef8f7fc0605df234\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\d6e839b8af4f3da9ef8f7fc0605df234\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cd765317d93171099ad3dae1dfb82c3a\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
@@ -429,6 +432,8 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] D:\In
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\f2eeba5d62b5b3189d5513635d5b302c\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cac630cbddeef961b2bd71fb75c475f3\jetified-transport-runtime-2.2.3\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\c5f8cefc0b005b1311a17c7955f80a83\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\c5f8cefc0b005b1311a17c7955f80a83\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\a81208bd821787ba75fa4adf7f8c6902\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\a81208bd821787ba75fa4adf7f8c6902\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\cfca695ce3ee0bd3008a0a1d6a4532a1\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
@@ -477,6 +482,14 @@ INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
 		ADDED from D:\project1\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project1\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\162a08c7349c28bb9035ba429332e73b\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.google.android.libraries.places:places:2.4.0] D:\Installed programms\.gradle\caches\transforms-2\files-2.1\fe58ce39ac679f102eec9c0318cea2d0\jetified-places-2.4.0\AndroidManifest.xml:10:5-76
 	android:name

@@ -71,7 +71,7 @@ public class MalumotFragment extends Fragment {
                 _lat = lat.getText().toString();
                 _longt = longt.getText().toString();
                 _txt_address = txt_address.getText().toString();
-                    _txt_qosh_address = txt_qosh_address.getText().toString();
+                _txt_qosh_address = txt_qosh_address.getText().toString();
                 _txt_mobile = txt_mobile.getText().toString();
                 txt_address.setClickable(false);
                 txt_name.setClickable(false);

@@ -46,9 +46,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
-import com.mahfa.dnswitch.DayNightSwitch;
-import com.mahfa.dnswitch.DayNightSwitchAnimListener;
-import com.mahfa.dnswitch.DayNightSwitchListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,7 +67,6 @@ public class MainActivity extends BaseActivity
     SharedPreferences preferences;
     LocalStorage localStorage;
     View mDecorView;
-    private DayNightSwitch day_night_switch;
     boolean isFullScreen = false;
     @SuppressLint("ResourceAsColor")
 
@@ -254,9 +250,9 @@ public class MainActivity extends BaseActivity
             case R.id.nav_myshipping:
                 fragment = new OrderFragment();
                 break;
-            case R.id.nav_mylocation:
-                fragment = new TestFragment();
-                break;
+//            case R.id.nav_mylocation:
+//                fragment = new TestFragment();
+//                break;
             case R.id.nav_personal:
                 fragment = new ProfileFragment();
                 break;

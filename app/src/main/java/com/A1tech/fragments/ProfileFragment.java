@@ -34,9 +34,9 @@ public class ProfileFragment extends Fragment {
         localStorage = new LocalStorage(getContext());
         Client user = gson.fromJson(localStorage.getUserLogin(), Client.class);
        // name.setText(user.getUserName());
-        mobile.setText(user.getPhoneNumber());
-        email.setText(user.getEmail());
-        address.setText(user.getMessage());
+//        mobile.setText(user.getPhoneNumber());
+     //   email.setText(user.getEmail());
+      //  address.setText(user.getMessage());
 
         return view;
     }

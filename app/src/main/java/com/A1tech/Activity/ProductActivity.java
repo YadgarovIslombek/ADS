@@ -1,5 +1,4 @@
 package com.A1tech.Activity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
@@ -14,7 +13,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -29,16 +27,11 @@ import com.A1tech.Model.Client;
 import com.A1tech.Model.ProductModel;
 import com.A1tech.Model.ProductGroup;
 import com.google.gson.Gson;
-
-
 import java.util.ArrayList;
 import java.util.List;
-
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 public class ProductActivity extends BaseActivity {
     private static int cart_count = 0;
     String Tag = "List";
@@ -52,8 +45,6 @@ public class ProductActivity extends BaseActivity {
     Client client;
     int productGroupId;
     private RecyclerView recyclerView;
-
-
     @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +64,6 @@ public class ProductActivity extends BaseActivity {
         productModel = new ProductModel(productGroupId);
         cart_count = cartCount();
         recyclerView = findViewById(R.id.product_rv);
-
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -98,11 +88,9 @@ public class ProductActivity extends BaseActivity {
 
         });
     }
-
     private void hideProgressDialog() {
         progress.setVisibility(View.GONE);
     }
-
     private void showProgressDialog() {
         progress.setVisibility(View.VISIBLE);
     }
@@ -136,8 +124,6 @@ public class ProductActivity extends BaseActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -152,14 +138,11 @@ public class ProductActivity extends BaseActivity {
     public void onAddProduct() {
         cart_count++;
         invalidateOptionsMenu();
-
     }
-
     @Override
     public void onRemoveProduct() {
         cart_count--;
         invalidateOptionsMenu();
-
     }
     private void changeActionBarTitle(ActionBar actionBar) {
         // Create a LayoutParams for TextView
@@ -174,7 +157,6 @@ public class ProductActivity extends BaseActivity {
         // Set text to display in TextView
         tv.setText("Mahsulotlar"); // ActionBar title text
         tv.setTextSize(19);
-
         // Set the text color of TextView to red
         // This line change the ActionBar title text color
         tv.setTextColor(getResources().getColor(R.color.white));

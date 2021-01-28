@@ -19,9 +19,12 @@ import com.A1tech.Activity.BaseActivity;
 import com.A1tech.Activity.ProductActivity;
 import com.A1tech.ApiClient.AddorRemoveCallbacks;
 import com.A1tech.Helper.LocalStorage;
+import com.A1tech.Helper.Utils;
 import com.A1tech.Model.Cart;
 import com.A1tech.Model.ProductModel;
 import com.google.gson.Gson;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -88,7 +91,19 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyviewHo
         holder.attribute.setText("1 " +product.getUnitName());
         holder.currency.setText(" So'm");
         holder.price.setText(""+product.getPrice());
-
+//        Picasso.get()
+//                .load(Utils.ProductImage + product.getImage())
+//                .into(holder.imageView, new Callback() {
+//                    @Override
+//                    public void onSuccess() {
+//                        holder.progressBar.setVisibility(View.GONE);
+//                    }
+//
+//                    @Override
+//                    public void onError(Exception e) {
+//                        Log.d("Error : ", e.getMessage());
+//                    }
+//                });
 
         if (!cartList.isEmpty()) {
             for (int i = 0; i < cartList.size(); i++) {
